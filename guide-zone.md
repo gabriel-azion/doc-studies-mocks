@@ -2,15 +2,7 @@
 
 Azion [Intelligent DNS](https://www.azion.com/en/documentation/products/intelligent-dns/) is designed for those that want high performance and high availability for their hosting and their domain. Intelligent DNS is an authoritative DNS solution that allows the customers to manage their domains, zones, and records through a friendly and intuitive interface.
 
-A **DNS zone** is a portion of the DNS namespace that is managed by a particular organization or administrative entity. A DNS zone contains all of the DNS records for a particular domain or subdomain.
-
-Through this guide, we will:
-
-- Create an iDNS zone.
-- Describe an iDNS zone.
-- List your iDNS zone.
-- Update an iDNS zone.
-- Delete an iDNS zone.
+A **DNS zone** is a portion of the DNS namespace that is managed by a particular organization or administrative entity. It contains all of the DNS records for a particular domain or subdomain.
 
 ## Requirements
 
