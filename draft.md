@@ -6,11 +6,12 @@
 
 Terraform works based [on providers](https://developer.hashicorp.com/terraform/registry/providers). A provider is responsible for managing the lifecycle of a particular resource type. Providers are implemented as plugins, being separate executable code that can be loaded into Terraform at Runtime.
 
-[Azion Terraform Provider](https://github.com/aziontech/terraform-provider-azion) is an open source project, registered in [HashiCorp](https://www.hashicorp.com/). Through [the Azion SDK (Go)](https://github.com/aziontech/azionapi-go-sdk), it communicates with the Azion APIs as represented below:
+[Azion Terraform Provider](https://github.com/aziontech/terraform-provider-azion) is an open source project, registered in [HashiCorp](https://www.hashicorp.com/). Through [the Azion SDK (Go)](https://github.com/aziontech/azionapi-go-sdk), it communicates with the Azion APIs.
 
-![alt text for screen readers](./arch.png "Text to show on mouseover").
 
 ## Process
+
+![azionterraformprovider](./arch.png "workflow")
 
 **Terraform Core** - You must have it installed on your environment, [Check how to install it here](https://developer.hashicorp.com/terraform/downloads). The Terraform core communicates to the Azion Terraform Provider.
 
@@ -33,8 +34,12 @@ In your Terraform files, you must set the Azion Terraform Provider as the provid
 
 ## Implementation
 
-- [How to manage your iDNS zones with Azion Terraform Provider]()
-- [How to manage your iDNS records with Azion Terraform Provider]()
+| Capabilty | Description   |
+|---|---|
+|  [iDNS Zones]() | Manage your iDNS zones with Azion Terraform Provider  |
+|  [iDNS Records]() | Manage your iDNS records with Azion Terraform Provider  |
+|  [Domains]() | work in progress...  |
+|  [DNS ]() | work in progress...  |
 
 ## See also
 
