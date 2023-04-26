@@ -36,7 +36,7 @@ In your Terraform files, you must set the Azion Terraform Provider as the provid
 
 | Capabilty | Description   |
 |---|---|
-|  [iDNS Zones]() | Manage your iDNS zones with Azion Terraform Provider  |
+|  [iDNS Zones](https://github.com/gabriel-azion/terraform/blob/main/guide-zone.md) | Manage your iDNS zones with Azion Terraform Provider  |
 |  [iDNS Records]() | Manage your iDNS records with Azion Terraform Provider  |
 |  [Domains]() | work in progress...  |
 |  [DNS ]() | work in progress...  |
