@@ -11,7 +11,7 @@ In order to be able to work with Azion Terraform Provider, you need to:
 - Have [Terraform](https://developer.hashicorp.com/terraform/downloads) installed.
 - Have access to a [personal token]() on [RTM]().
 
-### Terraform commands 
+### Terraform commands
 
 In this process, the following Terraform commands we'll be used:
 
@@ -21,7 +21,7 @@ In this process, the following Terraform commands we'll be used:
 |  `terraform plan` | Shows changes required by the current configuration.  |
 |  `terraform apply`| creates or updates infrastructure.  |
 
->**Note**: the `terraform apply` requires a confirmation from the user, as shown below:
+>**Note**: the `terraform apply` command requires a confirmation from the user, as shown below:
 
 ```
     Do you want to perform these actions?
@@ -41,7 +41,7 @@ In your .tf file, you need to set Azion Terraform Provider as the provider sourc
     terraform {
       required_providers {
         azion = {
-          source = "registry.terraform.io/aziontech/azion"
+          source = "aziontech/azion"
           version = ">= 0.13"
         }
       }
@@ -85,71 +85,10 @@ Then, you configure your Personal token:
     terraform init
 ```
 
-Expected output:
-
-```bash
-    Initializing the backend...
-
-    Initializing provider plugins...
-    - Finding latest version of aziontech/azion...
-    - Installing aziontech/azion v0.2.0...
-    - Installed aziontech/azion v0.2.0 (self-signed, key ID xxxx)
-
-    Partner and community providers are signed by their developers.
-    If you d like to know more about provider signing, you can read about it here:
-    https://www.terraform.io/docs/cli/plugins/signing.html
-
-    Terraform has created a lock file .terraform.lock.hcl to record the provider
-    selections it made above. Include this file in your version control repository
-    so that Terraform can guarantee to make the same selections by default when
-    you run "terraform init" in the future.
-```
-
-
 3. Then:
 
 ```bash
     terraform plan
-```
-
-Expected output: 
-
-```bash
-    Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
-    following symbols:
-    + create
-
-    Terraform will perform the following actions:
-
-    # azion_zone.dev3 will be created
-    + resource "azion_zone" "dev3" {
-      + id             = (known after apply)
-      + last_updated   = (known after apply)
-      + schema_version = (known after apply)
-      + zone           = {
-          + domain      = "testtalk1.com"
-          + expiry      = (known after apply)
-          + id          = (known after apply)
-          + is_active   = true
-          + name        = "test for tech talk terraform"
-          + nameservers = (known after apply)
-          + nxttl       = (known after apply)
-          + refresh     = (known after apply)
-          + retry       = (known after apply)
-          + soattl      = (known after apply)
-        }
-    }
-
-    Plan: 1 to add, 0 to change, 0 to destroy.
-
-    Changes to Outputs:
-      + dev_Azion = {
-          + zone = {
-              + domain    = "yourdomain.com"
-              + is_active = true
-              + name      = "Creating a iDNS zone through Azion Terraform Provider"
-            }
-        }
 ```
 
 4. To implement the changes:
@@ -271,7 +210,67 @@ Expected output:
 
 ## 3. Describing an iDNS zone
 
-1. Once you've listed your iDNS zones, you have access to their ID. Let's define the zone you want to have described by informing the id:
+1. Once you've listed your iDNS zones, you have access to their ID. Let's define the zone you want to have described by informing its id:
+
+```json
+    data "azion_zone" "azionZone" {
+      id = "id"
+    }
+    output "dev_zone" {
+    value = data.azion_zone.azionZone
+}
+```
+
+2. Now, with the data set, we open the current directory in the terminal and run:
+
+```bash
+    terraform init
+```
+
+3. Then:
+
+```bash
+    terraform plan
+```
+
+4. To implement the changes:
+
+```bash
+    terraform apply
+```
+
+Expected output: 
+
+```bash
+    Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
+
+    Outputs:
+
+    dev_zone = {
+      "id" = "Get By ID Zone"
+      "results" = {
+        "domain" = "yourdomain.com"
+        "expiry" = 1209600
+        "is_active" = true
+        "name" = "Creating a iDNS zone through Azion Terraform Provider"
+        "nameservers" = tolist([
+          "ns1.aziondns.net",
+          "ns2.aziondns.com",
+          "ns3.aziondns.org",
+        ])
+        "nxttl" = 3600
+        "refresh" = 43200
+        "retry" = 7200
+        "soattl" = 3600
+        "zone_id" = 2662
+      }
+      "schema_version" = 3
+    }
+```
+
+## 4. Deleting an iDNS zone
+
+1. Once you've listed your iDNS zones, you have access to their ID. Let's define the zone you want to have described by informing its id:
 
 ```json
     data "azion_zone" "azionZone" {
