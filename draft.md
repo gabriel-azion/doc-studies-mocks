@@ -13,13 +13,11 @@ Terraform works based [on providers](https://developer.hashicorp.com/terraform/r
 
 ![azionterraformprovider](./arch.png "workflow")
 
-**Terraform Core** - You must have it installed on your environment, [Check how to install it here](https://developer.hashicorp.com/terraform/downloads). The Terraform core communicates to the Azion Terraform Provider.
+**Terraform Core** - You must have it installed in your environment, [check how to install it here](https://developer.hashicorp.com/terraform/downloads). The Terraform core communicates to the Azion Terraform Provider.
 
 **Azion Terraform Provider** - Built in Go, it communicates with the Azion SDK (Go).
 
 **Azion SDK (Go)** - Communicates with the Azion APIs.
-
-
 
 In your Terraform files, you must set the Azion Terraform Provider as the provider and set its version as well, such as: 
 
