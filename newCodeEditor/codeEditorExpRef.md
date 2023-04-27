@@ -1,6 +1,6 @@
 # New Code Editor
 
-The new code editor for [Edge Functions](https://www.azion.com/en/documentation/products/edge-application/edge-functions/) is the best way to get started developing your edge functions. It's a web-based code editor that makes it easier and more intuitive to develop at the edge of the network. The [Monaco Code Editor](https://microsoft.github.io/monaco-editor/docs.html) is used in VS Code(https://code.visualstudio.com/), so if you're used to VS Code, you'll get familiar with it right away. The Monaco Code Editor main features available for the Edge Functions Code Editor are:
+The new code editor for [Edge Functions](https://www.azion.com/en/documentation/products/edge-application/edge-functions/) is the best way to get started developing your edge functions. It's a web-based code editor that makes it easier and more intuitive to develop at the edge of the network. It's empowered by the [Monaco Code Editor](https://microsoft.github.io/monaco-editor/docs.html), used in VS Code(https://code.visualstudio.com/), so if you're used to VS Code, you'll get familiar with it right away. The Monaco Code Editor main features available for the Edge Functions Code Editor are:
 
 - Syntax Highlighting
 - IntelliSense
@@ -29,4 +29,11 @@ Other feature that comes in the package is an integration with [ChatGPT](https:/
 - Code explanation
 - Code generator
 
-Take a look at [How to use ChatGPT to boost your productivity coding on the Azion Edge Platform]().
+Take a look at [How to use ChatGPT to boost your productivity coding at the edge]().
+
+See also
+
+- [x]()
+- [x]()
+- [x]()
+- [x]()
