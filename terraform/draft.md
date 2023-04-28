@@ -6,8 +6,7 @@
 
 Terraform works based [on providers](https://developer.hashicorp.com/terraform/registry/providers). A provider is responsible for managing the lifecycle of a particular resource type. Providers are implemented as plugins, being separate executable code that can be loaded into Terraform at Runtime.
 
-[Azion Terraform Provider](https://github.com/aziontech/terraform-provider-azion) is an open source project, registered in [HashiCorp](https://www.hashicorp.com/). Through [the Azion SDK (Go)](https://github.com/aziontech/azionapi-go-sdk), it communicates with the Azion APIs.
-
+[Azion Terraform Provider](https://github.com/aziontech/terraform-provider-azion) is an open source project, registered in [HashiCorp](https://www.hashicorp.com/). Through [the Azion SDK (Go)](https://github.com/aziontech/azionapi-go-sdk), it communicates with the Azion APIs, so you can manage your infrastructure hosted on the the Azion platform, locally, as code.
 
 ## Process
 
@@ -19,13 +18,40 @@ Terraform works based [on providers](https://developer.hashicorp.com/terraform/r
 
 **Azion SDK (Go)** - Communicates with the Azion APIs.
 
-In your Terraform files, you must set the Azion Terraform Provider as the provider and set its version as well, such as: 
+
+## Getting started
+
+In your Terraform file, you must set the Azion Terraform Provider as the provider and set its version as well, such as:
 
 ```terraform
     required_providers {
         source = "aziontech/azion"
         version = "0.2.0" // it depends on the version you're willing to use.
     }
+```
+
+Now, with the provider configured, it's recommended to configure your Personal token:
+
+```json
+    provider "azion" {
+      api_token  = "token" // Here you place your personal token
+}
+```
+
+If the Personal Token is not provided as presented above, a prompt will ask you to inform it when you try to run any Terraform command.
+
+After this steps, you're ready to get started managing your infrastructure using the Azion Terraform Provider.
+
+Here's how you `.tf` will look like, for now:
+
+```
+    required_providers {
+            source = "aziontech/azion"
+            version = "0.2.0" // it depends on the version you're willing to use.
+        }
+    provider "azion" {
+            api_token  = "token" // Here you place your personal token
+     }
 ```
 
 >**Note**: Currently **Azion Terraform Provider** is available only for managing your iDNS zones and records.
