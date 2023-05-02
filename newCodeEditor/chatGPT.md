@@ -1,6 +1,6 @@
 # Edge Functions ChatGPT integration
 
-Chat GPT can be used in almost all tasks that involves understanding or generation of natural language or code. In the development environment, it can be a tool for boosting developers productivity, being able to:
+[ChatGPT]() can be used in almost all tasks that involves understanding or generation of natural language or code. In the development environment, it's a tool used for boosting developers productivity, helping them to:
 
 - Explain the code being implemented.
 - Generate new code.
@@ -9,6 +9,8 @@ Chat GPT can be used in almost all tasks that involves understanding or generati
 ---
 
 ## How does the Edge Functions ChatGPT integration work?
+
+The Azion Code Editor is integrated to the ChatGPT APIs, so you can use a set of features inside the editor, without the need of having another tab opened. The features go from having the code refactor to generating new code based on the prompt input.
 
 First, it's necessary to configure your credentials registered on the OpenAI platform.
 
@@ -71,7 +73,7 @@ After writing the prompt inside the code editor, right click it and select `Chat
     </body>
 ```
 
-### Code Refactor 
+### Code Refactor
 
 Another option is to ask ChatGPT to refactor the code. To do so, you have to select the piece of code you want to have refactored, then right click on it and select `ChatGPT: Refactor`. After that, your code will be refactored automatically. 
 
@@ -81,12 +83,11 @@ Note that it's always a good idea to test and ensure the refactored code is work
 
 ## Implementation
 
-Here are some real-life implementations of the Preview Deployment tool:
+Here are some real-life implementations of the Edge Functions ChatGPT integration:
 
 | Implementation | Description   |
 |---|---|
-|  How to preview a function that returns a HTML page | xxxxx |
-|  How to return data in JSON with ChatGPT and Azion Preview Deployment | xxxxx |
+|  How to boost your productivity developing at the edge with ChatGPT| xxxxx |
 
 
 ## See also
