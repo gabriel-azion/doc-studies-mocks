@@ -32,11 +32,11 @@ One feature available on this integration is the Code Explanation. It comes in h
 
 ### Code Generation
 
-Code Generation works based on the prompt informed. For example, let's say you want to return a `HTML` page, with a table containing the name, phone number and address.
+Code Generation works based on the prompt informed. For example, let's say you want to return an `HTML` page, with a table containing the name, phone number and address.
 
 **Prompt**: 
 ```
-    // generate a html table with name, phone number and address
+    // generate an html table with name, phone number and address
 ```
 
 After writing the prompt inside the code editor, right click it and select `ChatGPT: Generate`
