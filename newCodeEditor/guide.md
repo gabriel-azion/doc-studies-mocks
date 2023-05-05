@@ -14,8 +14,8 @@ Learn about the required process to create an API with [Edge Functions]({% tl do
 
 To do so, you need to:
 
-- Be registered [on ChatGPT](https://chat.openai.com/)
-- Have [your ChatGPT API key]((https://platform.openai.com/account/api-keys)).
+- Be registered [on ChatGPT](https://chat.openai.com/).
+- Have [your ChatGPT API key](https://platform.openai.com/account/api-keys).
 - Have [your ChatGPT organization ID](https://platform.openai.com/account/org-settings).
 
 1. On [Real-Time Manager RTM](https://manager.azion.com/), on the upper-left corner, select **Edge Functions** in the **Edge Libraries** section. OK
