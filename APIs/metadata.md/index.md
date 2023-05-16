@@ -1,6 +1,6 @@
 # Metadata
 
-The Edge Functions on Edge Firewall provide a set of metadata that can be manipulated to:
+The edge functions on Edge Firewall have access to a set of metadata that can be manipulated to:
 
 - Filter and manage access to your application.
 - Apply specific logic in different scenarios.
@@ -120,17 +120,17 @@ The SSL-related metadata is available when the request is made over a secure TLS
     async function firewallHandler(event){
         // Access the country code through geoip
         let countryCode = event.request.metadata["geoip_country_code"]
-    
+
         // Do some logic here
         // In this example, we are blocking access from Brazil
         if (countryCode === "BR"){
             event.deny();
         }
-    
+
         // Then, if it comes from any other country,
         // the processing continues
         event.continue();
     }
-    
+
     addEventListener("firewall", (event)=>event.waitUntil(firewallHandler(event)));
 ```
