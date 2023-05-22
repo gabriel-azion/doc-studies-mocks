@@ -26,7 +26,7 @@ SSR offers a list of benefits, such as:
 - Accessibility and compatibility.
 - Code sharing and performance optimizations.
 
-## Prerequisites
+## Next.js SSR project on the Azion Platform
 
 To create a Next.js application with SSR on the Azion platform, you need:
 
