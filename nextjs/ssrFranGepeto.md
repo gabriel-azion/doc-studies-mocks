@@ -30,7 +30,7 @@ permalink_pt-br: "/documentacao/produtos/guias/nextjs-na-plataforma-azion/"
 Before getting started, make sure you have:
 
 - An Azion platform account with Edge Functions enabled
-- Node.js runtime environment (version 16.x or higher) installed in your build environment
+- Node.js runtime environment (version 16.x or 18.x) installed in your build environment
 - The latest version of Azion CLI installed
 - Next.js installed.
 

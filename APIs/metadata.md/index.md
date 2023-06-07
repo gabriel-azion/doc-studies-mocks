@@ -24,26 +24,7 @@ The GeoIP information data on the geographical location of the client based on I
 |  geoip_region                    | GeoIP information                                              |
 |  geoip_region_name               | GeoIP information                                              |
 
-### Usage
 
-```javascript
-    async function firewallHandler(event){
-        // Access the country code through geoip
-        let countryCode = event.request.metadata["geoip_country_code"]
-
-        // Do some logic here
-        // In this example, we are blocking access from Brazil
-        if (countryCode === "BR"){
-            event.deny();
-        }
-
-        // Then, if it comes from any other country,
-        // the processing continues
-        event.continue();
-    }
-
-    addEventListener("firewall", (event)=>event.waitUntil(firewallHandler(event)));
-```
 
 ## Remote
 
@@ -56,54 +37,11 @@ The remote metadata provides details about the remote client's IP address and TC
 |  remote_port                     | Remote (client) TCP port                                       |
 |  remote_user                     | User informed in the URL. Example: user in http://user@site.com/ |
 
-### Usage
-
-```javascript
-    async function firewallHandler(event){
-        // Access the country code through geoip
-        let countryCode = event.request.metadata["geoip_country_code"]
-
-        // Do some logic here
-        // In this example, we are blocking access from Brazil
-        if (countryCode === "BR"){
-            event.deny();
-        }
-
-        // Then, if it comes from any other country,
-        // the processing continues
-        event.continue();
-    }
-
-    addEventListener("firewall", (event)=>event.waitUntil(firewallHandler(event)));
-```
-
-
 ## Server
 
 |  Name                            | Description                                                    |
 |----------------------------------|----------------------------------------------------------------|
 |  server_protocol                 | Protocol being used in the request. Example: HTTP/1.1            |
-
-### Usage
-
-```javascript
-    async function firewallHandler(event){
-        // Access the country code through geoip
-        let countryCode = event.request.metadata["geoip_country_code"]
-
-        // Do some logic here
-        // In this example, we are blocking access from Brazil
-        if (countryCode === "BR"){
-            event.deny();
-        }
-
-        // Then, if it comes from any other country,
-        // the processing continues
-        event.continue();
-    }
-
-    addEventListener("firewall", (event)=>event.waitUntil(firewallHandler(event)));
-```
  
 ## SSL
 
@@ -114,23 +52,35 @@ The SSL-related metadata is available when the request is made over a secure TLS
 |  ssl_cipher                      | TLS/SSL cipher used                                            |
 |  ssl_protocol                    | TLS/SSL protocol used                                          |
 
-### Usage
+## Usage
+
+You can access the metadata through `event.request.metadata["remote_addr"]`, such as :
 
 ```javascript
-    async function firewallHandler(event){
-        // Access the country code through geoip
-        let countryCode = event.request.metadata["geoip_country_code"]
+    let ip = event.request.metadata["remote_addr"] // Accessing the remote address
 
-        // Do some logic here
-        // In this example, we are blocking access from Brazil
-        if (countryCode === "BR"){
-            event.deny();
+```
+
+### Implementation
+
+In the code sample below: 
+
+- The remote address is accessed.
+- It's verified if this address is in a network list.
+- If it's in the network list, the request is denied.
+
+```javascript
+     addEventListener("firewall", (event) => {
+
+      let ip = event.request.metadata["remote_addr"] // Accessing the remote address
+
+      try {
+        let found = Azion.networkList.contains(String(networkListId), ip); // Checking if the ip is in the list
+        if (found) {
+          event.deny(); // If it's in the list, deny the request
         }
-
-        // Then, if it comes from any other country,
-        // the processing continues
-        event.continue();
-    }
-
-    addEventListener("firewall", (event)=>event.waitUntil(firewallHandler(event)));
+      } catch (err) {
+        event.console.error(`Error: `, err.stack);
+      }
+    });
 ```
