@@ -118,11 +118,14 @@ You can also debug using:
 - [Real-time Metrics]()
 - [GraphQL]()
 
+--- 
+## Run a function
+
+Once you've created your edge function, you can configure a rule in Rules Engine and set the behavior to be `Run a function`, then, based on the rule configured, your edge application or edge firewall will run the chosen function.
+
 ---
 
 ## Limits
-
-### Limitation(or something else)
 
 | Where | Developer | Enterprise | Mission Critical| 
 | - | - | - | - |
@@ -130,12 +133,6 @@ You can also debug using:
 | Memory per Isolate | 512mb | 512mb | 512mb |
 | Arguments | 100kb | 100kb | 100kb |
 | Arguments | 100kb | 100kb | 100kb |
-
-
-## Run a function
-
-Once you've created your edge function, you can configure a rule in Rules Engine and set the behavior to be `Run a function`, then, based on the rule configured, your edge application or edge firewall will run the chosen function.
-
 ---
 
 Didn't find what you were looking for? Open a support ticket.
