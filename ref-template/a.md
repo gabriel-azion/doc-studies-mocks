@@ -100,14 +100,6 @@ When you add json args, you can have different behaviors in your edge function w
 
 You can check if the output is the one expected with the Preview Deployment, making use of the `PreviewProvider` function, that emulates a request.
 
-### Limitation(or something else)
-
-| Where | Description |
-| - | - |
-| Syntax Highlighting | Explain the code being implemented |
-| IntelliSense | Generate new code |
-| Debugging |  Refactor preexisting code |
-
 ## Debugging
 
 You can debug your edge functions on real time using the `inspect` tool inside the [Preview Deployment](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/preview-deployment/) section.
