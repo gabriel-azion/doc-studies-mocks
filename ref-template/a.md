@@ -6,83 +6,99 @@ With Edge Functions, you can perform serverless functions in response to events 
 
 ![imagem como o Edge Functions funciona](./arch.png)
 
-To find out more about Edge Functions first steps, see [...](...)
+[Find out more about how to get started with Edge Functions](...)
 
 ## Capabilities
 
-### Multi-language Support
+### JavaScript Support
 
-Multi-language support is a crucial aspect of software development and design that enables applications to cater to diverse linguistic user bases. It involves implementing features and functionalities that allow users to interact with the application in their preferred language. This support typically includes translating text, adapting date/time formats, and handling linguistic nuances. By embracing multi-language support, developers can enhance accessibility, user satisfaction, and expand their global reach. It requires careful consideration of internationalization techniques, such as resource management, localization frameworks, and language-specific character encoding. Implementing multi-language support empowers applications to break language barriers and provide a more inclusive experience for users worldwide.
+JavaScript is a popular programming language used for web development, enabling dynamic and interactive website features. It runs on the client-side and is supported by all major web browsers. By using JavaScript in Edge functions, you can execute code closer to the end user, enhancing performance and enabling custom logic for handling requests and responses.
+
+Using the Azion Edge Runtime to develop your own edge functions, you have a set of tools that help you implement your logic, such as:
+
+- [Web standards APIs](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-apis/javascript/).
+- [Metadata](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/api-reference/metadata/).
+- [Network List method](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/api-reference/network-list/).
 
 ### Javascript frameworks support
+>It has a dedicated page
 
-Next.js is a powerful and popular JavaScript framework used for building scalable and performant web applications. It provides a seamless development experience by combining the best features of React with server-side rendering and static site generation. Next.js offers comprehensive support for server-side rendering, automatic code splitting, and client-side routing, resulting in improved performance and SEO. It also integrates effortlessly with popular libraries and frameworks like TypeScript, GraphQL, and CSS-in-JS. With Next.js, developers can easily build modern web applications with a smooth development workflow, efficient server-side rendering, and excellent performance out of the box
+#### Next.js
+
+Next.js is a JavaScript framework built on top of React that enables server-side rendering (SSR) and static site generation for building **Jamstack** applications.
+
+**Jamstack**
+Jamstack stands for JavaScript, APIs, and Markup, and it promotes decoupling the front-end from the back-end by pre-rendering content and serving it as static files.
+
+**SSR**
+SSR allows rendering React components on the server before sending them to the client, enhancing initial load times and improving SEO.
+
+**Static Site**
+Static site generation generates static HTML files at build time, which can be cached and delivered quickly to users, reducing the need for server-side processing.
 
 ### Function Instantiation
+> // Deserves a dedicated page, currently we have two pages, one for firewall and another one for applications 
+[Application](https://www.azion.com/en/documentation/products/edge-application/edge-functions-instances/)
+[Firewall](https://www.azion.com/en/documentation/products/edge-firewall/edge-functions-instances/)
 
-Edge Functions module allows you to instantiate serverless functions in your Edge Application at Azion, as well as set up conditions for its execution.
+The Edge Functions module allows you to instantiate serverless functions in your edge applications and edge firewall, as well as set up conditions for its execution.
 
-Available for Edge Application and Edge Firewall products. Once it runs serverless functions in our robust distributed network of Edge Nodes, it responds to events closer to the end user, ensuring greater scalability and availability.
+Once your edge application or edge firewall runs edge functions, it responds to events closer to the end user, ensuring greater scalability and availability.
+
+Learn more about edge functions instances:
+
+- [Application](https://www.azion.com/en/documentation/products/edge-application/edge-functions-instances/)
+- [Firewall](https://www.azion.com/en/documentation/products/edge-firewall/edge-functions-instances/)
+
 
 ### Rules Engine
 
-Edge Functions module allows you to instantiate serverless functions in your Edge Application at Azion, as well as set up conditions for its execution.
+Rules Engine is a capability that handles the conditional execution of behaviors through logical operators. By using Rules Engine, you can build an architecture that provides better performance to your users while consuming fewer resources by processing at the origin.
 
-Available for Edge Application and Edge Firewall products. Once it runs serverless functions in our robust distributed network of Edge Nodes, it responds to events closer to the end user, ensuring greater scalability and availability.
+Available for Edge Application and Edge Firewall.
+
+Learn more about Rules Engine: 
+
+- [Application](https://www.azion.com/en/documentation/products/edge-application/edge-functions-instances/)
+- [Firewall](https://www.azion.com/en/documentation/products/edge-firewall/edge-functions-instances/)
 
 ### Code editor
 
-The new code editor for Edge Functions is the best way to get started developing your edge functions on the Azion platform. It's a web-based code editor that makes it easier and more intuitive to develop at the edge of the network. It's empowered by the Monaco Code Editor, used in VS Code, so if you're used to VS Code, you'll get familiar with it right away. The Monaco Code Editor main features available for the Edge Functions Code Editor are:
+The new code editor for Edge Functions is the best way to get started developing your edge functions on the Azion platform. It's a web-based code editor that makes it easier and more intuitive to develop at the edge of the network. It's empowered by the Monaco Code Editor, used in VS Code, so if you're used to VS Code, you'll get familiar with it right away.
 
-| Feature | Description |
-| - | - |
-| Syntax Highlighting | Explain the code being implemented |
-| IntelliSense | Generate new code |
-| Debugging |  Refactor preexisting code |
+Some of its key features are:
+
+- Syntax Highlighting.
+- Intellisense.
+- Debugging
+
+[Learn more about the Edge Functions Code Editor](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/code-editor/).
 
 ### AI Assistant
 
-ChatGPT can be used in almost all tasks that involve understanding or generating natural language or code. In the development environment, it's a tool used for boosting developers productivity, helping them to:
+Generative AI can be used in almost all tasks that involve understanding or generating natural language or code. In the development environment, it's a tool used for boosting developers productivity.
 
-| Feature | Description |
-| - | - |
-| Code Explanation | Explain the code being implemented |
-| Code Generation  | Generate new code |
-| Code Refactor |  Refactor preexisting code |
+In the edge functions scenario, it helps developers to:
+
+- Debug code.
+- Refactor code.
+- Generate code based on prompts.
+
+[Learn more about the AI Assistant](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/ai-integration/)
 
 ---
 
 ## Creating an edge function
 
-A Data Source represents the application at Azion that generates the event logs you want to use. By selecting one, you decide where your data will be collected from and the remaining product settings are configured according to your choice.
-
-Selecting a Data Source in the dropdown list is mandatory. You can choose between:
-
-### Limitation(or something else)
-
-| Where | Description |
-| - | - |
-| Syntax Highlighting | Explain the code being implemented |
-| IntelliSense | Generate new code |
-| Debugging |  Refactor preexisting code |
+You can create your own edge functions in JavaScript with the help of an AI tool and have your function preview presented to you on real-time. To do so, you need to write or copy and paste your JavaScript code, following the required structured to have it running on the Azion Edge Platform.
 
 ## Adding JSON args
 
-A Data Source represents the application at Azion that generates the event logs you want to use. By selecting one, you decide where your data will be collected from and the remaining product settings are configured according to your choice.
-
-Selecting a Data Source in the dropdown list is mandatory. You can choose between:
-
-### Limitation(or something else)
-
-| Where | Description |
-| - | - |
-| Syntax Highlighting | Explain the code being implemented |
-| IntelliSense | Generate new code |
-| Debugging |  Refactor preexisting code |
+When you add json args, you can have different behaviors in your edge function without having to alter the code. Once you've set your json args, you can retrieve them by calling `event.args("desiredArg")`
 
 ## Previewing
 
-A Data Source represents the application at Azion that generates the event logs you want to use. By selecting one, you decide where your data will be collected from and the remaining product settings are configured according to your choice.
+You can check if the output is the one expected with the Preview Deployment, making use of the `PreviewProvider` function, that emulates a request.
 
 ### Limitation(or something else)
 
@@ -94,21 +110,31 @@ A Data Source represents the application at Azion that generates the event logs 
 
 ## Debugging
 
-A Data Source represents the application at Azion that generates the event logs you want to use. By selecting one, you decide where your data will be collected from and the remaining product settings are configured according to your choice.
+You can debug your edge functions on real time using the `inspect` tool inside the [Preview Deployment](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/preview-deployment/) section.
 
-### Limitation(or something else)
+You can also debug using:
 
-| Where | Description |
-| - | - |
-| Syntax Highlighting | Explain the code being implemented |
-| IntelliSense | Generate new code |
-| Debugging |  Refactor preexisting code |
+- [Data Streaming]()
+- [Real-time Metrics]()
+- [GraphQL]()
 
 ---
 
+## Limits
+
+### Limitation(or something else)
+
+| Where | Developer | Enterprise | Mission Critical| 
+| - | - | - | - |
+| Arguments | 100kb | 100kb | 100kb |
+| Memory per Isolate | 512mb | 512mb | 512mb |
+| Arguments | 100kb | 100kb | 100kb |
+| Arguments | 100kb | 100kb | 100kb |
+
+
 ## Run a function
 
-Since the system is distributed, it isn't possible to know the specific server that sends messages to each endpoint.
+Once you've created your edge function, you can configure a rule in Rules Engine and set the behavior to be `Run a function`, then, based on the rule configured, your edge application or edge firewall will run the chosen function.
 
 ---
 
