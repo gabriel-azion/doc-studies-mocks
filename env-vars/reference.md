@@ -69,7 +69,7 @@ You can retrieve the value of your configured env variable inside an edge functi
   const apiSecret = Azion.env.get('API_SERVICE_SECRET')
 ```
 
-Learn more about the [Environment Variables interface]().
+Learn more about the [Environment Variables interface](https://github.com/gabriel-azion/doc-studies-mocks/blob/main/env-vars/api-reference.md).
 
 ---
 Didn't find what you were looking for? [Open a support ticket](https://tickets.azion.com/).
