@@ -72,4 +72,13 @@ You can retrieve the value of your configured env variable inside an edge functi
 Learn more about the [Environment Variables interface](https://github.com/gabriel-azion/doc-studies-mocks/blob/main/env-vars/api-reference.md).
 
 ---
+
+## Limits
+
+| Scope | Limitation | Description |
+| - | - | - |
+| Value | 32k | The max size of a value is 32k |
+| Keys | 100 per client | Each client can have 100 `key:value` variables. |  
+---
+
 Didn't find what you were looking for? [Open a support ticket](https://tickets.azion.com/).
