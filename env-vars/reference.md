@@ -12,7 +12,6 @@ One of the primary reasons to use env variables is to enhance the security of yo
 
 Env variables enable greater flexibility in configuring your application. Instead of modifying code or recompiling your application to update settings, you can simply change the values of the env variables. This makes it easier to deploy your application across different environments (development, staging, production) or when using different providers (e.g., cloud platforms), as each environment can have its own set of variables.
 
--- Talvez nao mencionar isso
 ### Portability
 
 Env variables contribute to the portability of your application. By abstracting configuration details away from the code, you can easily move your application between different environments or platforms without modifying the codebase. This is particularly useful when scaling your application or deploying it in different hosting environments.
@@ -32,7 +31,7 @@ In many cases, organizations need to adhere to compliance standards that regulat
 
 ## Environment variables on the Azion platform
 
-You can manage your environment variables on the Azion platform trough [Real-Time Manager (RTM) ](https://manager.azion.com/) or [the Azion API](https://api.azion.com/).
+You can manage your environment variables on the Azion platform trough [Real-Time Manager (RTM) ](https://manager.azion.com/), [Azion CLI](), and [the Azion API](https://api.azion.com/).
 
 The variables are `key:value` based, such as:
 
@@ -50,6 +49,20 @@ Through the RTM UI, you're able to access the Environment Variables section on t
 ### Environment variables through the Azion API
 
 You can manage your env variables using the API, what makes it possible to implement the methods using a client and automatize your use according to your needs. 
+
+We have the following methods available: 
+
+- [POST](https://stage-variables.azion.com/#/api/api_variables_create)
+- [GET](https://stage-variables.azion.com/#/api/api_variables_list)
+- [GET by ID](https://stage-variables.azion.com/#/api/api_variables_retrieve)
+- [PUT](https://stage-variables.azion.com/#/api/api_variables_update)
+- [DELETE](https://stage-variables.azion.com/#/api/api_variables_destroy)
+
+---
+
+### Environment variables through the Azion CLI (isso provavelmente demore um pouco mais para subir)
+
+You can manage your env variables using the CLI (isso provavelmente demore um pouco mais para subir), what makes it possible to implement the methods using a client and automatize your use according to your needs. 
 
 We have the following methods available: 
 

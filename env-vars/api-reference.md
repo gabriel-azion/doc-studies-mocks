@@ -53,7 +53,3 @@ If an error occurs during the execution of `Azion.env.get()`, an exception may b
 ---
 
 Didn't find what you were looking for? [Open a support ticket](https://tickets.azion.com/).
-
----
-
-Didn't find what you were looking for? [Open a support ticket](https://tickets.azion.com/).
