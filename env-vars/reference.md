@@ -20,7 +20,6 @@ Env variables contribute to the portability of your application. By abstracting 
 
 Env variables promote collaboration among team members. Since sensitive information is not exposed directly in the codebase, it's safer to have more than one developer working on the same project.
 
--- Talvez n mencionar
 ### Version Control
 By excluding sensitive information from the codebase, you can avoid committing secrets to version control systems. This prevents secrets from being inadvertently leaked when sharing code repositories or during code reviews. Instead, only the configuration templates or placeholders for env variables are committed, ensuring the security of sensitive information.
 
