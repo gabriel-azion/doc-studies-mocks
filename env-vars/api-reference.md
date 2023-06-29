@@ -49,7 +49,3 @@ Basic usage of `Azion.env.get()`:
 ## Error handling
 
 If an error occurs during the execution of `Azion.env.get()`, an exception may be thrown. Make sure to handle potential errors and provide appropriate error messages or fallback actions in your code.
-
----
-
-Didn't find what you were looking for? [Open a support ticket](https://tickets.azion.com/).
