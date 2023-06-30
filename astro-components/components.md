@@ -36,4 +36,4 @@ The output will be similar to:
 
 ![examplo1](./exemplo1.png)
 
-For the complete list of available components ->>>>>> [Story Book]()
+For the complete list of available components ->>>>>> [Story Book](https://github.com/gabriel-azion/doc-studies-mocks/blob/main/astro-components/story-book.md)
