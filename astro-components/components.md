@@ -18,7 +18,7 @@ To use one of the listed components, we need to import it in the documentation f
   import Box from '~/components/tutorial/Box.astro'
 ```
 
-And then call the component
+And then call the component:
 
 ```js
   <Box icon="implementation">
