@@ -1,8 +1,8 @@
 # Astro components & Azion Docs
 
-Astro is the all-in-one web framework designed for speed. It's our currently framework when talking about Azion Docs Portal.
+Astro is the all-in-one web framework designed for speed. It's our current framework when talking about Azion Docs Portal.
 
-With the astro framework a new set of possibilities come in handy.
+With the Astro framework, a new set of possibilities come in handy.
 
 ## .mdx files
 
@@ -12,7 +12,7 @@ We currently have a selection of components that can (and should) be used to enr
 
 ### Basic implementation
 
-To use one of the listed components, we need to import it in the documentation file (.mdx file):
+To use one of the listed components, we need to import it into the documentation file (.mdx file):
 
 ```js
   import Box from '~/components/tutorial/Box.astro'
