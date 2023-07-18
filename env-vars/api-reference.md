@@ -68,7 +68,7 @@ A `string` with the value stored at the given variable's key, or `undefined` if 
       const response = await fetch(apiUrl, { headers });
   
       if (!response.ok) {
-        throw new Error(String(response.error));
+        throw new Error(String(response.status));
       }
   
       const data = await response.json();
@@ -89,5 +89,3 @@ A `string` with the value stored at the given variable's key, or `undefined` if 
     }
   }
 ```
-
----
