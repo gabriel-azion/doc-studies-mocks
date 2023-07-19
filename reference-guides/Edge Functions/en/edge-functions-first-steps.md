@@ -29,7 +29,7 @@ It's paramount to take a look at the list of available APIs, methods and types. 
 
 ### Code Editor
 
-The [Edge Functions Code Editor](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/code-editor/) makes the experience of developing at the edge closer the experience developers are used to. The [Edge Functions ChatGPT Integration](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/ai-integration/) helps you to write, refactor and review code.
+The [Edge Functions Code Editor](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/code-editor/) provides a development experience similar to what developers are accustomed to. The [Edge Functions ChatGPT Integration](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/ai-integration/) helps you to write, refactor and review code.
 
 The edge functions on the Azion platform are implemented as it follows:
 
