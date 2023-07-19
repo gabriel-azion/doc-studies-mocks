@@ -25,7 +25,7 @@ For you to get started and excel as en edge developer, it's important to:
 
 The Azion's Edge Functions works on the [Azion Edge Runtime](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/overview/), which is a set of tools that enable the development.
 
-It's paramount to take a look at the list of available APIs, methods e types. Learn more about the [Azion Edge Runtime](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/overview/).
+It's paramount to take a look at the list of available APIs, methods and types. Learn more about the [Azion Edge Runtime](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/overview/).
 
 ### Code Editor
 
