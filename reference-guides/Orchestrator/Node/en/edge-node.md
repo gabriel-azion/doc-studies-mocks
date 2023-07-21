@@ -12,7 +12,7 @@ It is an open software which can be run on different types of microprocessor arc
 
 ---
 
-## Agent commands and options 
+## Agent commands and options
 
 The Edge Orchestrator agent has additional commands and options to make it easier to use.
 

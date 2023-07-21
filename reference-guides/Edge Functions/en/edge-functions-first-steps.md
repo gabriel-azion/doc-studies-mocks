@@ -1,21 +1,8 @@
-# First steps
-
-Edge Functions is a module that can be used alongside [Edge Applications](https://www.azion.com/en/documentation/products/edge-application/) and [Edge Firewall](https://www.azion.com/en/documentation/products/edge-firewall/). It allows the development of JavaScript functions that run at the edge of the network, closer to the end users. These functions have the power to implement the necessary logic to the edge application and boost the protection of the edge firewall.
-
-With Azion's Edge Functions, you can:
-
-- Have your logic running closer to end-users, reducing latency.
-- Develop in JavaScript, one of the most popular programming languages.
-- Boost your applications' protection through Edge Firewall.
-- Deploy JAMStack applications.
-- Make use of different frameworks, such as Astro, Nuxt, and Next.
-- Build APIs.
-- Check the preview before your function go to production.
-- Develop locally (WIP).
+# Azion Edge Functions First steps
 
 ## Before you begin
 
-For you to get started and excel as en edge developer, it's important to:
+For you to get started and excel as an edge developer, it's important to:
 
 - Be familiar with JavaScript.
 - Know the concept of [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode).
@@ -25,19 +12,19 @@ For you to get started and excel as en edge developer, it's important to:
 
 The Azion's Edge Functions works on the [Azion Edge Runtime](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/overview/), which is a set of tools that enable the development.
 
-It's paramount to take a look at the list of available APIs, methods and types. Learn more about the [Azion Edge Runtime](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/overview/).
+It's paramount to take a look at the list of available APIs, methods, and types. Learn more about the [Azion Edge Runtime](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/overview/).
 
 ### Code Editor
 
 The [Edge Functions Code Editor](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/code-editor/) provides a development experience similar to what developers are accustomed to. The [Edge Functions ChatGPT Integration](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/ai-integration/) helps you to write, refactor and review code.
 
-The edge functions on the Azion platform are implemented as it follows:
+The edge functions on the Azion platform are implemented as follows:
 
 ### Edge Application
 
 Developing your first edge function for Edge Application:
 
-1. On Real-Time Manager RTM, on the upper-left corner, select Edge Functions in the Edge Libraries section.
+1. On Real-Time Manager RTM, in the upper-left corner, select Edge Functions in the Edge Libraries section.
 2. Click Add a Function.
 3. Choose a name for your function.
 4. Write your edge function code. But wait, before that, keep reading...
@@ -52,7 +39,7 @@ First, the edge functions for edge applications work based on a [fetch event](ht
     });
 ```
 
-After that, it's necessary to define the behavior of the `handleRequest` function. This function has the event.request data as signature. This data can be used later on to implement the necessary logic, such as:
+After that, it's necessary to define the behavior of the `handleRequest` function. This function has the event.request data as the signature. This data can be used later on to implement the necessary logic, such as:
 
 - Manipulate cookies
 - Implement a behavior based on the request method (POST, GET, PUT, DELETE)
@@ -76,13 +63,13 @@ The `handleRequest` function can be defined as:
   }
 ```
 
-In this example, the response will be the HTML content, declared previously by the const `html`. The headers can be manipulated as well, and in the example it is set the content type.
+In this example, the response will be the HTML content, declared previously by the const `html`. The headers can be manipulated as well, and in the example, it is set the content type.
 
 ### Edge Firewall
 
 Developing your first edge function for Edge Firewall:
 
-1. On Real-Time Manager RTM, on the upper-left corner, select Edge Functions in the Edge Libraries section.
+1. On Real-Time Manager RTM, in the upper-left corner, select Edge Functions in the Edge Libraries section.
 2. Click Add a Function.
 3. Choose a name for your function.
 4. Select `Edge Firewall` as the **Initiator type**.
@@ -90,7 +77,7 @@ Developing your first edge function for Edge Firewall:
 
 **Writing an edge function**
 
-The edge functions for edge firewall are triggered by the `addEventListener` as well, but now, the type of the event is `firewall`, what differs from the `fetch` type, used on Edge Application functions.
+The edge functions for edge firewall are triggered by the `addEventListener` as well, but now, the type of the event is `firewall`, which differs from the `fetch` type, used on Edge Application functions.
 
 ```javascript
   addEventListener("firewall", (event) => event.waitUntil(firewallHandler(event)));
@@ -121,13 +108,13 @@ Learn more about the implementation of edge functions on the edge firewall on [E
 
 ## Testing and Debugging
 
-While writing your edge function, either for Edge Application or Edge Firewall, you have the possibility to preview the response and inspect the code. The preview simulates a request, and this simulation can be altered to meet the developer's needs.
+While writing your edge function, either for Edge Application or Edge Firewall, you can preview the response and inspect the code. The preview simulates a request, and this simulation can be altered to meet the developer's needs.
 
 Learn more about [Azion Preview Deployment](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/preview-deployment/). 
 
 It's possible to through:
 
-- [Real-time Metrics]() 
+- [Real-time Metrics]()
 - [GraphQL API]()
 
 --- 
