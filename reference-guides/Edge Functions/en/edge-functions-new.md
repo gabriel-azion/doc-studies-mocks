@@ -17,10 +17,6 @@ With Edge Functions for Edge Applications, you can:
 
 [Find out more about how to get started with Edge Functions](...)
 
-## How Edge Functions Work
-
-aohouheohaieablablabalabnlakbalbaboeuhaoejai
-
 ## Implementation
 
 | Scope | Guide |
@@ -28,6 +24,13 @@ aohouheohaieablablabalabnlakbalbaboeuhaoejai
 | WebAssembly | [How to create an edge function using WebAssembly on the Azion Edge platform](https://fun-cranberry.cloudvent.net/en/documentation/products/guides/webassembly-on-azion-platform/) |
 | Examples | [Examples](https://fun-cranberry.cloudvent.net/en/documentation/products/edge-application/edge-functions/javascript-examples/) |
 | Code samples | [GitHub repository](https://github.com/aziontech/azion-samples/tree/dev/samples) |
+
+---
+## How Edge Functions Work
+
+aohouheohaieablablabalabnlakbalbaboeuhaoejai
+
+---
 
 ## JavaScript Support
 
@@ -39,6 +42,8 @@ Using the Azion Edge Runtime to develop your edge functions, you have a set of t
 - [Metadata](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/api-reference/metadata/).
 - [Network List method](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/api-reference/network-list/).
 - [Environment Variables API]()
+
+---
 
 ## Javascript frameworks support
 
@@ -54,6 +59,8 @@ SSR allows rendering React components on the server before sending them to the c
 
 **Static Site**
 Static site generation generates static HTML files at build time, which can be cached and delivered quickly to users, reducing the need for server-side processing.
+
+---
 
 ## Function Instantiation
 
@@ -128,7 +135,7 @@ You can also debug using:
 - [Real-time Metrics]()
 - [GraphQL]()
 
---- 
+---
 
 ## Run a function
 

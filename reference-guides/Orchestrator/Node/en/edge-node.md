@@ -8,7 +8,14 @@ permalink: /documentation/products/edge-orchestrator/edge-node/
 
 Azion **Edge Node** enables you to create your own edge infrastructure, allowing you to install services and resources in real time.
 
-It is an open software which can be run on different types of microprocessor architecture: x86 and ARM, and different sizes of equipment, including Raspberry PI, network equipment such as network switches and SD-WAN routers as well as corporate servers.
+It is an open software which can be run on different types of microprocessor architecture: x86 and ARM, and different sizes of equipment, including:
+
+- Raspberry PI
+- Network switches
+- SD-WAN routers
+- Corporate servers.
+
+Take a look at [Edge Node first steps]() to know more about how to get started with it.
 
 ---
 
@@ -49,3 +56,12 @@ You can verify any action made by Watcher by looking at the *logfile* `/var/log/
     {"level":"info","time":"2021-09-22T17:32:16Z","message":"watcher: workers finished"}
     {"level":"info","time":"2021-09-22T17:32:16Z","message":"watcher: checked 19576 artifacts, 0 drifted from manifest."}
 ```
+
+## Limits
+
+| Where | Developer | Enterprise | Mission Critical| 
+| - | - | - | - |
+| Arguments | 100kb | 100kb | 100kb |
+| Memory per Isolate | 512mb | 512mb | 512mb |
+| Arguments | 100kb | 100kb | 100kb |
+| Arguments | 100kb | 100kb | 100kb |

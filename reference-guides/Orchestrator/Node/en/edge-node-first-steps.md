@@ -7,7 +7,6 @@ namespace:
 permalink:
 ---
 
-
 ## Installing
 
 1. Generate a credential to run the actions;
@@ -100,4 +99,3 @@ You can provision the services registered in your library by following steps:
 Once the service is provided, Edge Node can begin orchestrating it based on resource priorities. You can monitor the service installation process via logs in the Edge Orchestrator agent.
 
 > The service installation logs are stored in <br/>`/var/log/azion/edge-services.log`
-
