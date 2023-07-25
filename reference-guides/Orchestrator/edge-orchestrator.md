@@ -27,6 +27,9 @@ With Edge Orchestrator you can:
 
 ## How Edge Orchestrator works
 
+![Orch](./orch.png)
+
+
 An Azion Edge Orchestrator agent is installed on the edge nodes and provides end-to-end encrypted remote node management from the control panel [Real-Time Manager](https://manager.azion.com/) – Azion Control Panel – based in the cloud and API. 
 
 It can be deployed in two different ways:
@@ -53,12 +56,3 @@ The orchestration is done sequentially and respects the dependencies between res
 Edge Services enables the customer to create their own services. You can use your customized services and ensure your device is managed and orchestrated by Real-Time Manager.
 
 [Learn more about Edge Services]({% tl documentation_products_edge_orchestrator_edge_services %})
-
-## Limits
-
-| Where | Developer | Enterprise | Mission Critical|
-| - | - | - | - |
-| Arguments | 100kb | 100kb | 100kb |
-| Memory per Isolate | 512mb | 512mb | 512mb |
-| Arguments | 100kb | 100kb | 100kb |
-| Arguments | 100kb | 100kb | 100kb |
