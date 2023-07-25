@@ -12,7 +12,7 @@ With Edge Functions for Edge Applications, you can:
 - Access databases
 - Write your code in JavaScript
 - Deploy them easily
-- Make use of pair-programming with the Chat GPT integration
+- Make use of pair programming with the Chat GPT integration
 - Preview the outcome of the function live, on the preview deployment
 
 [Find out more about how to get started with Edge Functions](...)
@@ -31,9 +31,9 @@ aohouheohaieablablabalabnlakbalbaboeuhaoejai
 
 ## JavaScript Support
 
-JavaScript is a popular programming language used for web development, enabling dynamic and interactive website features. It runs on the client-side and is supported by all major web browsers. By using JavaScript in Edge functions, you can execute code closer to the end user, enhancing performance and enabling custom logic for handling requests and responses.
+JavaScript is a popular programming language used for web development, enabling dynamic and interactive website features. It runs on the client side and is supported by all major web browsers. By using JavaScript in Edge functions, you can execute code closer to the end user, enhancing performance and enabling custom logic for handling requests and responses.
 
-Using the Azion Edge Runtime to develop your own edge functions, you have a set of tools that help you implement your logic, such as:
+Using the Azion Edge Runtime to develop your edge functions, you have a set of tools that help you implement your logic, such as:
 
 - [Web standards APIs](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-apis/javascript/).
 - [Metadata](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/api-reference/metadata/).
@@ -47,7 +47,7 @@ Using the Azion Edge Runtime to develop your own edge functions, you have a set 
 Next.js is a JavaScript framework built on top of React that enables server-side rendering (SSR) and static site generation for building **Jamstack** applications.
 
 **Jamstack**
-Jamstack stands for JavaScript, APIs, and Markup, and it promotes decoupling the front-end from the back-end by pre-rendering content and serving it as static files.
+Jamstack stands for JavaScript, APIs, and Markup, and it promotes decoupling the front end from the back end by pre-rendering content and serving it as static files.
 
 **SSR**
 SSR allows rendering React components on the server before sending them to the client, enhancing initial load times and improving SEO.
@@ -59,7 +59,7 @@ Static site generation generates static HTML files at build time, which can be c
 
 [Edge Application](https://www.azion.com/en/documentation/products/edge-application/edge-functions-instances/)
 
-The Edge Functions module allows you to instantiate serverless functions in your edge applications, as well as set up conditions for its execution.
+The Edge Functions module allows you to instantiate serverless functions in your edge applications, as well as set up conditions for their execution.
 
 Once your edge application runs an edge function, it responds to events closer to the end user, ensuring greater scalability and availability.
 
@@ -82,7 +82,7 @@ Learn more about Rules Engine:
 ## Developing at the edge
 
 
-### Code editor
+### Code Editor
 
 The code editor for Edge Functions is the best way to get started developing your edge functions on the Azion platform. It's a web-based code editor that makes it easier and more intuitive to develop at the edge of the network. It's empowered by the Monaco Code Editor, used in VS Code, so if you're used to VS Code, you'll get familiar with it right away.
 
@@ -96,7 +96,7 @@ Some of its key features are:
 
 ### AI Assistant
 
-Generative AI can be used in almost all tasks that involve understanding or generating natural language or code. In the development environment, it's a tool used for boosting developers productivity.
+Generative AI can be used in almost all tasks that involve understanding or generating natural language or code. In the development environment, it's a tool used for boosting developers' productivity.
 
 In the edge functions scenario, it helps developers to:
 
@@ -108,11 +108,11 @@ In the edge functions scenario, it helps developers to:
 
 ### Creating an edge function
 
-You can create your own edge functions in JavaScript with the help of an AI tool and have your function preview presented to you on real-time. To do so, you need to write or copy and paste your JavaScript code, following the required structured to have it running on the Azion Edge Platform.
+You can create your edge functions in JavaScript with the help of an AI tool and have your function preview presented to you in real time. To do so, you need to write or copy and paste your JavaScript code, following the required structure to have it running on the Azion Edge Platform.
 
 ### Adding JSON args
 
-When you add json args, you can have different behaviors in your edge function without having to alter the code. Once you've set your json args, you can retrieve them by calling `event.args("desiredArg")`
+When you add JSON args, you can have different behaviors in your edge function without having to alter the code. Once you've set your json args, you can retrieve them by calling `event.args("desiredArg")`
 
 ### Previewing
 
@@ -120,7 +120,7 @@ You can check if the output is the expected with the Preview Deployment, making 
 
 ### Debugging
 
-You can debug your edge functions on real time using the `inspect` tool inside the [Preview Deployment](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/preview-deployment/) section.
+You can debug your edge functions in real time using the `inspect` tool inside the [Preview Deployment](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/preview-deployment/) section.
 
 You can also debug using:
 
