@@ -132,7 +132,7 @@ You can also debug using:
 
 ## Run a function
 
-Once you've created your edge function, you can configure a rule in Rules Engine and set the behavior to be `Run a function`, then, based on the rule configured, your edge application or edge firewall will run the chosen function.
+Once you've created your edge function, you can configure a rule in Rules Engine and set the behavior to be `Run a function`, then, based on the rule configured, your edge application will run the chosen function.
 
 ---
 
