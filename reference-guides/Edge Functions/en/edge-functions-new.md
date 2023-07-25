@@ -79,7 +79,10 @@ Learn more about Rules Engine:
 
 ---
 
-## Code editor
+## Developing at the edge
+
+
+### Code editor
 
 The code editor for Edge Functions is the best way to get started developing your edge functions on the Azion platform. It's a web-based code editor that makes it easier and more intuitive to develop at the edge of the network. It's empowered by the Monaco Code Editor, used in VS Code, so if you're used to VS Code, you'll get familiar with it right away.
 
@@ -91,7 +94,7 @@ Some of its key features are:
 
 [Learn more about the Edge Functions Code Editor](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/code-editor/).
 
-## AI Assistant
+### AI Assistant
 
 Generative AI can be used in almost all tasks that involve understanding or generating natural language or code. In the development environment, it's a tool used for boosting developers productivity.
 
@@ -102,10 +105,6 @@ In the edge functions scenario, it helps developers to:
 - Generate code based on prompts.
 
 [Learn more about the AI Assistant](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-api/ai-integration/)
-
----
-
-## Edge Development
 
 ### Creating an edge function
 
