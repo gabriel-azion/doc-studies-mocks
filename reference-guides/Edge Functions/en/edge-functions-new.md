@@ -117,7 +117,7 @@ Learn more about [Preview Deployment](/en/documentation/products/edge-applicatio
 
 ## Debug
 
-You can debug your edge functions in real time using the `inspect` tool inside the [Preview Deployment](/en/documentation/products/edge-application/edge-functions/runtime-api/preview-deployment/) section.
+You can debug your edge functions in real-time using the `inspect` tool inside the [Preview Deployment](/en/documentation/products/edge-application/edge-functions/runtime-api/preview-deployment/) section.
 
 You can also debug using:
 
