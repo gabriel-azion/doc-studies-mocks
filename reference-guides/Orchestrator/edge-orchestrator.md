@@ -13,22 +13,7 @@ With Edge Orchestrator you can:
 - Simplify software installation and upgrading, since it's compiled with all core and library dependencies.
 
 ---
-
-## Implementation
-
-| Scope | Guide |
-| - | - | 
-| WebAssembly | [How to create an edge function using WebAssembly on the Azion Edge platform](https://fun-cranberry.cloudvent.net/en/documentation/products/guides/webassembly-on-azion-platform/) |
-| Examples | [Examples](https://fun-cranberry.cloudvent.net/en/documentation/products/edge-application/edge-functions/javascript-examples/) |
-| Code samples | [GitHub repository](https://github.com/aziontech/azion-samples/tree/dev/samples) |
-
----
-
-
-## How Edge Orchestrator works
-
-![Orch](./orch.png)
-
+## Azion Edge Orchestrator agent
 
 An Azion Edge Orchestrator agent is installed on the edge nodes and provides end-to-end encrypted remote node management from the control panel [Real-Time Manager](https://manager.azion.com/) – Azion Control Panel – based in the cloud and API. 
 
@@ -56,3 +41,49 @@ The orchestration is done sequentially and respects the dependencies between res
 Edge Services enables the customer to create their own services. You can use your customized services and ensure your device is managed and orchestrated by Real-Time Manager.
 
 [Learn more about Edge Services]({% tl documentation_products_edge_orchestrator_edge_services %})
+
+---
+
+## Desired state
+
+Ensure that provisioned files weren't modified. In case they've been modified, it's possible to bring back the desired state, whenever it's necessary.
+
+---
+
+## Files provisioning
+
+Deliver text based files on the specified path, such as:
+
+- txt
+- config
+- scripts
+
+---
+
+## Template files
+
+Deliver files based on templates replacing service or node-specific variables on the files content.
+
+---
+
+## Scripts execution
+
+Runs install, update and uninstall trigger-based scripts.
+
+---
+
+## Manage reusable Edge Services at the account level
+
+Each Edge Service may be used for many Edge Nodes
+
+---
+
+## Manage reusable Credentials at the account level
+
+Each Credential may be used to add many Edge Nodes
+
+---
+
+## Encrypted channel
+
+Orchestrator Server communicates with every Edge Node using a TLS encrypted channel.

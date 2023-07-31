@@ -18,7 +18,17 @@ By using Azion as your edge platform, you can create and customize services to r
 
 This way, you can build Edge Applications for a wide variety of uses, ranging from a high scale and quality CDN to hosting web applications, AI applications, VR, and many others. To do so, you have to *activate* Azion Cells and define the **Edge Nodes** that should host certain applications, all controlled by the Azion dashboard or APIs, in a centralized interface and with different access controls.
 
-### Resources
+---
+
+## Implementation
+
+| Scope | Guide |
+| - | - | 
+| Edge Services | [Creating an Edge Service Step by Step]() |
+
+---
+
+## Resources
 
 In order to be able to orchestrate services on your device, you need to configure all the **resources** needed to install, uninstall, and reload your services.
 
@@ -32,7 +42,9 @@ All resources are executed using the *Path* referred during the registration. Th
 
 **Note**: there is a known issue when using the `{#` syntax. If you use `{# `and do not use `#}` as a closure, the resource will not be processed and will not be provisioned in the edges. If you use `{#` and then use `#}`, the content inside the block is considered a comment. In this case, the file is processed and provisioned but without the content inside the comment. To provision a resource with `{# my content #}` you must use the following pattern:`{{'{# my content #}'}}`. Our engineering team is aware of this issue and is working to fix it.
 
-### Variables
+---
+
+## Variables
 
 Variables are dynamic values that affect the Edge Services that will be orchestrated and run on Edge Nodes. In other words, it is possible to orchestrate and run the same service, on different devices, with different values for the settings, such as configuring a service on port 3306 on one device, and on port 3307 on another device.
 
@@ -45,7 +57,9 @@ There are some special predefined variables that, as facts, cannot be overwritte
 | CHANGESET_RM_PATH | It contains a path to a file that provides a list of paths to all files that have been removed or modified in the current manifest. | STRING | It is only available while the manifest is being applied. Each line has a unique path. |
 | CHANGESET_ADD_PATH | It contains a path to a file that provides a list of paths to all files that have been added or modified in the current manifest. | STRING | It is only available while the manifest is being applied. Each line has a unique path. |
 
-### Facts
+---
+
+## Facts
 
 In addition to the defined variables, you can also use **Facts** which are available technical information about your node, such as architecture, client version, operating system and operating system version. You can use these, for example, if you are setting up multiple nodes.
 
@@ -61,7 +75,9 @@ These values cannot be overwritten and can be used in **resources** using the `{
 | CPUS | Number of CPUs available | INTEGER | Example: 1, 2, 4. |
 | RAM_SIZE | Total system memory | BYTES | Example: 1048576 |
 
-### Triggers
+---
+
+## Triggers
 
 When configuring **Shell Script** type resources, you need to define which triggers will cause the resource to run.
 
@@ -73,10 +89,10 @@ The triggers are "Install", "Reload" and "Uninstall” and each has a function a
 
 **3) Uninstall:** this is run every time the link between the Edge Services and Edge Node is broken. That means, whenever the service is deleted from the Edge Nodes for which it was provisioned.
 
-### Link to the Edge Node
+---
+
+## Link to the Edge Node
 
 All registered services can be orchestrated and run on one or more Edge Nodes on your private network.
 
 Only active services will be available for orchestration on the Edge Node and, after it has been linked, you can change the value of existing variables or delete or add new services to the device.
-
-

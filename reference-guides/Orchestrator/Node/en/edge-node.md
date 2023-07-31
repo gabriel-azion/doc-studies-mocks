@@ -15,7 +15,13 @@ It is an open software which can be run on different types of microprocessor arc
 - SD-WAN routers
 - Corporate servers.
 
-Take a look at [Edge Node first steps]() to know more about how to get started with it.
+---
+
+## Implementation
+
+| Scope | Guide |
+| - | - | 
+| Edge Node | [Edge Node first steps]() |
 
 ---
 
@@ -57,11 +63,3 @@ You can verify any action made by Watcher by looking at the *logfile* `/var/log/
     {"level":"info","time":"2021-09-22T17:32:16Z","message":"watcher: checked 19576 artifacts, 0 drifted from manifest."}
 ```
 
-## Limits
-
-| Where | Developer | Enterprise | Mission Critical| 
-| - | - | - | - |
-| Arguments | 100kb | 100kb | 100kb |
-| Memory per Isolate | 512mb | 512mb | 512mb |
-| Arguments | 100kb | 100kb | 100kb |
-| Arguments | 100kb | 100kb | 100kb |

@@ -1,12 +1,4 @@
-
----
-title: Edge Node first steps
-description: 
-meta_tags:
-namespace: 
-permalink:
----
-
+# Edge Node first steps
 ## Installing
 
 1. Generate a credential to run the actions;

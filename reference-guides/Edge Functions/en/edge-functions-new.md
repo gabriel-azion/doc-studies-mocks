@@ -27,6 +27,27 @@ With Edge Functions for Edge Applications, you can:
 
 ---
 
+## Edge Functions management
+
+### UI
+
+You can create and manage edge functions through [Real-time Manage(RTM)](), below Edge Libraries.
+
+### CLI
+
+The Azion CLI allows you to manage your edge functions for edge applications through the terminal.
+
+Learn more about [Azion CLI edge functions command and its subcommands
+](https://www.azion.com/en/documentation/products/cli/edge-functions/)
+
+### API
+
+The Azion API, accessed through Postman, offers a the methods and calls necessary to manage your edge functions. 
+
+Access the [Azion API]() and test the requests.
+
+---
+
 ## JavaScript Support
 
 By using JavaScript in Edge Functions, you can execute code closer to the end user, enhancing performance and enabling custom logic for handling requests and responses.
@@ -56,8 +77,6 @@ Static site generation generates static HTML files at build time, which can be c
 ---
 
 ## Function Instantiation
-
-
 
 The **Edge Functions instances** module allows you to instantiate serverless functions in your edge applications, as well as set up conditions for their execution.
 
