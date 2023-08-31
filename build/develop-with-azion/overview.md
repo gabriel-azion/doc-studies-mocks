@@ -8,8 +8,7 @@ At Azion, there are several tools and methods available to facilitate the develo
 - Code editing
 - Application creation.
 
- 
-## CLI for Static Application Creation
+## Azion CLI
 
 Azion's Command Line Interface (CLI) allows developers to create static applications with various JavaScript frameworks effortlessly. This CLI tool streamlines the setup and deployment of static web applications, making it easier to develop and manage web projects.
 
@@ -28,19 +27,19 @@ You can use the two Azion GraphQL APIs to perform a logpull of your data and max
 
 [Learn more about GraphQL API](https://www.azion.com/en/documentation/products/graphql-api-overview/)
 
-## Terraform Providers
+## Terraform Provider
 
 Azion Terraform Provider is an open source project, registered in Terraform Registry that uses the Azion SDK (Go) to communicate with the Azion APIs, so you can manage your infrastructure hosted on the Azion platform, locally, as code.
 
 [Learn more about the Azion Terraform Provider](https://www.azion.com/en/documentation/products/terraform-provider/)
 
-## SDK Go
+## Azion Go SDK
 
 The Azion SDK for Go facilitates the use of the Azion API services by providing a set of tools that make the development of Go applications smoother.
 
 [Learn more about the Azion Go SDK](https://www.azion.com/en/documentation/devtools/sdk/go/)
 
-## Code Editor with Monaco, Preview, and GPT Integration
+## Code Editor
 
 The code editor for Edge Functions is the best way to get started developing your edge functions on the Azion platform. It’s a web-based code editor that makes it easier and more intuitive to develop at the edge of the network. It’s empowered by the Monaco Code Editor, used in VS Code, so if you’re used to VS Code, you’ll get familiar with it right away. The Monaco Code Editor main features available for the Edge Functions Code Editor are:
 
@@ -51,6 +50,6 @@ The code editor for Edge Functions is the best way to get started developing you
 [Learn more about the code editor](https://www.azion.com/en/documentation/devtools/sdk/go/)
 
 
-## API reference
+## API reference - Postman
 
 The Azion API is a RESTful API based on HTTPS requests. It allows you to integrate your systems with Azion's platform simply, quickly, and securely. This way, you can check, remove, or update existing settings besides creating new ones.
