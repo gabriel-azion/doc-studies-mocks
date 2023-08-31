@@ -55,14 +55,14 @@ Getting modes available
 3. Choose the Astro template: 
 
 ```sh 
-  Choose a template:  [Use arrows to move, type to filter]
-    Html (Deliver)
-    Javascript (Compute)
-    Typescript (Compute)
-    Angular (Deliver)
-  > Astro (Deliver)
-    Hexo (Deliver)
-    Next (Deliver)
+Getting modes available? Choose a template for your project: (Use arrow keys)
+  Angular 
+ ❯Astro 
+  Hexo 
+  Next 
+  React 
+  Vue 
+  Vite 
 ```
 
 Now, Astro's CLI will follow the process and initialize your Astro project.
