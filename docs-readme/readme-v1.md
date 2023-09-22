@@ -23,14 +23,12 @@ We encourage and welcome contributions from the community. Whether you've found 
 6. **Test**: Before submitting your changes, ensure that your documentation updates are accurate and that they follow our internal style guide and Microsoft style guide.
 
 7. Commit your changes with a clear and concise commit message. Include any relevant details about what you've done.
-Push to GitHub:
 
 8. Open a pull request from your forked repository to our main repository. Make sure to describe the changes you've made and provide any necessary context.
-Code Review:
 
 Our dedicated documentation team will review your PR and provide feedback. Please be open to suggestions and willing to make necessary revisions.
 
-> Ensure that you have read and agreed to our **Contributor License Agreement (CLA)** before your PR can be merged.
+> Ensure that you've read and agreed to our **Contributor License Agreement (CLA)** before your PR can be merged.
 Merging:
 
 9. Once your PR has been approved and passes all necessary checks, it will be merged into the main documentation.
