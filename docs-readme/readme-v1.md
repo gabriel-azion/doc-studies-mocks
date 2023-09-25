@@ -1,6 +1,8 @@
-# Azion Docs 💻📚🧡
+<h1 align="center">
+  Azion Docs 💻📚🧡
+</h1>
 
-Welcome to our open documentation repository! We're thrilled that you're interested in contributing to our documentation and being a part of our community. This README will guide you through the process of contributing to our documentation effectively. ❤️📖
+Welcome to our open documentation repository! We're thrilled that you're interested in contributing to our documentation and being a part of our community. This README will go over the mission to empower Azion users through effective and clear documentation, as well as introduce how anyone willing to do good can help us by contributing. 📖
 
 ## About Us ℹ️
 
