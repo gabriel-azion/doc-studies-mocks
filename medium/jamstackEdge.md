@@ -1,8 +1,5 @@
 # Running Jamstack Applications on the Edge
 
-
-# Enhancing User Experience: Edge Computing Strategies for Jamstack Developers
-
 ## Introduction
 
 In the ever-accelerating, hyper-connected digital landscape, where speed, accessibility, and user experience reign supreme, a powerful synergy is emerging at the forefront of web development. Imagine a scenario where the seamless dynamism of Jamstack meets the capabilities of edge computing, a fusion that is redefining how we deliver web applications to a global audience.
