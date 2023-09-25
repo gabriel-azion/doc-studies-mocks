@@ -4,7 +4,7 @@ Welcome to our open documentation repository! We're thrilled that you're interes
 
 ## About Us
 
-We are an edge computing company committed to pushing the boundaries of technology to make edge computing accessible and efficient. Our documentation is a crucial part of ensuring our users have the best experience with our products and services.
+We are an edge computing platform that allows you to build and run application anywhere. Our documentation is a crucial part of ensuring our users have the best experience with our products and services.
 
 ## How to Contribute
 
