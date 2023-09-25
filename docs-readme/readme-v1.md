@@ -8,6 +8,16 @@ Welcome to our open documentation repository! We're thrilled that you're interes
 
 We are an edge computing platform that allows you to build and run applications anywhere. Our documentation is a crucial part of ensuring our users have the best experience with our products and services. 🌐🚀
 
+Our documentation includes:
+
+- Product reference
+- API reference
+- Guides
+- Use cases
+- Code samples
+
+The documentation portal is built on [Astro](https://docs.astro.build/en/getting-started/) and leverages [MDX](https://mdxjs.com/docs/what-is-mdx/) to build experience-focused content with front-end components, going beyond text.
+
 ## Contributor Covenant Code of Conduct 📜
 
 To maintain the quality and integrity of our documentation, contributors are required to read our Contributor [Covenant Code of Conduct](https://github.com/aziontech/docs/blob/main/CODE_OF_CONDUCT.md). 📝🤝
