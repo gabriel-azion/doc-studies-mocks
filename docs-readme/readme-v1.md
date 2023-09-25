@@ -8,9 +8,9 @@ Welcome to our open documentation repository! We're thrilled that you're interes
 
 We are an edge computing platform that allows you to build and run applications anywhere. Our documentation is a crucial part of ensuring our users have the best experience with our products and services. 🌐🚀
 
-## Contributor License Agreement (CLA) 📜
+## Contributor Covenant Code of Conduct 📜
 
-To maintain the quality and integrity of our documentation, contributors are required to sign our Contributor License Agreement (CLA). By contributing, you agree to abide by the terms outlined in the CLA. [You can find the CLA here](add_o_link). 📝🤝
+To maintain the quality and integrity of our documentation, contributors are required to read our Contributor [Covenant Code of Conduct](https://github.com/aziontech/docs/blob/main/CODE_OF_CONDUCT.md). 📝🤝
 
 ## Contribution 🤝
 
