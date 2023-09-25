@@ -1,19 +1,19 @@
-# The Future of Web Development: Jamstack and Edge Computing Synergy
+# Running Jamstack Applications on the Edge
 
 
 # Enhancing User Experience: Edge Computing Strategies for Jamstack Developers
 
 ## Introduction
 
-In the ever-accelerating, hyper-connected digital landscape, where speed, accessibility, and user experience reign supreme, a powerful synergy is emerging at the forefront of web development. Imagine a scenario where the seamless dynamism of Jamstack meets the capabilities of edge computing—a fusion that pis redefinig how we deliver web applications to a global audience.
+In the ever-accelerating, hyper-connected digital landscape, where speed, accessibility, and user experience reign supreme, a powerful synergy is emerging at the forefront of web development. Imagine a scenario where the seamless dynamism of Jamstack meets the capabilities of edge computing, a fusion that is redefining how we deliver web applications to a global audience.
 
-In this exploration of "Running Jamstack Applications on the Edge," we embark on a journey to uncover the profound impacts on the web development landscape. Jamstack, renowned for its simplicity, scalability, and security, joins forces with edge computing, a distributed computing paradigm that pushes computation closer to the user.
+In this exploration, we embark on a journey to uncover the profound impacts on the web development landscape. Jamstack, renowned for its simplicity, scalability, and security, joins forces with edge computing, a distributed computing paradigm that pushes computation closer to the user.
 
 As we delve deeper into this synergy, we'll discover how it is poised to enhance not only the performance and reliability of web applications but also the overall user experience. From reducing latency to mitigating downtime, the possibilities are boundless.
 
 ## Web Development Before the Jamstack Revolution
 
-![alt text for screen readers](./jam.jpg "Text to show on mouseover").
+![J-javascript, a-api, m-markup](./jam.jpg "Jamstack").
 
 Before the advent of Jamstack architecture, web development was characterized by a different set of paradigms and practices. In this retrospective glimpse, we explore the landscape of web development that preceded the Jamstack revolution.
 
@@ -77,3 +77,4 @@ As we continue to explore the intricacies of running Jamstack applications on th
 
 The developer experience stands as a critical cornerstone. It's the juncture where innovation takes shape, where challenges turn into opportunities, and where lines of code transform into remarkable solutions. Platforms like Azion focus on the developer experience as a way to implement ground-breaking solutions, and offer journeys which aim on reducing the friction between developing and deploying applications.
 
+aqui eu vou adentrar no hands-on (?) - um gif criando uma edge app com astro via CLI?
