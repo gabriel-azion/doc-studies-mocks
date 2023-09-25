@@ -13,6 +13,8 @@ As we delve deeper into this synergy, we'll discover how it is poised to enhance
 
 ## Web Development Before the Jamstack Revolution
 
+![alt text for screen readers](./jam.jpg "Text to show on mouseover").
+
 Before the advent of Jamstack architecture, web development was characterized by a different set of paradigms and practices. In this retrospective glimpse, we explore the landscape of web development that preceded the Jamstack revolution.
 
 **Server-Side Rendering (SSR)**
@@ -70,3 +72,8 @@ This global content distribution network not only accelerates load times but als
 In summary, the synergy of Jamstack architecture with edge computing creates a harmonious environment where web applications are not only faster and more reliable but also more accessible to a global audience. This partnership redefines how we think about content delivery, as it optimizes every aspect of the user experience, from load times to responsiveness.
 
 As we continue to explore the intricacies of running Jamstack applications on the edge, we'll uncover how this symbiotic relationship is reshaping the digital landscape, ensuring that web applications aren't just functional but delightful to use, no matter where you are in the world.
+
+## Deploying Jamstack applications on the Edge of the network
+
+The developer experience stands as a critical cornerstone. It's the juncture where innovation takes shape, where challenges turn into opportunities, and where lines of code transform into remarkable solutions. Platforms like Azion focus on the developer experience as a way to implement ground-breaking solutions, and offer journeys which aim on reducing the friction between developing and deploying applications.
+
