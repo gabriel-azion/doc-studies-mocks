@@ -16,7 +16,7 @@ Before the advent of Jamstack architecture, web development was characterized by
 
 **Server-Side Rendering (SSR)**
 
-Traditional web development relied heavily on server-side rendering. When a user requested a web page, the server processed and generated the complete HTML for that page before sending it to the user's browser. This server-centric approach handled everything from rendering content to managing data.
+Traditional web development relies heavily on server-side rendering. When a user requests a web page, the server processes and generates the complete HTML for that page before sending it to the user's browser. This server-centric approach handled everything from rendering content to managing data.
 
 **Monolithic Architectures**
 
@@ -32,13 +32,13 @@ Relational databases, like MySQL and PostgreSQL, were commonly used to store and
 
 **Complex Hosting and Scaling**
 
-Hosting and scaling web applications required intricate server configurations, load balancing setups, and server maintenance. These complexities often introduced challenges in terms of cost, performance, and reliability.
+Hosting and scaling web applications required intricate server configurations, load-balancing setups, and server maintenance. These complexities often introduced challenges in terms of cost, performance, and reliability.
 
 **Security Concerns**
 
 Security was a significant concern in traditional web development, with various attack vectors targeting vulnerabilities in server-side code and databases. Developers had to implement robust security measures to protect against threats like SQL injection and cross-site scripting (XSS) attacks.
 
-Pre-Jamstack web development was characterized by a server-centric model, where servers were pivotal for content rendering and data management. While this approach worked for numerous applications, it introduced inherent intricacies such as scalability issues, the necessity for developers to possess diverse skill sets, and raised security vulnerabilities. The advent of Jamstack architecture represented a substantial transition towards a more modular, streamlined, and security-conscious methodology for constructing web applications..
+Pre-Jamstack web development was characterized by a server-centric model, where servers were pivotal for content rendering and data management. While this approach worked for numerous applications, it introduced inherent intricacies such as scalability issues, the necessity for developers to possess diverse skill sets, and raised security vulnerabilities. The advent of Jamstack architecture represented a substantial transition towards a more modular, streamlined, and security-conscious methodology for constructing web applications.
 
 ## Jamstack, Edge Computing, and Content Delivery
 
@@ -72,6 +72,64 @@ As we continue to explore the intricacies of running Jamstack applications on th
 
 ## Deploying Jamstack applications on the Edge of the network
 
-The developer experience stands as a critical cornerstone. It's the juncture where innovation takes shape, where challenges turn into opportunities, and where lines of code transform into remarkable solutions. Platforms like Azion focus on the developer experience as a way to implement ground-breaking solutions, and offer journeys which aim on reducing the friction between developing and deploying applications.
+The developer experience stands as a critical cornerstone. It's the juncture where innovation takes shape, where challenges turn into opportunities, and where lines of code transform into remarkable solutions. Platforms like Azion focus on the developer experience as a way to implement ground-breaking solutions and offer journeys that aim to reduce the friction between developing and deploying applications.
 
-aqui eu vou adentrar no hands-on (?) - um gif criando uma edge app com astro via CLI?
+Azion offers a journey through their CLI, which installing methods can be found on their [official documentation](https://www.azion.com/en/documentation/products/azion-cli/overview/).
+
+### Practical example
+
+With the Azion CLI installed properly in your machine, run:
+
+```
+azion
+```
+
+> The `azion` command is an alias to the `init` command. It starts the processing by initializing and gives you the option to run the application locally or deploy it to the edge.
+
+Accept the suggested name, or choose a new one:
+
+```
+(Hit enter to accept the suggested name in parentheses) Your application's name:  (serene_strength) 
+
+```
+
+Choose a template:
+
+```
+Choose a template for your project: (Use arrow keys)
+❯ Angular 
+  Astro 
+  Hexo 
+  Next 
+  React 
+  Vue 
+  Vite 
+```
+
+In this example, I won't run it locally:
+
+```
+? Do you want to start a local development server? (y/N) n
+```
+
+We're going to deploy the application
+
+```
+? Do you want to deploy your project? (y/N) y
+```
+
+Install the dependencies:
+
+```
+? Do you want to install project dependencies? This may be required to deploy your project (y/N) y
+```
+
+Now, the application undergoes a build and it's deployed to the Edge. The build process is taken over by a tool called Vulcan, which adapts the frameworks to run right from the edge.
+
+When the deployment is complete, a domain is provided. Wait a few minutes so the propagation takes place, and then access your application using the provided domain, which should be similar to `https://xxxxxxx.map.azionedge.net`.
+
+## Conclusion
+
+In conclusion, the fusion of Jamstack architecture with edge computing represents a significant shift in the web development landscape. It marks a departure from the complexities of server-centric, monolithic approaches towards a future prioritizing speed, accessibility, and user experience. This synergy reduces latency, improves scalability, and ensures global content delivery, resulting in faster, more reliable web applications accessible to a global audience. Companies like Azion and tools like the Azion CLI simplify deployment, empowering developers to create innovative solutions effortlessly. As we navigate this transformative journey, we look forward to a future where user experience reigns supreme, offering boundless possibilities.
+
+Welcome to the future of web development!
