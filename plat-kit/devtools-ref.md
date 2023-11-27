@@ -6,7 +6,7 @@ Azion Platform Kit is a front-end development kit designed for running a customi
 
 ## Getting Started
 
-### Prerequisites
+### Requirements
 
 Before you begin, ensure that you have the following:
 
