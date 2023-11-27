@@ -62,22 +62,14 @@ The Azion Platform Kit can run natively on Azion's edge using Azion CLI (version
 1. Download and configure Azion-CLI with a Personal Token:
 
    ```bash
-   curl https://downloads.azion.com/linux/x86_64/azioncli -o azioncli && chmod +x azioncli
-   ./azioncli configure -t PERSONALTOKEN
+   curl https://downloads.azion.com/linux/x86_64/azion -o azion && chmod +x azion
+   ./azion -t PERSONALTOKEN
    ```
 
-2. Build the bundler and copy the content to the edge:
+3. Link project to an edge application:
 
    ```bash
-   yarn build
-   mkdir -p .edge/statics && cp -r ./dist/* .edge/statics
-   ```
-
-3. Publish your edge application:
-
-   ```bash
-   azioncli edge_applications init --name azion-platform-kit --type vue --mode deliver
-   azioncli edge_applications publish --debug
+   azion link
    ```
 
    After a few seconds, access your project on the domain provided by the CLI.
