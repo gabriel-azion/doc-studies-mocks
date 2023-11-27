@@ -1,4 +1,6 @@
-# Azion Platform Kit Documentation
+# Azion Platform Kit
+
+<---Button que leva para o repo --->
 
 Azion Platform Kit is a front-end development kit designed for running a customized Azion Real-time Manager. This kit is built using Vue/Vite and incorporates the PrimeVue and Tailwind frameworks.
 
@@ -74,19 +76,19 @@ The Azion Platform Kit can run natively on Azion's edge using Azion CLI (version
 
    After a few seconds, access your project on the domain provided by the CLI.
 
-## Features
+## Features - outro termo talvez fique melhor
 
 The Azion Platform Kit includes the following features:
 
-- Multi-tenancy: build your Real-Time Manager by consuming endpoints from the [Azion Public API](#).
+- Multi-tenancy: build your Real-Time Manager by consuming endpoints from the [Azion Public API](https://api.azion.com/).
 - Customizable UI: configure theme tokens or generate them automatically via the Builder, giving the look and feel according to your needs.
 - Simple Structure: layered separation of blocks, components, and services for easy route building.
 
 ## Contributing
 
-Before contributing to the project, please familiarize yourself with the [Contributor Guide](CONTRIBUTING.md) and [Development Guide](DEVELOPER.md) to set up your development environment.
+Before contributing to the project, please familiarize yourself with: 
+- The [Contributor Guide](CONTRIBUTING.md)
+- [Development Guide](DEVELOPER.md) to set up your development environment.
+- [UX Write guidelines]()
 
-## Code of Conduct
-
-Read and adhere to our [Code of Conduct](#).
 
