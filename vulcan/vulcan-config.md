@@ -29,7 +29,7 @@ module.exports = {
   useNodePolyfills: true,
   useOwnWorker: false,
   preset: {
-    name: 'vue',
+    name: 'next',
     mode: 'compute',
   },
   memoryFS: {
