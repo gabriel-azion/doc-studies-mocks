@@ -1,6 +1,6 @@
 # Vulcan 
 
-Vulcan is a robust tool designed to streamline the development and deployment of JavaScript applications and frameworks, with a specific focus on Edge Computing. This utility automates **polyfills** for workers, particularly tailored for the **Azion platform**, simplifying the process of creating and optimizing applications for edge environments.
+[Vulcan](https://github.com/aziontech/vulcan) is a powerful, **open-source** tool designed to streamline the development and deployment of JavaScript applications and frameworks. This powerful **framework adapter** automates [polyfills]() for Edge Computing, significantly simplifying the process of creating Workers, particularly for the Azion platform.
 
 ## How Vulcan works
 
@@ -13,9 +13,7 @@ C -->|args| D(Common Build)
 D --> E[Artifacts]
 ```
 
-## Vulcan build process
-
-The Vulcan build process is designed to streamline the build and deployment of edge applications on the Azion Edge Platform and consists of several key components, each one with the respective responsibility:
+### Components
 
 | Step            | Description                                                                                                  | Responsibility                                                                                                                                                                     |
 | -| - | - |
