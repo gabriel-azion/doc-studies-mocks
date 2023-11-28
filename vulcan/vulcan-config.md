@@ -9,7 +9,7 @@ The `vulcan.config.js` file serves as a powerful configuration system for Vulcan
 | Property | Type | Description | Additional Information |
 | --- | --- | --- | --- |
 | Entry | String | Represents the primary entry point for your application, where the building process begins. | Entry will be ignored for Jamstack solutions. |
-| Builder | String ('esbuild' or 'webpack') | Defines the build tool to use. | The options are `'esbuild'` and `'webpack'`. |
+| Builder | String | Defines the build tool to use. | The options are `'esbuild'` and `'webpack'`. |
 | UseNodePolyfills | Boolean | Determines whether Node.js polyfills should be applied. | Useful for projects leveraging Node.js functionalities targeting environments without built-in capabilities. |
 | UseOwnWorker | Boolean | Indicates that the constructed code inserts its own worker expression, eliminating the need to inject a provider. | Worker expression example:`addEventListener("fetch")` |
 | Preset | Object | Provides preset-specific configurations. | **Properties**:<br> - **Name** (String): Refers to the preset name (example: "vue" or "next"). <br>- **Mode** (String): Specifies the mode for the preset (example: "compute" or "deliver"). |
