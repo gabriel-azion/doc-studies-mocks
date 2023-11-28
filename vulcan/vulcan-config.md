@@ -38,5 +38,3 @@ module.exports = {
   },
 };
 ```
-
-*Note: Adapting `vulcan.config.js` to your setup allows a personalized development experience, catering to the specific needs of your JavaScript applications and frameworks.*
