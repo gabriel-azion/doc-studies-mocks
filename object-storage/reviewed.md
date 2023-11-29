@@ -1,8 +1,8 @@
 # Object Storage API
 
-The [Edge Functions]() storage API is an interface that allows access to Azion Storage. Through this interface, it's possible to write and retrieve data in the Storage. 
+The [Edge Functions]() storage API is an interface that allows access to Azion Storage. Through this interface, it's possible to write and retrieve data in the Storage.
 
-## Class instantiation 
+## Class instantiation
 
 To leverage this API, you need to instantiate the Storage class, passing the version ID.
 
@@ -18,12 +18,13 @@ const storage = Azion.Storage.new(versionId);
 | - | - | - |
 | `versionId` | string | Key to a group of stored objects. If the key doesn't match any existing version ID, a new one is created. |
 
-### Return value 
+### Return value
 
 Storage object used to access Azion Storage
+
 ---
 
-## Methods 
+## Methods
 
 ### async Storage.put
 
@@ -33,7 +34,7 @@ The Storage.put method is used to insert a new object to Azion Storage.
 The method is async, and must be used with await or event.waitUntil.
 :::
 
-#### Syntax 
+#### Syntax
 
 ```js
 async Storage.put(key, value, options)
@@ -49,17 +50,17 @@ async Storage.put(key, value, options)
 
 **options**
 
-To pass the `options` parameter, it's necessary to an object with the following attributes:
+To pass the `options` parameter, it's necessary to provide an object with the following attributes:
 
 | Attribute | Type | Description |
 | - | - | - |
-| `content-type` | string | O content-type do objeto a ser criado. É similar ao HTTP Header Content-type e descreve como o conteúdo do object storage deve ser tratado. Content-type é opcional, o valor default é application/octet-stream. |
-| `content-length` | string | É o tamanho do objeto a ser criado em bytes. É mandatório quando o value é ReadableStream. |
-| `metadata` | object | Qualquer objeto javascript contendo informações sobre o objeto que será armazenado no Storage. Todas as properties do objeto devem ser strings. |
+| `content-type` | string | The content-type of the object to be created. It is similar to the HTTP Header Content-type and describes how the content of the object storage should be treated. Content-type is optional; the default value is application/octet-stream. |
+| `content-length` | string | The size of the object to be created in bytes. It is mandatory when the value is ReadableStream. |
+| `metadata` | object | Any JavaScript object containing information about the object that will be stored in the Storage. All properties of the object must be strings. |
 
-#### Return 
+#### Return
 
-| Success | Error | 
+| Success | Error |
 |-|-|
 | No response| It throws a `StorageError`|
 
@@ -258,6 +259,8 @@ async Storage.delete(key)
 
 | Parameter | Type | Description |
 | - | - | - |
+
+
 | `key` | string | Key to a group of stored objects. If the key doesn't match any existing version ID, a new one is created. |
 
 #### Return 
@@ -266,11 +269,6 @@ async Storage.delete(key)
 |-|-|
 | Returns an object of the class `StorageObjectList` | It throws a `StorageError`|
 
-**StorageError example**:
-
-```
-Don't know
-```
 
 #### Code sample
 
@@ -326,11 +324,6 @@ await storage.list()
 |-|-|
 | No response | It throws a `StorageError`|
 
-**StorageError example**:
-
-```
-Don't know
-```
 
 #### Code sample
 
@@ -357,12 +350,12 @@ addEventListener("fetch", (event) => {
 
 ---
 
-### Métodos da classe StorageObject
+### StorageObject Class Methods
 
 |Method|Description|
 |-|-|
-|`StorageObject.content`|read-only property contendo um ReadbleStream para o conteúdo armazenado no storage.|
-|`async StorageObject.arrayBuffer()`| Função assíncrona que retorna um ArrayBuffer com o conteúdo armazenado no storage. Este método consome o ReadableStream da propriedade content.|
-|`StorageObject.metadata`| read-only property contendo a objeto Map(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) com os metadados do objeto armazenado no storage.|
-| `StorageObject.contentType`|read-only property contendo o content-type do conteúdo armazenado no storage.|
-| `StorageObject.contentLength`|  read-only property contendo o tamanho em bytes do conteúdo armazenado no storage.|
+|`StorageObject.content`|Read-only property containing a ReadableStream for the content stored in the storage.|
+|`async StorageObject.arrayBuffer()`| Asynchronous function that returns an ArrayBuffer with the content stored in the storage. This method consumes the ReadableStream from the content property.|
+|`StorageObject.metadata`| Read-only property containing a Map object (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) with the metadata of the object stored in the storage.|
+| `StorageObject.contentType`|Read-only property containing the content-type of the content stored in the storage.|
+| `StorageObject.contentLength`|  Read-only property containing the size in bytes of the content stored in the storage.|
