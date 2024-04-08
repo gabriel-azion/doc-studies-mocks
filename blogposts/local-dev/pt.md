@@ -47,14 +47,14 @@ Para iniciar um ambiente de teste local:
 3.  Dê um nome a sua aplicação ou aceite a sugestão.
 4.  Selecione JavaScript como o template.
 
-\> Você pode iniciar a aplicação com base no modelo que desejar. Neste exemplo, usamos JavaScript.
+> Você pode iniciar a aplicação com base no modelo que desejar. Neste exemplo, usamos JavaScript.
 
 5.  Inicie o desenvolvimento local respondendo sim à interação.
 6.  Instale as dependências.
 7.  Após um processo de compilação, Azion retornará a porta para acessar a aplicação.
 8.  Envie requisições para o servidor e verifique o comportamento.
 
-\>nota: você sempre pode encerrar o processo no terminal e rodar `azion dev` para executar a aplicação localmente. As alterações aplicadas na função são atualizadas através de hot reload.
+>nota: você sempre pode encerrar o processo no terminal e rodar `azion dev` para executar a aplicação localmente. As alterações aplicadas na função são atualizadas através de hot reload.
 
 O comando `azion dev` inicia um ambiente local onde você pode testar e monitorar a funcionalidade e eficiência de suas Edge Functions.
 
@@ -112,7 +112,7 @@ Primeiro, as edge functions para Edge Applications funcionam com base em um even
 
 ```js
 
-  addEventListener('fetch', event \=> {
+  addEventListener('fetch', event => {
 
       event.respondWith(handleRequest(event.request));
 
@@ -130,7 +130,7 @@ Acessar os metadados da solicitação.
 A função `handleRequest` pode ser definida como:
 
 ```js
-  const html \= `<!DOCTYPE html>
+  const html = `<!DOCTYPE html>
 
   <body>
 
@@ -160,7 +160,7 @@ Neste exemplo, a resposta será o conteúdo HTML, declarado anteriormente pela c
 Exemplo completo:
 
 ```js
-const html \= `<!DOCTYPE html>
+const html = `<!DOCTYPE html>
 
   <body>
 
@@ -184,7 +184,7 @@ Exemplo completo:
 
   }
 
-  addEventListener('fetch', event \=> {
+  addEventListener('fetch', event => {
 
       event.respondWith(handleRequest(event.request));
 
@@ -198,7 +198,7 @@ Exemplo completo:
 As edge functions para o Edge Firewall operam com base em um evento de firewall. Eles são inicializados usando a function `addEventListener`, passando `'firewall'` como o tipo de evento, e um evento. For example:
 
 ```js
-  addEventListener('firewall', event \=> {
+  addEventListener('firewall', event => {
 
       event.deny();
 
@@ -221,11 +221,11 @@ Um exemplo onde a função `event.deny` é definida e usada:
 ```js
  // Definir uma lista de endereços IP bloqueados
 
-  const blockedIPs \= \["192.0.2.0", "203.0.113.0", "198.51.100.0"\]
+  const blockedIPs = ["192.0.2.0", "203.0.113.0", "198.51.100.0"]
 
   addEventListener('firewall', event => {
 
-      let ip \= event.request.clientIP;
+      let ip = event.request.clientIP;
 
       if (blockedIPs.includes(ip)) {
 
