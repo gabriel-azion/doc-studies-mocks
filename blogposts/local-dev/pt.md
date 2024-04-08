@@ -14,9 +14,9 @@ Impulsione a Qualidade do Software: Desenvolvimento Local com Azion CLI
 
 Usando Azion CLI para Desenvolvimento e Testes Locais
 
-Azion CLI é uma ferramenta eficiente para configurar ambientes de teste local para Edge Functions. Você pode facilmente usá-lo executando o comando \`azion dev\`, iniciando o processo de desenvolvimento local.
+Azion CLI é uma ferramenta eficiente para configurar ambientes de teste local para Edge Functions. Você pode facilmente usá-lo executando o comando `azion dev`, iniciando o processo de desenvolvimento local.
 
-Para cenários com edge functions para Edge Firewall, você só precisa passar a flag \`--firewall\` junto com o comando. Este recurso enriquece suas capacidades de teste e análise de funções de firewall antes de integrá-las ao produto.
+Para cenários com edge functions para Edge Firewall, você só precisa passar a flag `--firewall` junto com o comando. Este recurso enriquece suas capacidades de teste e análise de funções de firewall antes de integrá-las ao produto.
 
 Benefícios:
 
@@ -54,9 +54,9 @@ Para iniciar um ambiente de teste local:
 7.  Após um processo de compilação, Azion retornará a porta para acessar a aplicação.
 8.  Envie requisições para o servidor e verifique o comportamento.
 
-\>nota: você sempre pode encerrar o processo no terminal e rodar \`azion dev\` para executar a aplicação localmente. As alterações aplicadas na função são atualizadas através de hot reload.
+\>nota: você sempre pode encerrar o processo no terminal e rodar `azion dev` para executar a aplicação localmente. As alterações aplicadas na função são atualizadas através de hot reload.
 
-O comando \`azion dev\` inicia um ambiente local onde você pode testar e monitorar a funcionalidade e eficiência de suas Edge Functions.
+O comando `azion dev` inicia um ambiente local onde você pode testar e monitorar a funcionalidade e eficiência de suas Edge Functions.
 
 As edge functions da Azion são executadas no Azion Edge Runtime e possuem compatibilidade com Web APIs e Azion APIs.
 
@@ -70,11 +70,11 @@ As edge functions da Azion são executadas no Azion Edge Runtime e possuem compa
 
 Se você implementou funções para Edge Firewall, você precisa considerar condições especiais de teste.
 
-Para isso, é preciso executar o comando \`azion dev\` com a flag \`--firewall\`, que informa ao sistema de que você está testando uma função de firewall.
+Para isso, é preciso executar o comando `azion dev` passando a flag `--firewall`, que informa ao sistema de que você está testando uma função de firewall.
 
-*   [Edge functions para o Edge Firewall](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/secure/edge-firewall/edge-functions-instances/&sa=D&source=editors&ust=1712588650571829&usg=AOvVaw3jWFpd7lfLDpzHnfhfCooY).
-*   [API Network List.](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/edge-application/edge-functions/runtime/api-reference/network-list/&sa=D&source=editors&ust=1712588650572004&usg=AOvVaw1tSA39Bzegnz5uJLcfmxwR)
-*   [API de Metadados](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/edge-application/edge-functions/runtime/api-reference/metadata/&sa=D&source=editors&ust=1712588650572235&usg=AOvVaw1PB8IlumCY5hMoepuhIZK4).
+- [Edge functions para o Edge Firewall](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/secure/edge-firewall/edge-functions-instances/&sa=D&source=editors&ust=1712588650571829&usg=AOvVaw3jWFpd7lfLDpzHnfhfCooY).
+- [API Network List.](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/edge-application/edge-functions/runtime/api-reference/network-list/&sa=D&source=editors&ust=1712588650572004&usg=AOvVaw1tSA39Bzegnz5uJLcfmxwR)
+- [API de Metadados](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/edge-application/edge-functions/runtime/api-reference/metadata/&sa=D&source=editors&ust=1712588650572235&usg=AOvVaw1PB8IlumCY5hMoepuhIZK4).
 
 ---
 
@@ -82,7 +82,7 @@ Para isso, é preciso executar o comando \`azion dev\` com a flag \`--firewall\`
 
 ### Fluxo de Dados
 
-Através da Azion CLI, o usuário executa o comando \`azion dev \[flags\]\`.
+Através da Azion CLI, o usuário executa o comando `azion dev [flags]`.
 
 A Azion CLI chama o Vulcan, que gerencia a construção e o desenvolvimento local.
 
@@ -108,7 +108,7 @@ A diferença está na maneira como as funções são estruturadas, vamos nos apr
 
 edge functions Applications
 
-Primeiro, as edge functions para Edge Applications funcionam com base em um evento fetch. Elas são inicializadas com uma função \`addEventListener\`, passando fetch como o tipo de evento, e um evento. Por exemplo:
+Primeiro, as edge functions para Edge Applications funcionam com base em um evento fetch. Elas são inicializadas com uma função `addEventListener`, passando fetch como o tipo de evento, e um evento. Por exemplo:
 
 ```js
 
@@ -119,7 +119,7 @@ Primeiro, as edge functions para Edge Applications funcionam com base em um even
     });
 ```
 
-Segundo, é necessário definir o comportamento da função handleRequest. Esta função tem \`event.request\` como a assinatura. Esses dados podem ser usados para implementar a lógica necessária, como:
+Segundo, é necessário definir o comportamento da função handleRequest. Esta função tem `event.request` como a assinatura. Esses dados podem ser usados para implementar a lógica necessária, como:
 
 Manipular cookies.
 
@@ -127,10 +127,10 @@ Implementar um comportamento com base no método de solicitação HTTP (POST, GE
 
 Acessar os metadados da solicitação.
 
-A função \`handleRequest\` pode ser definida como:
+A função `handleRequest` pode ser definida como:
 
 ```js
-  const html \= \`<!DOCTYPE html>
+  const html \= `<!DOCTYPE html>
 
   <body>
 
@@ -138,7 +138,7 @@ A função \`handleRequest\` pode ser definida como:
 
     <p>This markup was generated by Azion - Edge Functions.</p>
 
-  </body>\`
+  </body>`
 
   async function handleRequest(request) {
 
@@ -160,7 +160,7 @@ Neste exemplo, a resposta será o conteúdo HTML, declarado anteriormente pela c
 Exemplo completo:
 
 ```js
-const html \= \`<!DOCTYPE html>
+const html \= `<!DOCTYPE html>
 
   <body>
 
@@ -168,7 +168,7 @@ Exemplo completo:
 
     <p>This markup was generated by Azion - Edge Functions.</p>
 
-  </body>\`
+  </body>`
 
   async function handleRequest(request) {
 
@@ -195,7 +195,7 @@ Exemplo completo:
 
 ### Edge functions para Edge Firewall
 
-As edge functions para o Edge Firewall operam com base em um evento de firewall. Eles são inicializados usando a function \`addEventListener\`, passando \`'firewall'\` como o tipo de evento, e um evento. For example:
+As edge functions para o Edge Firewall operam com base em um evento de firewall. Eles são inicializados usando a function `addEventListener`, passando `'firewall'` como o tipo de evento, e um evento. For example:
 
 ```js
   addEventListener('firewall', event \=> {
@@ -206,7 +206,7 @@ As edge functions para o Edge Firewall operam com base em um evento de firewall.
 
 ```
 
-Nesse caso, a system envia uma negação em resposta ao evento de firewall que foi acionado. Pode haver outras reações a eventos como \`event.continue()\`, e \`event.drop()\` dependendo das circunstâncias específicas ou da lógica desejada.
+Nesse caso, a system envia uma negação em resposta ao evento de firewall que foi acionado. Pode haver outras reações a eventos como `event.continue()`, e `event.drop()` dependendo das circunstâncias específicas ou da lógica desejada.
 
 É necessário definir os comportamentos potenciais para diferentes reações a eventos dentro do listener do evento de firewall. A resposta exata depende da condição atendida. Por exemplo:
 
@@ -216,7 +216,7 @@ Bloquear ou listar direitos dos endereços IP.
 
 Implementar comportamentos baseados em padrões de tráfego.
 
-Um exemplo onde a função \`event.deny\` é definida e usada:
+Um exemplo onde a função `event.deny` é definida e usada:
 
 ```js
  // Definir uma lista de endereços IP bloqueados
@@ -240,7 +240,7 @@ Um exemplo onde a função \`event.deny\` é definida e usada:
   });
 ```
 
-Neste exemplo, o listener do evento de firewall verifica o endereço IP que acionou o evento na lista de IPs bloqueados. Se o IP estiver na lista, a evento é negado. If the IP is not on the list, processing of the event will continue. Ele mostra como você pode usar \`event.deny()\`, \`event.continue()\`, and \`event.drop()\` em cenários de aplicação reais.
+Neste exemplo, o listener do evento de firewall verifica o endereço IP que acionou o evento na lista de IPs bloqueados. Se o IP estiver na lista, a evento é negado. If the IP is not on the list, processing of the event will continue. Ele mostra como você pode usar `event.deny()`, `event.continue()`, and `event.drop()` em cenários de aplicação reais.
 
 [Saiba mais sobre as edge functions para o edge firewall](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/secure/edge-firewall/edge-functions-instances/&sa=D&source=editors&ust=1712588650584523&usg=AOvVaw0yg15wcLOykG_UU4-d1IGI).
 
@@ -249,4 +249,4 @@ Neste exemplo, o listener do evento de firewall verifica o endereço IP que acio
 ## Conclusão
 
 
-Usar ambientes de teste locais melhora o processo de desenvolvimento do produto. Uma ferramenta como a Azion CLI facilita a construção de soluções de software confiáveis, eficientes, seguras e de alto desempenho. Ao testar edge functions com o comando \`azion dev\`, e opcionalmente adicionando uma flag \`--firewall\` quando necessário, os desenvolvedores podem navegar por possíveis armadilhas antes de levar seu código para produção.
+Usar ambientes de teste locais melhora o processo de desenvolvimento do produto. Uma ferramenta como a Azion CLI facilita a construção de soluções de software confiáveis, eficientes, seguras e de alto desempenho. Ao testar edge functions com o comando `azion dev`, e opcionalmente adicionando uma flag `--firewall` quando necessário, os desenvolvedores podem navegar por possíveis armadilhas antes de levar seu código para produção.
