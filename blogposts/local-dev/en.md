@@ -71,9 +71,9 @@ To do so, you must run the `azion dev` command with the flag `--firewall`. It in
 
 ### Responsibilities
 
-Azion CLI: serves as the primary point of interaction between the user and the system. It manages the entire application deployment process, ensuring a smooth and efficient workflow.
+*Azion CLI*: serves as the primary point of interaction between the user and the system. It manages the entire application deployment process, ensuring a smooth and efficient workflow.
 
-Vulcan: the engine that drives project initialization, building, and adaptation. It intelligently tailors the project based on the selected template, ensuring that the application is optimally configured for its intended use. For local development, Vulcan:
+*Vulcan*: the engine that drives project initialization, building, and adaptation. It intelligently tailors the project based on the selected template, ensuring that the application is optimally configured for its intended use. For local development, Vulcan:
 
 -   Initiates a server.
 -   Instantiates the Edge Runtime.
