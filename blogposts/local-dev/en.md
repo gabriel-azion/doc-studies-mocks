@@ -7,12 +7,12 @@ For scenarios with edge firewall functions, you simply need to pass the \`--fire
 
 Key benefits:
 
--   Error prevention: test new features or modifications before they go live, reducing the risk of introducing mistakes to the production system.
--   Improved debugging: debug code more effectively and quickly in a controlled environment.
--   Performance optimization: test the application's behavior under different loads or unique user scenarios.
--   Security enhancements: identify and rectify security vulnerabilities before the application goes live.
--   Development efficiency: work without an internet connection, promoting productivity and autonomy.
--   Cost-effective: prevent high resource-consuming post-production fixes, saving time and money by addressing potential problems before deployment.
+-  *Error prevention*: test new features or modifications before they go live, reducing the risk of introducing mistakes to the production system.
+-  *Improved debugging*: debug code more effectively and quickly in a controlled environment.
+-  *Performance optimization*: test the application's behavior under different loads or unique user scenarios.
+-  *Security enhancements*: identify and rectify security vulnerabilities before the application goes live.
+-  *Development efficiency*: work without an internet connection, promoting productivity and autonomy.
+-  *Cost-effective*: prevent high resource-consuming post-production fixes, saving time and money by addressing potential problems before deployment.
 
 ## Requirements
 

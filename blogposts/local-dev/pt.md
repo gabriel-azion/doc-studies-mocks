@@ -16,21 +16,21 @@ Usando Azion CLI para Desenvolvimento e Testes Locais
 
 Azion CLI é uma ferramenta eficiente para configurar ambientes de teste local para Edge Functions. Você pode facilmente usá-lo executando o comando \`azion dev\`, iniciando o processo de desenvolvimento local.
 
-Para cenários com edge functions Firewall, você só precisa passar a flag \`--firewall\` junto com o comando. Este recurso enriquece suas capacidades de teste e análise de funções de firewall antes de integrá-las ao produto ao vivo.
+Para cenários com edge functions para Edge Firewall, você só precisa passar a flag \`--firewall\` junto com o comando. Este recurso enriquece suas capacidades de teste e análise de funções de firewall antes de integrá-las ao produto.
 
 Benefícios principais:
 
-Prevenção de erros: teste novos recursos ou modificações antes de serem lançadas, reduzindo o risco de introduzir erros no sistema de produção.
+*Prevenção de erros*: teste novos recursos ou modificações antes de serem lançadas, reduzindo o risco de introduzir erros no sistema de produção.
 
-Depuração melhorada: depure o código de forma mais eficiente e rápida em um ambiente controlado.
+*Depuração melhorada*: depure o código de forma mais eficiente e rápida em um ambiente controlado.
 
-Otimização de desempenho: teste o comportamento do aplicativo sob diferentes cargas ou cenários de usuário únicos.
+*Otimização de desempenho*: teste o comportamento do aplicativo sob diferentes cargas ou cenários de usuário únicos.
 
-Melhorias de segurança: identifique e corrija vulnerabilidades de segurança antes que o aplicativo seja lançado.
+*Melhorias de segurança*: identifique e corrija vulnerabilidades de segurança antes que o aplicativo seja lançado.
 
-Eficiência no desenvolvimento: trabalhe sem uma conexão com a internet, promovendo produtividade e autonomia.
+*Eficiência no desenvolvimento*: trabalhe sem uma conexão com a internet, promovendo produtividade e autonomia.
 
-Custo-eficaz: evite correções pós-produção que consomem muitos recursos, economizando tempo e dinheiro ao resolver problemas potenciais antes do lançamento.
+*Custo-eficaz*: evite correções pós-produção que consomem muitos recursos, economizando tempo e dinheiro ao resolver problemas potenciais antes do lançamento.
 
 ## Requisitos
 
