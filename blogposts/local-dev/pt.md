@@ -160,7 +160,7 @@ Neste exemplo, a resposta será o conteúdo HTML, declarado anteriormente pela c
 Exemplo completo:
 
 ```js
-const html = `<!DOCTYPE html>
+const html = `<!DOCTYPE html>
 
   <body>
 
