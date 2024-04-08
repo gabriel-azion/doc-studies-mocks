@@ -20,17 +20,17 @@ Para cenários com edge functions para Edge Firewall, você só precisa passar a
 
 Benefícios:
 
-*Prevenção de erros*: teste novos recursos ou modificações antes de serem lançadas, reduzindo o risco de introduzir erros no sistema de produção.
+- *Prevenção de erros*: teste novos recursos ou modificações antes de serem lançadas, reduzindo o risco de introduzir erros no sistema de produção.
 
-*Depuração melhorada*: depure o código de forma mais eficiente e rápida em um ambiente controlado.
+- *Depuração melhorada*: depure o código de forma mais eficiente e rápida em um ambiente controlado.
 
-*Otimização de desempenho*: teste o comportamento do aplicativo sob diferentes cargas ou cenários de usuário únicos.
+- *Otimização de desempenho*: teste o comportamento do aplicativo sob diferentes cargas ou cenários de usuário únicos.
 
-*Melhorias de segurança*: identifique e corrija vulnerabilidades de segurança antes que o aplicativo seja lançado.
+- *Melhorias de segurança*: identifique e corrija vulnerabilidades de segurança antes que o aplicativo seja lançado.
 
-*Eficiência no desenvolvimento*: trabalhe sem uma conexão com a internet, promovendo produtividade e autonomia.
+- *Eficiência no desenvolvimento*: trabalhe sem uma conexão com a internet, promovendo produtividade e autonomia.
 
-*Custo-eficaz*: evite correções pós-produção que consomem muitos recursos, economizando tempo e dinheiro ao resolver problemas potenciais antes do lançamento.
+- *Custo-eficaz*: evite correções pós-produção que consomem muitos recursos, economizando tempo e dinheiro ao resolver problemas potenciais antes do lançamento.
 
 ## Requisitos
 
