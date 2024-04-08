@@ -223,7 +223,7 @@ Um exemplo onde a função `event.deny` é definida e usada:
 
   const blockedIPs \= \["192.0.2.0", "203.0.113.0", "198.51.100.0"\]
 
-  addEventListener('firewall', event \=> {
+  addEventListener('firewall', event => {
 
       let ip \= event.request.clientIP;
 
