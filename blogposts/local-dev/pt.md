@@ -18,7 +18,7 @@ Azion CLI é uma ferramenta eficiente para configurar ambientes de teste local p
 
 Para cenários com edge functions para Edge Firewall, você só precisa passar a flag \`--firewall\` junto com o comando. Este recurso enriquece suas capacidades de teste e análise de funções de firewall antes de integrá-las ao produto.
 
-Benefícios principais:
+Benefícios:
 
 *Prevenção de erros*: teste novos recursos ou modificações antes de serem lançadas, reduzindo o risco de introduzir erros no sistema de produção.
 
