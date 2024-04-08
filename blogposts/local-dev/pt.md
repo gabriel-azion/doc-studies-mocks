@@ -38,7 +38,7 @@ Benefícios:
 - A Azion CLI instalada.
 - Node.js >= 18.
 
-## Testando edge functions Applications
+## Testando edge functions para Edge Applications
 
 Para iniciar um ambiente de teste local:
 
@@ -66,7 +66,7 @@ As edge functions da Azion são executadas no Azion Edge Runtime e possuem compa
 
 ---
 
-## Testando Funções de Firewall
+## Testando edge functions para Edge Firewall
 
 Se você implementou funções para Edge Firewall, você precisa considerar condições especiais de teste.
 
