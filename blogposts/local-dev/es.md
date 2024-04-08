@@ -1,10 +1,4 @@
-Texto: Mejora la Calidad del Software: Desarrollo Local con Azion CLI
-"Ambientes de Pruebas Locales: Beneficios Claves & Guía de Azion CLI"
-"Mejora la Calidad del Software: Pruebas Locales con Azion CLI"
-"Maximiza la Eficiencia: Pruebas Locales para Edge Functions"
-"Seguridad en Desarrollo: Azion CLI para Pruebas Locales"
-"Mejora el Rendimiento: Azion CLI & Pruebas Locales Explicado"
-Usando Azion CLI para el Desarrollo Local y Pruebas
+# Desarrollo y Prueba Local de Edge Functions con Azion CLI
 
 Azion CLI es una herramienta eficiente para configurar entornos de prueba locales para edge functions. Puedes usarlo fácilmente ejecutando el comando `azion dev`, iniciando así el proceso de desarrollo local.
 
