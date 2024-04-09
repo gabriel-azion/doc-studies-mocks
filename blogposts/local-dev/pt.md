@@ -29,7 +29,7 @@ Benefícios:
 Para iniciar um ambiente de teste local:
 
 1.  Abra o terminal, crie um novo diretório e acesse-o.
-2.  Inicie um aplicativo através do azion init
+2.  Inicie um aplicativo através do comando `azion init`.
 3.  Dê um nome a sua aplicação ou aceite a sugestão.
 4.  Selecione JavaScript como o template.
 
@@ -37,18 +37,18 @@ Para iniciar um ambiente de teste local:
 
 5.  Inicie o desenvolvimento local respondendo sim à interação.
 6.  Instale as dependências.
-7.  Após um processo de compilação, Azion retornará a porta para acessar a aplicação.
+7.  Após um processo de compilação, a Azion retornará a porta para acessar a aplicação.
 8.  Envie requisições para o servidor e verifique o comportamento.
 
 >nota: você sempre pode encerrar o processo no terminal e rodar `azion dev` para executar a aplicação localmente. As alterações aplicadas na função são atualizadas através de hot reload.
 
-O comando `azion dev` inicia um ambiente local onde você pode testar e monitorar a funcionalidade e eficiência de suas Edge Functions.
+O comando `azion dev` inicia um ambiente local onde você pode testar e monitorar a funcionalidade e eficiência de suas edge functions.
 
 As edge functions da Azion são executadas no Azion Edge Runtime e possuem compatibilidade com Web APIs e Azion APIs.
 
-*   [Primeiros passos com Edge Functions](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/guias/edge-functions/primeiros-passos/&sa=D&source=editors&ust=1712588650570674&usg=AOvVaw1U-FRQBrsHjpUDdljIdoMt).
-*   [Web APIs](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/devtools/runtime-apis/javascript/&sa=D&source=editors&ust=1712588650570857&usg=AOvVaw0OHUK06bDQ7SmSIgLu7GUS).
-*   [Lista completa de suporte a Web APIs do Azion Edge Runtime](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/edge-application/edge-functions/runtime-apis/javascript/tipos-suportados/&sa=D&source=editors&ust=1712588650571052&usg=AOvVaw18dhDP8kNctApwLY-lf01O).
+-   [Primeiros passos com Edge Functions](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/guias/edge-functions/primeiros-passos/&sa=D&source=editors&ust=1712588650570674&usg=AOvVaw1U-FRQBrsHjpUDdljIdoMt).
+-   [Web APIs](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/devtools/runtime-apis/javascript/&sa=D&source=editors&ust=1712588650570857&usg=AOvVaw0OHUK06bDQ7SmSIgLu7GUS).
+-   [Lista completa de suporte a Web APIs do Azion Edge Runtime](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/edge-application/edge-functions/runtime-apis/javascript/tipos-suportados/&sa=D&source=editors&ust=1712588650571052&usg=AOvVaw18dhDP8kNctApwLY-lf01O).
 
 ---
 
@@ -64,7 +64,7 @@ Para isso, é preciso executar o comando `azion dev` passando a flag `--firewall
 
 ---
 
-## Como o Azion CLI Local Dev Funciona
+## Como o Local Dev Da Azion CLI Funciona
 
 ### Fluxo de Dados
 
@@ -88,11 +88,11 @@ O Vulcan inicia um servidor e este servidor instancia o Runtime. Este runtime su
 
 ## Sobre Edge Functions
 
-As Edge Functions da Azion são usadas para aprimorar Edge Applications ou para impulsionar a segurança em um Edge Firewall. Ambas são executadas na Azion Edge Runtime, reduzem a latência e ajudam a implementar uma abordagem distribuída. OK, mas qual é a diferença entre elas?
+As Edge Functions da Azion são usadas para aprimorar Edge Applications ou para impulsionar a segurança em um Edge Firewall. Ambas são executadas sobre o Azion Edge Runtime, reduzem a latência e ajudam a implementar uma abordagem distribuída. OK, mas qual é a diferença entre elas?
 
 A diferença está na maneira como as funções são estruturadas, vamos nos aprofundar nisso.
 
-edge functions Applications
+### Edge functions e Edge Applications
 
 Primeiro, as edge functions para Edge Applications funcionam com base em um evento fetch. Elas são inicializadas com uma função `addEventListener`, passando fetch como o tipo de evento, e um evento. Por exemplo:
 
@@ -179,7 +179,7 @@ const html = `<!DOCTYPE html>
 
 [Saiba mais sobre edge functions para Edge Applications](https://www.google.com/url?q=https://www.azion.com/pt-br/documentacao/produtos/build/edge-application/edge-functions/&sa=D&source=editors&ust=1712588650580606&usg=AOvVaw02WTxFWw44ieRadRqA9kFA).
 
-### Edge functions para Edge Firewall
+### Edge functions e Edge Firewall
 
 As edge functions para o Edge Firewall operam com base em um evento de firewall. Eles são inicializados usando a function `addEventListener`, passando `'firewall'` como o tipo de evento, e um evento. Exemplo:
 
