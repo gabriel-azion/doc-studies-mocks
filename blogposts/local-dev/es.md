@@ -2,16 +2,16 @@
 
 Azion CLI es una herramienta eficiente para configurar entornos de prueba locales para edge functions. Puedes ejecutar el comando `azion dev` para iniciar el proceso de desarrollo local.
 
-Para escenarios con funciones de edge firewall, solo necesitas agregar la flag `--firewall` al comando. Esta funcionalidad enriquece tus capacidades para probar y analizar las funciones del firewall antes de integrarlas al producto final.
+Para escenarios con funciones de edge firewall, solo necesitas agregar la flag `--firewall` al comando. Esta funcionalidad aumenta tu capacidad para probar y analizar las funciones del firewall antes de integrarlas al producto final.
 
 Beneficios claves:
 
-- Prevención de errores: prueba nuevas funciones o modificaciones antes de que enviarlas a producción, reduciendo el riesgo de introducir errores en el sistema.
+- Prevención de errores: prueba nuevas funciones o modificaciones antes de enviarlas a producción y reduce el riesgo de introducir errores en el sistema.
 - Debugging mejorado: depura el código de manera más efectiva y rápida en un entorno controlado.
 - Optimización del desempeño: prueba el comportamiento de la aplicación bajo diferentes cargas o escenarios únicos de usuarios.
 - Seguridad reforzada: identifica y soluciona vulnerabilidades de seguridad antes de que la aplicación esté en producción.
-- Desarrollo eficiente: trabaja sin conexión a Internet, promoviendo la productividad y autonomía.
-- Rentable: evita fixes post-producción que consumen muchos recursos, ahorrando tiempo y dinero al abordar problemas potenciales antes de la implementación.
+- Desarrollo eficiente: trabaja sin conectarte a Internet, promoviendo la productividad y autonomía.
+- Rentable: evita ajustes post-producción que consumen muchos recursos, ahorrando tiempo y dinero al abordar problemas potenciales antes de la implementación.
 
 ## Requisitos
 
@@ -24,8 +24,8 @@ Beneficios claves:
 
 Para iniciar un entorno de pruebas local:
 
-1. Abre la terminal, crea un nuevo directorio, y accede a él.
-2. Inicia una aplicación a través de `azion init`.
+1. Abre la terminal, crea un nuevo directorio y accede a él.
+2. Inicia una aplicación usando el comando `azion init`.
 3. Define un nombre para tu aplicación o acepta la sugerencia.
 4. Selecciona JavaScript como template. 
 > Puedes iniciar la aplicación basada en la template que quieras. Este ejemplo usa JavaScript.
@@ -42,15 +42,15 @@ Las edge functions de Azion se ejecutan en el Azion Edge Runtime y son compatibl
 
 - Edge Functions Primeros pasos.
 - Web APIs.
-- Lista completa de las Web APIs que el Azion Edge Runtime es compatible.
+- Lista completa de las API web compatibles con Azion Edge Runtime.
 
 ---
 
-## Cómo probar las funciones del Edge Firewall
+## Cómo probar las funciones de Edge Firewall
 
 Si has implementado funciones de firewall en tu sistema, tendrás que considerar condiciones especiales de prueba.
 
-Para ello, debes ejecutar el comando `azion dev` con la bandera `--firewall`. Esto informa al sistema de que estás probando una función de edge firewall. 
+Para ello, debes ejecutar el comando `azion dev` con la flag `--firewall`. Esto informa al sistema de que estás probando una función de edge firewall. 
 
 - Edge functions para Edge Firewall.
 - Network List API.
@@ -58,7 +58,7 @@ Para ello, debes ejecutar el comando `azion dev` con la bandera `--firewall`. Es
 
 ---
 
-## Cómo funciona el desarrollo local de la Azion CLI
+## Cómo funciona el desarrollo local de Azion CLI
 
 ### Diagrama de Flujo
 
@@ -70,7 +70,7 @@ Para ello, debes ejecutar el comando `azion dev` con la bandera `--firewall`. Es
 
 *Azion CLI*: actúa como el principal punto de interacción entre el usuario y el sistema. Gestiona todo el proceso de despliegue de la aplicación, asegurando un flujo de trabajo fluido y eficiente.
 
-*Vulcan*: el motor que impulsa la inicialización, construcción y adaptación del proyecto. Adapta de forma inteligente el proyecto basado en la plantilla seleccionada, asegurando que la aplicación esté optimamente configurada para su uso previsto. Para el desarrollo local, Vulcan:
+*Vulcan*: es el motor que impulsa la inicialización, construcción y adaptación del proyecto. Adapta de forma inteligente el proyecto basado en la template seleccionada, asegurando que la aplicación esté optimamente configurada para su uso previsto. Para el desarrollo local, Vulcan:
 
 - Inicia un servidor.
 - Instancia el Edge Runtime.
@@ -84,7 +84,7 @@ Las edge functions de Azion se utilizan para mejorar las edge applications o par
 
 La diferencia está en cómo se estructuran las funciones, vamos a profundizar en eso.
 
-### Edge Application Functions
+### Funciones de Edge Application
 
 Primero, las edge functions para las edge applications funcionan basándose en un evento fetch. Se inicializan con la función `addEventListener`, pasando fetch como el tipo de evento, y un evento. Por ejemplo:
 
@@ -157,10 +157,10 @@ Las edge functions para Edge Firewall operan basándose en un evento firewall. S
 
 En este caso, el sistema envía una denegación en respuesta al evento firewall que ha sido activado. Podría haber otras reacciones a eventos como `event.continue()`, y `event.drop()` dependiendo de las circunstancias específicas o la lógica deseada.
 
-Es necesario definir los comportamientos potenciales para diferentes reacciones a eventos dentro del oyente de eventos firewall. La respuesta exacta depende de la condición que se cumpla. Por ejemplo:
+Es necesario definir los comportamientos potenciales para diferentes reacciones a eventos dentro del agente de escucha de eventos firewall. La respuesta exacta depende de la condición que se cumpla. Por ejemplo:
 
 - Detecta niveles de amenaza.
-- Block o lista de derechos de direcciones IP.
+- Bloquea o lista direcciones IP permitidas.
 - Implementa comportamientos basados en patrones de tráfico.
 
 Un ejemplo donde se define y utiliza la función `event.deny`:
