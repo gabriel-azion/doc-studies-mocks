@@ -78,9 +78,9 @@ Para ello, debes ejecutar el comando `azion dev` con la flag `--firewall`. Esto 
 
 ---
 
-## Sobre las edge eunctions
+## Sobre las edge functions
 
-Las edge functions de Azion se utilizan para mejorar las edge applications o para reforzar la seguridad en un edge firewall. Ambas se ejecutan en el Azion Edge Runtime, reducen la latencia y ayudan a implementar un enfoque distribuido. OK, pero ¿cuál es la diferencia entre ellas? 
+Las edge functions de Azion se utilizan para mejorar las edge applications o para reforzar la seguridad en un edge firewall. Ambos tipos de funciones se ejecutan en el Azion Edge Runtime, reducen la latencia y ayudan a implementar un enfoque distribuido. OK, pero ¿cuál es la diferencia entre ellas? 
 
 La diferencia está en cómo se estructuran las funciones, vamos a profundizar en eso.
 
