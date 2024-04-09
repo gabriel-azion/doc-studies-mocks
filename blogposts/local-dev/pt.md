@@ -181,7 +181,7 @@ const html = `<!DOCTYPE html>
 
 ### Edge functions para Edge Firewall
 
-As edge functions para o Edge Firewall operam com base em um evento de firewall. Eles são inicializados usando a function `addEventListener`, passando `'firewall'` como o tipo de evento, e um evento. For example:
+As edge functions para o Edge Firewall operam com base em um evento de firewall. Eles são inicializados usando a function `addEventListener`, passando `'firewall'` como o tipo de evento, e um evento. Exemplo:
 
 ```js
   addEventListener('firewall', event => {
