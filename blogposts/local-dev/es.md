@@ -1,6 +1,6 @@
 # Desarrollo y prueba local de edge functions con Azion CLI
 
-Azion CLI es una herramienta eficiente para configurar entornos de prueba locales para edge functions. Puedes ejecutar el comando `azion dev` para iniciar el proceso de desarrollo local.
+Azion CLI es una herramienta eficiente para configurar entornos de prueba locales para edge functions. Puedes ejecutar el comando `azion dev` para iniciar de forma fácil el proceso de desarrollo local.
 
 Para escenarios con funciones de edge firewall, solo necesitas agregar la flag `--firewall` al comando. Esta funcionalidad aumenta tu capacidad para probar y analizar las funciones del firewall antes de integrarlas al producto final.
 
@@ -10,7 +10,7 @@ Beneficios claves:
 - Debugging mejorado: depura el código de manera más efectiva y rápida en un entorno controlado.
 - Optimización del desempeño: prueba el comportamiento de la aplicación bajo diferentes cargas o escenarios únicos de usuarios.
 - Seguridad reforzada: identifica y soluciona vulnerabilidades de seguridad antes de que la aplicación esté en producción.
-- Desarrollo eficiente: trabaja sin conectarte a Internet, promoviendo la productividad y autonomía.
+- Desarrollo eficiente: trabaja sin necesidad de conectarte a Internet, promoviendo la productividad y autonomía.
 - Rentable: evita ajustes post-producción que consumen muchos recursos, ahorrando tiempo y dinero al abordar problemas potenciales antes de la implementación.
 
 ## Requisitos
@@ -38,11 +38,11 @@ Para iniciar un entorno de pruebas local:
 
 El comando `azion dev` inicia un entorno local donde puedes probar y monitorizar la funcionalidad y eficiencia de tus edge functions.
 
-Las edge functions de Azion se ejecutan en el Azion Edge Runtime y son compatibles con las Web APIs y Azion APIs.
+Las edge functions de Azion se ejecutan en el Azion Edge Runtime y son compatibles con las Web API y Azion API.
 
 - Edge Functions Primeros pasos.
-- Web APIs.
-- Lista completa de las API web compatibles con Azion Edge Runtime.
+- Web API.
+- Lista completa de las Web API compatibles con Azion Edge Runtime.
 
 ---
 
@@ -100,7 +100,7 @@ Segundo, es necesario definir el comportamiento de la función handleRequest. Es
 - Implementar un comportamiento basado en el método de solicitud HTTP (POST, GET, PUT, DELETE).
 - Acceder a los metadatos de la solicitud.
 
-La función `handleRequest` puede ser definida como:
+La función `handleRequest` puede ser definida de la siguiente manera:
 
 ```js
   const html = `<!DOCTYPE html>
@@ -145,7 +145,7 @@ Ejemplo completo:
 Conoce más sobre las edge functions para edge applications.
 
 
-### Edge Firewall Functions
+### Funciones de Edge Firewall
 
 Las edge functions para Edge Firewall operan basándose en un evento firewall. Se inicializan usando la función `addEventListener`, pasando `'firewall'` como el tipo de evento, y un evento. Por ejemplo:
 
@@ -159,9 +159,9 @@ En este caso, el sistema envía una denegación en respuesta al evento firewall 
 
 Es necesario definir los comportamientos potenciales para diferentes reacciones a eventos dentro del agente de escucha de eventos firewall. La respuesta exacta depende de la condición que se cumpla. Por ejemplo:
 
-- Detecta niveles de amenaza.
-- Bloquea o lista direcciones IP permitidas.
-- Implementa comportamientos basados en patrones de tráfico.
+- Detectar niveles de amenaza.
+- Bloquear o listar direcciones IP permitidas.
+- Implementar comportamientos basados en patrones de tráfico.
 
 Un ejemplo donde se define y utiliza la función `event.deny`:
 
