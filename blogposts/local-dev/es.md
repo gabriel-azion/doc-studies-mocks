@@ -157,7 +157,7 @@ Las edge functions para Edge Firewall operan basándose en un evento firewall. S
 
 En este caso, el sistema envía una denegación en respuesta al evento firewall que ha sido activado. Podría haber otras reacciones a eventos como `event.continue()`, y `event.drop()` dependiendo de las circunstancias específicas o la lógica deseada.
 
-Es necesario definir los comportamientos potenciales para diferentes reacciones a eventos dentro del agente de escucha de eventos firewall. La respuesta exacta depende de la condición que se cumpla. Por ejemplo:
+Es necesario definir los comportamientos potenciales para diferentes reacciones a eventos dentro del agente de escucha de eventos del firewall. La respuesta exacta depende de la condición que se cumpla. Por ejemplo:
 
 - Detectar niveles de amenaza.
 - Bloquear o listar direcciones IP permitidas.
