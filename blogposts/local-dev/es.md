@@ -1,4 +1,4 @@
-# Desarrollo y prueba local de Edge Functions con Azion CLI
+# Desarrollo y prueba local de edge functions con Azion CLI
 
 Azion CLI es una herramienta eficiente para configurar entornos de prueba locales para edge functions. Puedes comenzar ejecutando el comando `azion dev` para iniciar el proceso de desarrollo local.
 
