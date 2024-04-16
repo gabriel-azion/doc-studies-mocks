@@ -13,9 +13,9 @@
 
 1. [Introduction](#introduction)
 
-2. [Prerequisites for Using Azion CLI](#prerequisites)
+2. [Prerequisites for Using Azion CLI](#prerequisites-for-using-azion-cli)
 
-3. [Getting Started: Testing Edge Applications Functions](#edge-applications)
+3. [Getting Started: Testing Edge Applications Functions](#getting-started-:-testing-edge-applications-functions)
 
 4. [Testing Firewall Functions](#firewall-functions)
 
