@@ -15,7 +15,7 @@
 
 For scenarios with edge firewall functions, you simply need to pass the `--firewall` flag alongside the command. This feature enriches your capabilities of testing and examining firewall functions before integrating them into the live product.
 
-### Key Benefits of Local Development with Azion CLI's
+### Key Benefits of Local Development with Azion CLI
 
 *   Error prevention: test new features or modifications before they go live, reducing the risk of introducing mistakes to the production system.
 *   Improved debugging: debug code more effectively and quickly in a controlled environment.
