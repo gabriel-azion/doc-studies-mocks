@@ -11,7 +11,7 @@
 
 ## Introduction
 
-[Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/) is an efficient tool for setting up local testing environments for edge functions. You can easily run your application locally by executing the `azion dev` command, kickstarting the local development process. This feature enriches your capabilities of testing and examining edge functions before integrating them into the live product.
+[Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/) is an efficient tool for setting up local testing environments for edge functions. You can easily run your application locally by executing the `azion dev` command, kickstarting the local development process. This capability boosts software quality by testing and examining edge functions before integrating them into the live product, preventing errors, and unexpected behaviors.
 
 ## Key Benefits of Local Development with Azion CLI
 
