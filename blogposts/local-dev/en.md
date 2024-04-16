@@ -9,16 +9,6 @@
 5.  [Enhance Performance: Azion CLI & Local Testing Explained]()
 ```
 
-**Table of Contents**
-
-1. [Introduction](#introduction)
-2. [Prerequisites for Using Azion CLI](#prerequisites-for-using-azion-cli)
-3. [Testing Edge Applications Functions](#testing-edge-applications-functions)
-4. [Testing Firewall Functions](#testing-firewall-functions)
-5. [How Azion CLI local dev Works](#how-azion-cli-local-dev-works)
-6. [The Science Behind Edge Functions](#the-science-behind-edge-functions)
-7. [Conclusion](#conclusion)
-
 ## Introduction
 
 [Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/) is an efficient tool for setting up local testing environments for edge functions. You can easily use it by executing the `azion dev` command, kickstarting the local development process.
@@ -40,7 +30,7 @@ For scenarios with edge firewall functions, you simply need to pass the `--firew
 *   Node.js ≥ 18.
 *   Access to the command line.
 
-### Testing Edge Applications Functions
+### Getting Started: Testing Edge Applications Functions
 
 To kick off a local testing environment:
 
@@ -76,7 +66,7 @@ To do so, you must run the `azion dev` command with the flag `--firewall`. It in
 -   [Network List API](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/api-reference/network-list/&sa=D&source=editors&ust=1713274135723967&usg=AOvVaw2vDnuv4l5WmPbemupeHpec).
 -   [Metadata API](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/api-reference/metadata/&sa=D&source=editors&ust=1713274135724107&usg=AOvVaw3sz4q1vf1BRv2BSaiqTo0i).
 
-### How Azion CLI local dev Works
+### Behind The Scenes: How Azion CLI local dev Works
 
 ### Dataflow
 
