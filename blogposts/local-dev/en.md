@@ -15,7 +15,7 @@
 
 For scenarios with edge firewall functions, you simply need to pass the `--firewall` flag alongside the command. This feature enriches your capabilities of testing and examining firewall functions before integrating them into the live product.
 
-### Key Benefits of Local Testing with Azion CLI's:
+### Key Benefits of Local Development with Azion CLI's:
 
 *   Error prevention: test new features or modifications before they go live, reducing the risk of introducing mistakes to the production system.
 *   Improved debugging: debug code more effectively and quickly in a controlled environment.
@@ -76,16 +76,17 @@ To do so, you must run the `azion dev` command with the flag `--firewall`. It in
 
 ### Responsibilities
 
-Azion CLI: serves as the primary point of interaction between the user and the system. It manages the entire application deployment process, ensuring a smooth and efficient workflow.
+**Azion CLI**: serves as the primary point of interaction between the user and the system. It manages the entire application deployment process, ensuring a smooth and efficient workflow.
 
-Vulcan: the engine that drives project initialization, building, and adaptation. It intelligently tailors the project based on the selected template, ensuring that the application is optimally configured for its intended use. For local development, Vulcan:
+**Vulcan**: the engine that drives project initialization, building, and adaptation. It intelligently tailors the project based on the selected template, ensuring that the application is optimally configured for its intended use. For local development, Vulcan:
 
-   Initiates a server.
-   Instantiates the Edge Runtime.
-   Handles changes in the source code, implementing hot reload.
+- Initiates a server.
+-  Instantiates the Edge Runtime.
+- Handles changes in the source code, implementing hot reload.
 
-The Science Behind Edge Functions
----------------------------------
+---
+
+## The Science Behind Edge Functions
 
 Azion Edge Functions are used to enhance edge applications or to boost security in an edge firewall. Both run on Azion Edge Runtime, reduce latency, and help to implement a distributed approach. OK, but what's the difference between them?
 
@@ -195,9 +196,9 @@ In this instance, the system sends a denial in response to the firewall event th
 
 It's necessary to define the potential behaviors for different event reactions within the firewall event listener. The exact response depends on the condition met. For example:
 
-*   Detect threat levels.
-*   Block or rights list IP addresses.
-*   Implement behaviors based on traffic patterns.
+-   Detect threat levels.
+-   Block or rights list IP addresses.
+-   Implement behaviors based on traffic patterns.
 
 An example where the `event.deny` function is defined and used:
 
