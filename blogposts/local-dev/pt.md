@@ -24,14 +24,14 @@ A [Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview
 ### Fluxo de Dados
 
 1.  Através da Azion CLI, o usuário executa o comando `azion dev [flags]`.
-2.  Azion CLI invoca Vulcan, que gerencia a construção e o desenvolvimento local.
+2.  A Azion CLI invoca o [Vulcan](), que gerencia a construção e o desenvolvimento local.
 3.  Vulcan inicializa um servidor e este servidor instancia o runtime. Este runtime suporta uma lista de [Web APIs](https://www.google.com/url?q=https://www.azion.com/en/documentation/devtools/runtime-apis/javascript/&sa=D&source=editors&ust=1713274135724526&usg=AOvVaw19uTCbdww-svGdVIlEQM44) e emula o [Azion Edge Runtime](https://www.google.com/url?q=https://www.azion.com/en/documentation/devtools/runtime/overview/&sa=D&source=editors&ust=1713274135724613&usg=AOvVaw1fYrE_S7795YGAopz-BjIx) atual.
 
 ### Responsabilidades
 
 **Azion CLI**: serve como o principal ponto de interação entre o usuário e o sistema. Ele gerencia todo o processo de implantação da aplicação, garantindo um fluxo de trabalho suave e eficiente.
 
-**Vulcan**: o motor que impulsiona a inicialização do projeto, a construção e a adaptação. Ele adapta o projeto com base no modelo selecionado, garantindo que a aplicação seja configurada para o uso pretendido. Para o desenvolvimento local, o Vulcan:
+**Vulcan**: o motor que impulsiona a inicialização do projeto, a construção e a adaptação. Ele adapta o projeto baseado no modelo selecionado, garantindo que a aplicação seja configurada para o uso pretendido. Para o desenvolvimento local, o Vulcan:
 
 - Inicia um servidor.
 - Instancia o Edge Runtime.
