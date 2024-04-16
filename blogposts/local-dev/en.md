@@ -11,11 +11,11 @@
 
 ## Introduction
 
-[Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/) is an efficient tool for setting up local testing environments for edge functions. You can easily use it by executing the `azion dev` command, kickstarting the local development process.
+[Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/) is an efficient tool for setting up local testing environments for edge functions. You can easily run your application locally by executing the `azion dev` command, kickstarting the local development process.
 
 For scenarios with edge firewall functions, you simply need to pass the `--firewall` flag alongside the command. This feature enriches your capabilities of testing and examining firewall functions before integrating them into the live product.
 
-### Key Benefits of Local Development with Azion CLI's:
+### Key Benefits of Local Development with Azion CLI's
 
 *   Error prevention: test new features or modifications before they go live, reducing the risk of introducing mistakes to the production system.
 *   Improved debugging: debug code more effectively and quickly in a controlled environment.
@@ -92,7 +92,7 @@ Azion Edge Functions are used to enhance edge applications or to boost security 
 
 The difference is how the functions are structured, let's dive deeper into that.
 
-#### Edge Application Functions
+### Edge Application Functions
 
 First, edge functions for edge applications work based on a fetch event. They're initialized with an `addEventListener` function, passing fetch as the event type, and an event. For example:
 
@@ -179,7 +179,7 @@ Complete Example:
 
 [Learn more about edge functions for edge applications](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/guides/edge-functions/first-steps/&sa=D&source=editors&ust=1713274135730183&usg=AOvVaw0dz9Tmn29rIJAB2RNHcj2t).
 
-#### Edge Firewall Functions
+### Edge Firewall Functions
 
 Edge functions for Edge Firewall operate based on a firewall event. They are initialized using the `addEventListener` function, passing `'firewall'` as the event type, and an event. For example:
 
