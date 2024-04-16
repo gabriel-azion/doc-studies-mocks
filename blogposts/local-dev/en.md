@@ -1,11 +1,13 @@
 
 # Boost Software Quality: Local Development with Azion CLI
 
+```
 1.  [Local Testing Environments: Key Benefits & Azion CLI Guide]()
 2.  [Boost Software Quality: Local Testing with Azion CLI]()
 3.  [Maximize Efficiency: Local Testing for Edge Functions]()
 4.  [Secure Development: Azion CLI for Local Testing]()
 5.  [Enhance Performance: Azion CLI & Local Testing Explained]()
+```
 
 **Table of Contents**
 
