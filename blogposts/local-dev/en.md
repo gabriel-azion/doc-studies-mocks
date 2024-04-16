@@ -11,24 +11,22 @@
 
 ## Introduction
 
-[Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/) is an efficient tool for setting up local testing environments for edge functions. You can easily run your application locally by executing the `azion dev` command, kickstarting the local development process.
-
-For scenarios with edge firewall functions, you simply need to pass the `--firewall` flag alongside the command. This feature enriches your capabilities of testing and examining firewall functions before integrating them into the live product.
+[Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/) is an efficient tool for setting up local testing environments for edge functions. You can easily run your application locally by executing the `azion dev` command, kickstarting the local development process. This feature enriches your capabilities of testing and examining edge functions before integrating them into the live product.
 
 ### Key Benefits of Local Development with Azion CLI
 
-*   Error prevention: test new features or modifications before they go live, reducing the risk of introducing mistakes to the production system.
-*   Improved debugging: debug code more effectively and quickly in a controlled environment.
-*   Performance optimization: test the application's behavior under different loads or unique user scenarios.
-*   Security enhancements: identify and rectify security vulnerabilities before the application goes live.
-*   Development efficiency: work without an internet connection, promoting productivity and autonomy.
-*   Cost-effective: prevent high resource-consuming post-production fixes, saving time and money by addressing potential problems before deployment.
+-   Error prevention: test new features or modifications before they go live, reducing the risk of introducing mistakes to the production system.
+-   Improved debugging: debug code more effectively and quickly in a controlled environment.
+-   Performance optimization: test the application's behavior under different loads or unique user scenarios.
+-   Security enhancements: identify and rectify security vulnerabilities before the application goes live.
+-   Development efficiency: work without an internet connection, promoting productivity and autonomy.
+-   Cost-effective: prevent high resource-consuming post-production fixes, saving time and money by addressing potential problems before deployment.
 
 ### Prerequisites for Using Azion CLI
 
-*   Azion CLI installed.
-*   Node.js ≥ 18.
-*   Access to the command line.
+-   Azion CLI installed.
+-   Node.js ≥ 18.
+-   Access to the command line.
 
 ### Getting Started: Testing Edge Applications Functions
 
