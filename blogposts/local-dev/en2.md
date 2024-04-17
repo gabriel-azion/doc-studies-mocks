@@ -15,11 +15,13 @@
 
 ## Key Benefits of Local Development with Azion CLI
 
--   Error prevention: test new features or modifications before they go live, reducing the risk of introducing bugs to the production system.
--   Improved debugging: debug code more effectively and quickly in a controlled environment as you can check logs in real time. 
--   Performance optimization: test the application's behavior under different loads or unique user scenarios.
--   Security enhancements: identify and rectify security vulnerabilities before the application goes live.
--   Cost-effective: prevent high resource-consuming post-production fixes, saving time and money by addressing potential problems before deployment.
+-   *Error prevention*: test new features or modifications before they go live, reducing the risk of introducing bugs to the production system.
+-   *Improved debugging*: debug code more effectively and quickly in a controlled environment as you can check logs in real time. 
+-   *Performance optimization*: test the application's behavior under different loads or unique user scenarios.
+-   *Security enhancements*: identify and rectify security vulnerabilities before the application goes live.
+-   *Cost-effective*: prevent high resource-consuming post-production fixes, saving time and money by addressing potential problems before deployment.
+
+---
 
 ## Prerequisites for Using Azion CLI
 
@@ -27,13 +29,15 @@
 -   Node.js ≥ 18.
 -   Access to the command line.
 
+---
+
 ## Behind The Scenes: How Azion CLI local dev Works
 
 ### Dataflow
 
 1.  Through Azion CLI, the user runs the `azion dev [flags]` command.
 2.  Azion CLI invokes Vulcan, which manages build and local development.
-3.  Vulcan initializes a server and this server instantiates the runtime. This runtime supports a list of [Web APIs](https://www.google.com/url?q=https://www.azion.com/en/documentation/devtools/runtime-apis/javascript/&sa=D&source=editors&ust=1713274135724526&usg=AOvVaw19uTCbdww-svGdVIlEQM44) and emulates the actual [Azion Edge Runtime](https://www.google.com/url?q=https://www.azion.com/en/documentation/devtools/runtime/overview/&sa=D&source=editors&ust=1713274135724613&usg=AOvVaw1fYrE_S7795YGAopz-BjIx).
+3.  Vulcan initializes a server and this server instantiates the runtime. This runtime supports a list of [Web APIs](https://www.azion.com/en/documentation/devtools/runtime-apis/javascript) and emulates the actual [Azion Edge Runtime](https://www.azion.com/en/documentation/devtools/runtime/overview/).
 
 ### Responsibilities
 
@@ -42,7 +46,7 @@
 **Vulcan**: the engine that drives project initialization, building, and adaptation. It intelligently tailors the project based on the selected template, ensuring that the application is optimally configured for its intended use. For local development, Vulcan:
 
 - Initiates a server.
--  Instantiates the Edge Runtime.
+- Instantiates the Edge Runtime.
 - Handles changes in the source code, implementing hot reload.
 
 ---
@@ -140,7 +144,7 @@ Complete Example:
 
 ```
 
-[Learn more about edge functions for edge applications](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/guides/edge-functions/first-steps/&sa=D&source=editors&ust=1713274135730183&usg=AOvVaw0dz9Tmn29rIJAB2RNHcj2t).
+[Learn more about edge functions for edge applications](https://www.azion.com/en/documentation/products/guides/edge-functions/first-steps/).
 
 ### Edge Firewall Functions
 
@@ -192,7 +196,7 @@ In this example, the firewall event listener checks the IP address that triggere
 
 > Since it's not possible to execute any other method after the exectuion of an finishing event, it's recommended to use a return right after the event so it's clear nothing more will be executed.
 
-[Learn more about edge functions for edge firewall](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/secure/edge-firewall/edge-functions/&sa=D&source=editors&ust=1713274135733367&usg=AOvVaw1eMBAkipps1V27D61fPjxG).
+[Learn more about edge functions for edge firewall](https://www.azion.com/en/documentation/products/secure/edge-firewall/edge-functions/).
 
 ---
 
@@ -218,9 +222,9 @@ The `azion dev` command starts up a local environment where you can test and mon
 
 Azion edge functions run on Azion [Edge Runtime](https://www.azion.com/en/documentation/devtools/runtime/overview/) and have compatibility with Web APIs and Azion APIs.  
 
--   [Edge Functions First steps](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/guides/edge-functions/first-steps/&sa=D&source=editors&ust=1713274135722940&usg=AOvVaw38Ntl-AI8nxoWS9W9ae5Sk).
--   [Web APIs](https://www.google.com/url?q=https://www.azion.com/en/documentation/devtools/runtime-apis/javascript/&sa=D&source=editors&ust=1713274135723155&usg=AOvVaw0-EVfbeBFODb1yAFcMrYsx).
--   [Complete list of Azion Edge Runtime Web APIs suppor](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-apis/javascript/supported-types/&sa=D&source=editors&ust=1713274135723303&usg=AOvVaw1EAfYIYYU2AuDOJ9Lyqd9Y)t.
+-   [Edge Functions First steps](https://www.azion.com/en/documentation/products/guides/edge-functions/first-steps/).
+-   [Web APIs](https://www.azion.com/en/documentation/devtools/runtime-apis/javascript/).
+-   [Complete list of Azion Edge Runtime Web APIs suppor](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime-apis/javascript/supported-types/)t.
 
 ### Testing Firewall Functions
 
@@ -228,16 +232,16 @@ If you've implemented firewall functions within your system, you'll need to cons
 
 To do so, you must run the `azion dev` command with the flag `--firewall`. It informs the system you're testing an edge firewall function.
 
--   [Edge function for Edge Firewall](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/secure/edge-firewall/edge-functions/&sa=D&source=editors&ust=1713274135723812&usg=AOvVaw3FmDqotBU64sXKv33aZe8K).
--   [Network List API](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/api-reference/network-list/&sa=D&source=editors&ust=1713274135723967&usg=AOvVaw2vDnuv4l5WmPbemupeHpec).
--   [Metadata API](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/api-reference/metadata/&sa=D&source=editors&ust=1713274135724107&usg=AOvVaw3sz4q1vf1BRv2BSaiqTo0i).
+-   [Edge function for Edge Firewall](https://www.azion.com/en/documentation/products/secure/edge-firewall/edge-functions/).
+-   [Network List API](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/api-reference/network-list/).
+-   [Metadata API](https://www.azion.com/en/documentation/products/edge-application/edge-functions/runtime/api-reference/metadata/).
 
 ---
 
 ## Conclusion
 
 
-Using local testing environments improves the product development process. Leveraging tools like Azion CLI makes it easier to build reliable, efficient, secure, and high-performing software solutions. By testing edge functions with the command `azion dev`, and optionally adding a `--firewall` flag when necessary, developers can navigate potential pitfalls before pushing their code into production.
+Using local testing environments improves the product development process and the software quality. Leveraging tools like Azion CLI makes it easier to build reliable, efficient, secure, and high-performing software solutions. By testing edge functions with the command `azion dev`, and optionally adding a `--firewall` flag when necessary, developers can navigate potential pitfalls before pushing their code into production.
 
 ---
 
