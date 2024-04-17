@@ -15,11 +15,10 @@
 
 ## Key Benefits of Local Development with Azion CLI
 
--   Error prevention: test new features or modifications before they go live, reducing the risk of introducing mistakes to the production system.
--   Improved debugging: debug code more effectively and quickly in a controlled environment.
+-   Error prevention: test new features or modifications before they go live, reducing the risk of introducing bugs to the production system.
+-   Improved debugging: debug code more effectively and quickly in a controlled environment as you can check logs in real time. 
 -   Performance optimization: test the application's behavior under different loads or unique user scenarios.
 -   Security enhancements: identify and rectify security vulnerabilities before the application goes live.
--   Development efficiency: work without an internet connection, promoting productivity and autonomy.
 -   Cost-effective: prevent high resource-consuming post-production fixes, saving time and money by addressing potential problems before deployment.
 
 ## Prerequisites for Using Azion CLI
@@ -69,9 +68,11 @@ First, edge functions for edge applications work based on a fetch event. They're
 
 Second, it’s necessary to define the behavior of the handleRequest function. This function has `event.request` as the signature. This data can be used later on to implement the necessary logic, such as:
 
-   Manipulate cookies.
-   Implement a behavior based on the HTTP request method (POST, GET, PUT, DELETE).
-   Access request metadata.
+- Manipulate cookies.
+- Implement a behavior based on the HTTP request method (POST, GET, PUT, DELETE).
+- Access request metadata.
+
+>It's mandatory to return a response object with fetch.
 
 The `handleRequest` function can be defined as:
 
@@ -187,7 +188,9 @@ An example where the `event.deny` function is defined and used:
 
 ```
 
-In this example, the firewall event listener checks the IP address that triggered the event against the list of blocked IPs. If the IP is on the list, the event is denied. If the IP isn't on the list, the event will continue processing. It showcases how you might use the `event.deny()`, `event.continue()`, and `event.drop()` in real application scenarios.
+In this example, the firewall event listener checks the IP address that triggered the event against the list of blocked IPs. If the IP is on the list, the event is denied. If the IP isn't on the list, the event will continue processing. It showcases how you might use the `event.deny()`, `event.continue()`, and `event.drop()` in real application scenarios. You can also implement `event.respondWith(<Response>)`.
+
+> Since it's not possible to execute any other method after the exectuion of an finishing event, it's recommended to use a return right after the event so it's clear nothing more will be executed.
 
 [Learn more about edge functions for edge firewall](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/secure/edge-firewall/edge-functions/&sa=D&source=editors&ust=1713274135733367&usg=AOvVaw1eMBAkipps1V27D61fPjxG).
 
