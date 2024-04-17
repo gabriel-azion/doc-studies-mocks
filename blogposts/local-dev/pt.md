@@ -28,7 +28,7 @@ A [Azion CLI](https://www.azion.com/pt-br/documentacao/produtos/azion-cli/visao-
 ### Fluxo de Dados
 
 1.  Através da Azion CLI, o usuário executa o comando `azion dev [flags]`.
-2.  A Azion CLI invoca o [Vulcan](), que gerencia a construção e o desenvolvimento local.
+2.  A Azion CLI invoca o [Vulcan](https://github.com/aziontech/vulcan), que gerencia a construção e o desenvolvimento local.
 3.  Vulcan inicializa um servidor e este servidor instancia o runtime. Este runtime suporta uma lista de [Web APIs](https://www.azion.com/pt-br/documentacao/devtools/runtime-apis/javascript/) e emula o [Azion Edge Runtime](https://www.azion.com/pt-br/documentacao/devtools/runtime/visao-geral/) atual.
 
 ### Responsabilidades
@@ -134,7 +134,7 @@ Exemplo Completo:
 
 ```
 
-[Saiba mais sobre funções de Edge para Edge Applications](https://www.azion.com/en/documentation/products/guides/edge-functions/first-steps/&sa=D&source=editors&ust=1713274135730183&usg=AOvVaw0dz9Tmn29rIJAB2RNHcj2t).
+[Saiba mais sobre funções de Edge para Edge Applications](ttps://www.azion.com/pt-br/documentacao/produtos/guias/edge-functions/primeiros-passos/).
 
 ### Funções de Edge Firewall
 

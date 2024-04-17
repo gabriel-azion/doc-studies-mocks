@@ -1,14 +1,6 @@
 
 # Boost Software Quality: Local Development with Azion CLI
 
-```
-1.  [Local Testing Environments: Key Benefits & Azion CLI Guide]()
-2.  [Boost Software Quality: Local Testing with Azion CLI]()
-3.  [Maximize Efficiency: Local Testing for Edge Functions]()
-4.  [Secure Development: Azion CLI for Local Testing]()
-5.  [Enhance Performance: Azion CLI & Local Testing Explained]()
-```
-
 ## Introduction
 
 [Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/) is an efficient tool for setting up local testing environments for edge functions. You can easily run your application locally by executing the `azion dev` command, kickstarting the local development process. This capability boosts software quality by testing and examining edge functions before integrating them into the live product, preventing errors, and unexpected behaviors.
@@ -36,7 +28,7 @@
 ### Dataflow
 
 1.  Through Azion CLI, the user runs the `azion dev [flags]` command.
-2.  Azion CLI invokes Vulcan, which manages build and local development.
+2.  Azion CLI invokes [Vulcan](https://github.com/aziontech/vulcan), which manages build and local development.
 3.  Vulcan initializes a server and this server instantiates the runtime. This runtime supports a list of [Web APIs](https://www.azion.com/en/documentation/devtools/runtime-apis/javascript) and emulates the actual [Azion Edge Runtime](https://www.azion.com/en/documentation/devtools/runtime/overview/).
 
 ### Responsibilities
