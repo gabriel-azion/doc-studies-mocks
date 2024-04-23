@@ -6,7 +6,6 @@ Live tail logs provide real-time insights into application behavior. However, ac
 The `azion logs cells` command offers the ability to watch your edge functions' `console.logs()` on your local machine, dramatically changing how you test and debug serverless functions.
 
 ---
----
 
 ## Prerequisites for Using Azion CLI
 
