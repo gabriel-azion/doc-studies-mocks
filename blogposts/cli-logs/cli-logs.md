@@ -1,13 +1,9 @@
 # Enhancing Edge Functions Debugging with Azion logs
 
-Using [Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/), you can initiate, run, and inspect edge functions' logs through the following commands:
 
-- `azion init`: Initializes the application.
-- `azion dev`: Runs your application locally.
-- `azion deploy`: Deploys your application on Azion's distributed Edge Network.
-- `azion logs cells`: Observes the logs inside the function's code running at the edge of the network.
+Live tail logs provide real-time insights into application behavior. However, accessing these logs can sometimes be complex. 
 
-The `azion logs cells` command offers the ability to view console logs on your local machine, dramatically changing how you test and debug serverless functions.
+The `azion logs cells` command offers the ability to watch your edge functions' `console.logs()` on your local machine, dramatically changing how you test and debug serverless functions.
 
 ## Putting It into Practice: Checking Request Data
 
