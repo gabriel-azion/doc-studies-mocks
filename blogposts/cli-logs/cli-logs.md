@@ -1,7 +1,5 @@
 # Enhancing Edge Functions Debugging with Azion logs
 
-This blog post will guide you through the nuances of managing logs for edge functions, providing valuable insights and techniques to streamline development and master debugging.
-
 Using [Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/), you can initiate, run, and inspect edge functions' logs through the following commands:
 
 - `azion init`: Initializes the application.
