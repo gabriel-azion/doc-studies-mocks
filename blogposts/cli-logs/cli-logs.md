@@ -5,14 +5,27 @@ Live tail logs provide real-time insights into application behavior. However, ac
 
 The `azion logs cells` command offers the ability to watch your edge functions' `console.logs()` on your local machine, dramatically changing how you test and debug serverless functions.
 
-## Putting It into Practice: Checking Request Data
+---
+---
 
-### Requirements
-
-Before starting this implementation, ensure that you have:
+## Prerequisites for Using Azion CLI
 
 - [Azion CLI installed](https://www.azion.com/en/documentation/products/azion-cli/overview/#installing-azion-cli).
-- Node.js ≥ 18.x.y
+- Node.js ≥ 18.
+- Access to the command line.
+
+---
+
+## Behind The Scenes: How Azion CLI live tail logs Work
+
+### Dataflow
+
+
+### Responsibilities
+
+---
+
+## Putting It into Practice: Checking Request Data
 
 ### Checking logs locally
 
@@ -60,6 +73,8 @@ Follow these steps:
 3.  Run `azion logs cells` to retrieve logs of your edge functions.
 
 > Note: the `azion logs cells` command fetches logs from the last 5 minutes. More details are available in the [command documentation](https://www.azion.com/en/documentation/products/azion-cli/overview/#using-azion-logs-cells).
+
+---
 
 ## Harnessing Azion logs
 
