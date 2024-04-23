@@ -4,7 +4,7 @@ Unleash Scalability: Azion's Edge Storage
 
 In the digital world, dealing with growing volumes of data while ensuring fast access and strong system performance can be demanding for developers. What if there's an easier way? What if you can use Object Storage at the edge of the network, gain benefits like low-latency access, scalability, cost predictability, and high availability, all without dealing with the complexities of classic storage systems?
 
-In this article, we delve into Azion Edge Storage. It's an Object Storage solution designed to simplify the data management process and turbocharge your applications' performance.
+In this article, we delve into Azion Edge Storage, an Object Storage solution designed to simplify the data management process and turbocharge your applications' performance.
 
 ## Leverage Object Storage at the Edge
 
