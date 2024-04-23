@@ -26,18 +26,80 @@ Key benefits include:
    
 7. No More Egress Charge: With edge computing, data processing occurs closer to the origin, significantly reducing data transfer volumes to and from the central server. Thus, control the high egress charges typically associated with cloud services and cut down operational expenses.
 
+---
+
 ## Setting Up and Streamlining Data Management
 
-Edge Storage manages data via distinct objects, each consisting of:
+Edge Storage manages data via distinct objects, each contain:
 
-1. Data forming the object.
-2. Relevant metadata like the media type and object size.
-3. A unique object key identifier.
+- The data composing the object,
+- Related metadata (such as media type and object size),
+- An object key serving as the unique identifier.
 
-We can manage such objects through the `S3 API` and `Azion's REST API`. Another alternative is initializing and deploying applications with Azion CLI. We could also use `Azion Edge Functions Storage API` to access and manage stored data.
+### S3 API
 
-Edge Storage achieves a seamless data flow by processing user requests for static objects, such as videos, through their Edge Platform. The edge application—configured with its origin set to a bucket in Edge Storage—processes the request and retrieves the desired object. If the Tiered Cache is active, the edge application first searches in the cache module.
+Edge Storage is compatible with the S3 API. The credentials can be managed through the /s3-credentials endpoint. You can retrieve data on all S3 credentials registered with Azion, retrieve data on an S3 credential registered with Azion, create an S3 credential, and remove S3 credentials from the account.
 
-With Azion Edge Storage, developers can address data storage and management challenges innovatively. By capitalizing on object storage technologies at the network edge, developers not only benefit from scalability, high reliability, and cost predictability but also from a simplified development process.
+You can use the credentials through S3cmd, the S3 API through the region endpoint https://s3.use-east-005.azionstorage.net/, or libraries related to S3 for your chosen programming language.
 
-With straightforward data management using the REST API, CLI, and Edge Functions Storage API of Azion, developers can prioritise innovation over infrastructural obstacles. As we embrace Azion Edge Storage, we're not just resolving data problems; we're unveiling the enormous potential inherent in our data, ready to power our edge applications.
+Here are examples of creating S3 credentials and configuring them in S3cmd:
+
+vbnet
+```vbnet
+Creating S3 credentials to be used with Edge Storage:
+
+curl --location 'https://api.azion.com/v4/storage/s3-credentials 
+--header 'Accept: application/json' 
+--header 'Authorization: Token xxxxxxx 
+--header 'Content-Type: application/json' 
+--data '{
+"name": "My S3 Credential",
+"capabilities": ["listAllBucketNames", "listFiles"],
+"bucket": "my-bucket-name",
+// expiration based on the timezone defined in RTM settings
+"expiration_date": "2025-01-31T10:57:00"
+
+}'
+```
+
+yaml
+```yaml
+Configuring your credentials in S3cmd: 
+
+user@user ~ % s3cmd --configure
+Enter new values or accept defaults in brackets with Enter.
+Refer to user manual for detailed description of all options.
+Access key and Secret key are your identifiers for Amazon S3. Leave them empty for using the env variables.
+Access Key: [your-recently-created-access-key]
+Secret Key:  [your-recently-created-secret]
+Default Region....
+S3 Endpoint [s3.amazonaws.com]: https://s3.use-east-005.azionstorage.net/
+```
+
+Once the capabilities are assigned to the S3 credential, you can access and manipulate objects through S3cmd.
+
+### REST API
+
+Azion provides REST API methods to store objects. You can create and modify buckets and their permissions and manage objects.
+
+Creating a bucket and uploading a file, such as `src/index.html`, allows you to use object storage as the origin for a static edge application. You will have a complete working application you can access and manipulate.
+
+### Azion CLI
+
+Azion CLI also provides an alternative to initialize and deploy an application. Upon initialization of an application using the `azion init` command to deploy it to the edge, a bucket is created with the chosen project name, and the static application is stored in it.
+
+### Azion Edge Functions Storage API
+
+Azion Edge Storage can be accessed via the Edge Functions Storage API. This interface allows you to read and write data in the storage and its associated buckets.
+
+You need to import the APIs inside your edge function, instantiate a new Storage object, and choose and implement the methods listed in the documentation to get started.
+
+## Dataflow Insights
+
+The user access process involves a simple pattern. The user accesses a domain in Azion Edge Platform, requesting a static object like a video. Depending on the edge application configuration, the request is processed and the object requested from Edge Storage. Once the static object is obtained, the edge application delivers the content to the user.
+
+## Conclusion
+
+By leveraging object storage technologies at the edge of the network, Azion Edge Storage not only offers scalability, high reliability, and predictable costs but also streamlines the development process. 
+
+With streamlined data management using Azion's user-friendly REST API, CLI, and Edge Functions Storage API, developers can focus on pushing their applications' boundaries rather than dealing with infrastructure problems. With Azion Edge Storage, we are not merely overcoming data challenges; we are unlocking our data's immense potential to propel our edge applications into the future.
