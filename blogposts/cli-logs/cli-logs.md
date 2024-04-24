@@ -122,8 +122,4 @@ Localized console logs have several benefits:
 
 ## Conclusion
 
-[Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/) and Vulcan vastly simplify the development process, offering a comprehensive debugging tool via localized console logs for edge functions in local environments. Deploying your code on a server for each change is no longer necessary.
-
-The `azion logs cells` command provides real-time function behaviour monitoring, which reduces both development time and server usage costs. Using these tools optimizes your code locally, saving early-stage development time, resources, and debugging effort.
-
-By emulating edge-like conditions in your local environment, Azion reinforces the concept of the edge being ubiquitous. Begin using these tools today and upgrade to a seamless edge function development process. Let Azion bring the edge closer to you.
+In conclusion, [Azion CLI](https://www.azion.com/en/documentation/products/azion-cli/overview/) provides a powerful and efficient way to debug and monitor your edge functions. With the ability to watch logs in real-time through your terminal, you can gain valuable insights into your application's behavior, significantly reducing development time and server usage costs. The `azion logs cells --tail` command, in particular, offers a real-time view of your function's behavior, making it an invaluable tool for any developer working with Azion's edge functions. Whether you're testing locally or deploying your application on the Azion Edge Platform, these tools provide a streamlined and effective approach to debugging and monitoring.
