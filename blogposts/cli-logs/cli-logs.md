@@ -49,6 +49,7 @@ The `azion logs cells` command offers the ability to watch your edge functions' 
 ### Responsibilities
 
 **Azion CLI**: serves as the interface for user interaction and is responsible for formatting and returning the data to the user.
+
 **GraphQL API**  handles the incoming requests (communicates with beholder) and retrieves the requested data.
 
 ---
