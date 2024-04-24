@@ -13,13 +13,6 @@ While Azion CLI also supports the `azion logs http` command for accessing HTTP l
 
 ---
 
-## Prerequisites for Using Azion CLI
-
-- [Azion CLI installed](https://www.azion.com/en/documentation/products/azion-cli/overview/#installing-azion-cli).
-- Node.js ≥ 18.
-- Access to the command line.
-
----
 
 ## Behind The Scenes: How Azion CLI live tail logs Work
 
@@ -52,6 +45,14 @@ While Azion CLI also supports the `azion logs http` command for accessing HTTP l
 **Azion CLI**: serves as the interface for user interaction and is responsible for formatting and returning the data to the user.
 
 **GraphQL API**: handles the incoming requests (communicates with beholder) and retrieves the requested data.
+
+---
+
+## Prerequisites for Using Azion CLI
+
+- [Azion CLI installed](https://www.azion.com/en/documentation/products/azion-cli/overview/#installing-azion-cli).
+- Node.js ≥ 18.
+- Access to the command line.
 
 ---
 
