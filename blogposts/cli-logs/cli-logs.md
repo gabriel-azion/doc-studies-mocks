@@ -1,14 +1,15 @@
 # Enhancing Edge Functions Debugging with Azion logs
 
-Live tail logs provide real-time insights into application behavior. However, accessing these logs can sometimes be complex. 
+Real-time logs, or live tail logs, are an invaluable resource for gaining immediate insights into your application's behavior. However, accessing these logs can often be a challenging task. 
 
-Azion CLI enables the watch of logs trough the terminal where you can check your edge functions' logs and your edge applications' logs.
+Azion CLI simplifies this process by enabling you to monitor logs directly from your terminal. This is particularly useful for logs from your edge functions.
 
-The `azion logs cells` command offers the ability to watch your edge functions' `console.logs()` on your local machine, dramatically changing how you test and debug serverless functions, while the `azion logs http` command brings the HTTP logs related to your edge applications.
+The `azion logs cells` command allows you to view your edge functions' `console.logs()` on your local machine, significantly enhancing the way you test and debug serverless functions. For a more continuous monitoring, the `azion logs cells --tail` command can be used to keep displaying new logs as they come in. 
+
+While Azion CLI also supports the `azion logs http` command for accessing HTTP logs related to your edge applications, we will focus on the `azion logs cells` and `azion logs cells --tail` commands in this discussion. The `azion logs http` command will be covered in a dedicated blog post soon.
 
 [Learn more about Edge Functions]()
 [Learn more about Edge Applications]()
-
 
 ---
 
