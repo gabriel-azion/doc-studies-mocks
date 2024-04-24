@@ -22,14 +22,38 @@ The `azion logs cells` command offers the ability to watch your edge functions' 
 
 ## Behind The Scenes: How Azion CLI live tail logs Work
 
-### Dataflow
+### Azion logs
 
+![Azion logs](./logs.png "Azion logs").
+
+#### Dataflow
+
+1. The user initiates the process by executing the command `azion logs [ cells || http ]`.
+2. The Azion CLI interacts with the GraphQL API.
+3. The GraphQL API responds by returning logs from the last five minutes.
+4. The CLI processes and interprets this data.
+5. The logs are then presented to the user, with an option to display the data in a more readable, beautified format.
+
+### Azion logs with live tail 
+
+![Azion live tail logs](./live-tail.png "Azion live tail logs").
+
+#### Dataflow
+
+1. The user initiates the process by running the command `azion logs [ cells || http ] --tail`.
+2. The Azion CLI then continuously calls the GraphQL API, each time starting from the timestamp of the last log that was displayed on the screen.
+3. The GraphQL API responds by returning the requested data.
+4. The CLI then processes and interprets this data.
+5. Finally, the logs are returned to the user. The user has the option to receive this data in a more readable, beautified format.
 
 ### Responsibilities
 
+**Azion CLI**: serves as the interface for user interaction and is responsible for formatting and returning the data to the user.
+**GraphQL API**  handles the incoming requests (communicates with beholder) and retrieves the requested data.
+
 ---
 
-## Putting It into Practice: Checking Request Data
+## Putting It into Practice: Checking edge functions logs
 
 ### Checking logs locally
 
@@ -68,13 +92,13 @@ export default function myWorker(event) {
     - Visit: http://localhost:{{port}} in your browser.
 9.  Check the generated logs in the terminal when the function executes.
 
-### Deploying your application and checking logs on the Azion Edge Platform
+### Deploying your application and checking live tail logs on the Azion Edge Platform
 
 Follow these steps:
 
 1.  Run `azion deploy` to deploy your application to the network edge.
 2.  Access your application's domain, provided at the end of the deployment process.
-3.  Run `azion logs cells` to retrieve logs of your edge functions.
+3.  Run `azion logs cells --tail` to retrieve live tail logs of your edge functions.
 
 > Note: the `azion logs cells` command fetches logs from the last 5 minutes. More details are available in the [command documentation](https://www.azion.com/en/documentation/products/azion-cli/overview/#using-azion-logs-cells).
 
@@ -92,6 +116,8 @@ Localized console logs have several benefits:
 - **Better understanding of function behavior**: You can monitor the functionality and logic of your function in real time.
 - **Iterative development**: Localized console logs simplify testing for iterative development cycles, ensuring each change operates as intended.
 - **Decreased server costs**: Reducing server deployments for minute changes can lower server usage and expenses.
+
+--
 
 ## Conclusion
 
