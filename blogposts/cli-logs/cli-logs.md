@@ -118,7 +118,7 @@ Localized console logs have several benefits:
 - **Iterative development**: Localized console logs simplify testing for iterative development cycles, ensuring each change operates as intended.
 - **Decreased server costs**: Reducing server deployments for minute changes can lower server usage and expenses.
 
---
+---
 
 ## Conclusion
 
