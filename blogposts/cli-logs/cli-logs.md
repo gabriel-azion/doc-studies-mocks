@@ -24,7 +24,7 @@ The `azion logs cells` command offers the ability to watch your edge functions' 
 
 ### Azion logs
 
-![Azion logs](./logs.png "Azion logs").
+![Azion logs](./logs.png "Azion logs")
 
 #### Dataflow
 
@@ -36,7 +36,7 @@ The `azion logs cells` command offers the ability to watch your edge functions' 
 
 ### Azion logs with live tail 
 
-![Azion live tail logs](./live-tail.png "Azion live tail logs").
+![Azion live tail logs](./live-tail.png "Azion live tail logs")
 
 #### Dataflow
 
