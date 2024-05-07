@@ -15,9 +15,9 @@ While Azion CLI also supports the `azion logs http` command for accessing HTTP l
 
 ## Behind The Scenes: How Azion CLI Live Tail Logs Work
 
-### Azion logs
-
 ![Azion logs](./logs.png "Azion logs")
+
+### Azion logs
 
 #### Dataflow
 
@@ -28,8 +28,6 @@ While Azion CLI also supports the `azion logs http` command for accessing HTTP l
 5. The logs are presented to the user, with an option to display the data in a more readable, beautified format.
 
 ### Azion logs with live tail 
-
-![Azion live tail logs](./live-tail.png "Azion live tail logs")
 
 #### Dataflow
 

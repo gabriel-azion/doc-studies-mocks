@@ -15,9 +15,9 @@ Embora o Azion CLI também suporte o comando `azion logs http` para acessar logs
 
 ## Por Trás das Cenas: Como Funcionam os Tail Logs da Azion CLI
 
-### Logs da Azion
-
 ![Logs da Azion](./logs.png "Logs da Azion")
+
+### Logs da Azion
 
 #### Fluxo de Dados
 
@@ -27,9 +27,7 @@ Embora o Azion CLI também suporte o comando `azion logs http` para acessar logs
 4. O CLI processa e interpreta esses dados.
 5. Os logs são apresentados ao usuário, com a opção de exibir os dados em um formato mais legível e aprimorado.
 
-### Tail Logs da Azion
-
-![Tail Logs ao Vivo da Azion](./live-tail.png "Tail Logs ao Vivo da Azion")
+### Tail Logs
 
 #### Fluxo de Dados
 
