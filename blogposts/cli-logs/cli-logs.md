@@ -1,3 +1,27 @@
+schema: blog_post
+title: Enhancing Edge Functions Debugging with Azion CLI Logs
+authors:
+    - src/content/authors/gabriel.franca.md
+meta_tags: azion, cli, logs, debugging, edge functions, serverless
+excerpt: >-
+    Learn how to enhance your edge functions debugging process using Azion CLI logs. Gain immediate insights into your application's behavior and monitor logs directly from your terminal.
+description: >-
+    This blog post provides a comprehensive guide on how to use Azion CLI logs for debugging edge functions. It covers the process of accessing real-time logs, the prerequisites for using Azion CLI, and the benefits of localized console logs.
+img_featured: >-
+    /assets/blog/images/uploads/azion-cells-technical-approach-and-the-future-of-serverless-computing.png
+categories:
+    - developers
+related_content:
+namespace: blogpost_azion_cli_logs
+date: 2024-02-26T06:00:00Z
+date_updated:
+resourceHub:
+    flags:
+        contentType: Blog
+permalink: /enhancing-edge-functions-debugging-with-azion-cli-logs/
+
+---
+
 # Enhancing Edge Functions Debugging with Azion Logs
 
 Real-time logs, or live tail logs, are an invaluable resource for gaining immediate insights into your application's behavior. However, accessing these logs can often be a challenging task.

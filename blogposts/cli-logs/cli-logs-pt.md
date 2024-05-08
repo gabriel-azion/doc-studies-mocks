@@ -1,3 +1,26 @@
+schema: blog_post
+title: Melhorando a Depuração de Edge Functions com Azion CLI Logs
+authors:
+    - src/content/authors/gabriel.franca.md
+meta_tags: azion, cli, logs, debugging, edge functions, serverless
+excerpt: >-
+    Aprenda como melhorar o processo de depuração de suas edge functions usando os logs da Azion CLI. Obtenha insights imediatos sobre o comportamento de sua aplicação e monitore logs diretamente do seu terminal.
+description: >-
+    Este post do blog fornece um guia abrangente sobre como usar os logs da Azion CLI para depurar edge functions. Ele abrange o processo de acesso a logs em tempo real, os pré-requisitos para usar o Azion CLI e os benefícios dos logs de console localizados.
+img_featured: >-
+    /assets/blog/images/uploads/azion-cells-technical-approach-and-the-future-of-serverless-computing.png
+categories:
+    - developers
+related_content:
+namespace: blogpost_azion_cli_logs
+date: 2024-02-26T06:00:00Z
+date_updated:
+resourceHub:
+    flags:
+        contentType: Blog
+permalink: /melhorando-a-depuracao-de-edge-functions-com-azion-cli-logs/
+---
+
 # Melhorando a Depuração de Edge Functions com o comando Azion Logs
 
 Os logs em tempo real, ou tail logs, são um recurso inestimável para obter insights imediatos sobre o comportamento da sua aplicação. No entanto, acessar esses logs pode muitas vezes ser uma tarefa desafiadora.
