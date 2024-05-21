@@ -5,9 +5,9 @@ authors:
     - src/content/authors/gabriel.franca.md
 meta_tags: azion, edge storage, object storage, gestão de dados, serverless, s3 api
 excerpt: >-
-    Descubra como o Edge Storage da Azion simplifica a gestão de dados e aprimora o desempenho de aplicações. Aprenda sobre os benefícios do armazenamento de objetos no edge da rede e como aproveitá-lo usando a API REST da Azion, CLI e a API de Storage das Edge Functions.
+    Descubra como o Edge Storage da Azion simplifica a gestão de dados e aprimora o desempenho de aplicações. Aprenda sobre os benefícios do armazenamento de objetos no edge da rede e como aproveitá-lo usando a REST API a CLI e a Edge Functions Storage API da Azion.
 description: >-
-    Este blog mergulha no Azion Edge Storage, uma solução de armazenamento de objetos projetada para simplificar a gestão de dados e melhorar o desempenho da aplicação. O post abrange os principais benefícios, configuração, e a gestão de dados usando S3 API, REST API, Azion CLI e Edge Functions Storage API.
+    Este blog mergulha no Edge Storage da Azion, uma solução de armazenamento de objetos projetada para simplificar a gestão de dados e melhorar o desempenho da aplicação. O post abrange os principais benefícios, configuração, e a gestão de dados usando S3 API, REST API, Azion CLI e Edge Functions Storage API.
 img_featured: >-
     /assets/blog/images/uploads/storage-image.png
 categories:
@@ -27,29 +27,29 @@ Como desenvolvedores, navegar pelo complexo mundo do armazenamento de dados pode
 
 E se você pudesse aproveitar o conceito de Object Storage, implantando seus dados no edge, beneficiando-se de acesso de baixa latência, escalabilidade, custo previsível e alta disponibilidade sem ter que lidar com as complexidades dos sistemas de armazenamento tradicionais?
 
-Neste blog, mergulhamos no Azion Edge Storage, uma solução de armazenamento de objetos projetada com os desenvolvedores em mente, simplificando o processo de gestão de dados e potencializando o desempenho das aplicações.
+Neste blog, mergulhamos no Edge Storage da Azion, uma solução de armazenamento de objetos projetada com os desenvolvedores em mente, simplificando o processo de gestão de dados e potencializando o desempenho das aplicações.
 
 ---
 
-## Object Storage no Edge
+## Object Storage no edge
 
-Através do Azion Edge Storage, a gestão de ativos como imagens e arquivos pode ser realizada sem se envolver nas complexidades do gerenciamento de infraestrutura. Isso permite que os usuários se concentrem em construir aplicações inovadoras, evitando quaisquer obstáculos de infraestrutura.
+Através do Edge Storage da Azion, a gestão de ativos como imagens e arquivos pode ser realizada sem se envolver nas complexidades do gerenciamento de infraestrutura. Isso permite que os usuários se concentrem em construir aplicações inovadoras, evitando quaisquer obstáculos de infraestrutura.
 
 Os principais benefícios incluem:
 
-- API compatível com S3: esta compatibilidade facilita a migração de outros sistemas de armazenamento em nuvem que usam a API S3, permitindo a transição sem a necessidade de alterar o código existente.
-- Escalabilidade: a escalabilidade ilimitada fornecida pelas infraestruturas edge remove qualquer restrição de capacidade de armazenamento. Os usuários podem ajustar o armazenamento de acordo com suas demandas.
-- Confiabilidade: o edge garante desempenho confiável e consistente.
-- Previsibilidade de custo: custos inesperados podem ser evitados mantendo as despesas de transferência de dados dentro de orçamentos predeterminados.
-- Arquitetura sem servidor (serverless): a arquitetura serverless traz um modelo prático de desenvolvimento de aplicações, enfatizando simplicidade e adaptabilidade.
-- Evitar bloqueio do fornecedor: essa flexibilidade facilita a tomada de decisões estratégicas e promove preços competitivos.
-- Sem mais cobrança de saída (egress charge): com o edge computing, o processamento de dados acontece mais próximo da fonte, minimizando os volumes de transferência de dados para e do servidor central. Como resultado, as empresas podem evitar a alta despesa de saída frequentemente associada aos serviços de nuvem, economizando nos custos operacionais.
+- **API compatível com S3**: esta compatibilidade facilita a migração de outros sistemas de armazenamento em nuvem que usam a API S3, permitindo a transição sem a necessidade de alterar o código existente.
+- **Escalabilidade**: a escalabilidade ilimitada fornecida pelas infraestruturas edge remove qualquer restrição de capacidade de armazenamento. Os usuários podem ajustar o armazenamento de acordo com suas demandas.
+- **Confiabilidade**: o edge garante desempenho confiável e consistente.
+- **Previsibilidade de custo**: custos inesperados podem ser evitados mantendo as despesas de transferência de dados dentro de orçamentos predeterminados.
+- **Arquitetura serverless**: a arquitetura serverless traz um modelo prático de desenvolvimento de aplicações, enfatizando simplicidade e adaptabilidade.
+- **Evitar vendor lock-in**: essa flexibilidade facilita a tomada de decisões estratégicas e promove preços competitivos.
+- **Sem egress charge**: com o edge computing, o processamento de dados acontece mais próximo da fonte, minimizando os volumes de transferência de dados para e do servidor central. Como resultado, as empresas podem evitar a alta despesa de saída frequentemente associada aos serviços de nuvem, economizando nos custos operacionais.
 
 ---
 
-## Configurando e Simplificando a Gestão de Dados
+## Configurando e simplificando a gestão de dados
 
-Edge Storage gerencia dados através de objetos. Cada objeto inclui:
+O Edge Storage gerencia dados através de objetos. Cada objeto inclui:
 
 - Dados que compõem o objeto.
 - Metadados associados, como o tipo de mídia e o tamanho do objeto.
@@ -57,22 +57,22 @@ Edge Storage gerencia dados através de objetos. Cada objeto inclui:
 
 ### API S3
 
-Edge Storage é compatível com a API S3. Este recurso funciona da seguinte forma:
+O Edge Storage é compatível com a API S3. Este recurso funciona da seguinte forma:
 
 1.  As credenciais podem ser gerenciadas através do endpoint `/s3-credentials`. Os métodos relacionados às credenciais incluem:
 
-1. GET: recuperar dados em todas as credenciais S3 registradas no Azion.
-1. GET por ID: recuperar dados em uma credencial S3 registrada no Azion.
-1. POST: criar uma credencial S3.
-2. DELETE: remover as credenciais S3 da conta.
+- GET: recuperar dados em todas as credenciais S3 registradas no Azion.
+- GET por ID: recuperar dados em uma credencial S3 registrada no Azion.
+- POST: criar uma credencial S3.
+- DELETE: remover as credenciais S3 da conta.
 
 2.  Uma vez que as credenciais são criadas, você pode usá-las através:
 
-1. S3cmd
-2. S3 API através do endpoint regional `https://s3.use-east-005.azionstorage.net/`
-3. Bibliotecas relacionadas ao tratamento do S3 para a linguagem de programação escolhida.
+- S3cmd
+- S3 API através do endpoint regional `https://s3.use-east-005.azionstorage.net/`
+- Bibliotecas relacionadas ao tratamento do S3 para a linguagem de programação escolhida.
 
-Criando credenciais S3 para serem usadas com o Edge Storage:
+### Criando credenciais S3 para serem usadas com o Edge Storage
 
 ```
 curl --location 'https://api.azion.com/v4/storage/s3-credentials \
@@ -89,7 +89,7 @@ curl --location 'https://api.azion.com/v4/storage/s3-credentials \
 }'
 ```
 
-Configurando as suas credenciais no S3cmd:
+### Configurando as suas credenciais no S3cmd
 
 ```
 user@user ~ % s3cmd --configure
@@ -104,7 +104,7 @@ S3 Endpoint [s3.amazonaws.com]: https://s3.use-east-005.azionstorage.net/
 
 Agora, você pode acessar e manipular objetos através do S3cmd dependendo das capacidades atribuídas à credencial S3.
 
-Enviando um objeto usando a API S3
+### Enviando um objeto usando a API S3
 
 ```
 curl --location --request PUT 'https://s3.us-east-005.azionstorage.net/<bucket_name>/<object_key>' \
@@ -114,21 +114,21 @@ curl --location --request PUT 'https://s3.us-east-005.azionstorage.net/<bucket_n
     --data '<filepath>'
 ```
 
-Um usuário, desde que esteja atribuído a uma equipe com a permissão Editar Credenciais de Armazenamento, pode criar credenciais que serão visíveis para outros usuários na mesma conta. Quando uma credencial é criada, ela não pode ser editada, e as chaves secretas só serão apresentadas no momento da criação. Dessa forma, ao visualizar uma credencial depois de ter sido criada, as chaves serão omitidas.
+Um usuário, desde que esteja atribuído a uma equipe com a permissão para editar credenciais no Storage, pode criar credenciais que serão visíveis para outros usuários na mesma conta. Quando uma credencial é criada, ela não pode ser editada, e as chaves secretas só serão apresentadas no momento da criação. Dessa forma, ao visualizar uma credencial depois de ter sido criada, as chaves serão omitidas.
 
-As credenciais podem ser atribuídas a um determinado bucket ou a todos os buckets criados pela conta, mas não a um grupo de buckets. Embora seja possível criar um conjunto de credenciais, elas não terão poderes de gestão sobre o bucket ou as próprias credenciais - a gestão de buckets e credenciais só pode ser realizada através da API REST.
+As credenciais podem ser atribuídas a um determinado bucket ou a todos os buckets criados pela conta, mas não a um grupo de buckets. Embora seja possível criar um conjunto de credenciais, elas não terão poderes de gestão sobre o bucket ou as próprias credenciais - a gestão de buckets e credenciais só pode ser realizada através da REST API.
 
 No entanto, as credenciais proporcionam um conjunto específico de operações possíveis relacionadas aos objetos no bucket. Com credenciais apropriadas, é possível realizar operações como listar, ler, modificar e excluir objetos, dado que o bucket tenha as permissões necessárias. As credenciais S3 operam separadamente do nível de acesso definido para o bucket usando a API REST, definido pela propriedade `edge_access`. Por exemplo, se uma credencial com a capacidade `writeFiles` for criada para um bucket com permissões `read_only`, a credencial ainda poderá ser usada para adicionar ou modificar arquivos no bucket, enquanto a API Azion não pode ser usada para essa mesma operação.
 
-Embora o gerenciamento do bucket e das credenciais esteja limitado à API REST, os próprios objetos podem ser manipulados pelas credenciais com permissão.
+Embora o gerenciamento do bucket e das credenciais esteja limitado à REST API, os próprios objetos podem ser manipulados pelas credenciais com permissão.
 
 ---
 
-### API Rest
+## REST API
 
-A Azion oferece métodos de API REST para armazenar objetos, desde a criação e modificação de buckets e de suas permissões até a gestão de objetos.
+A Azion oferece métodos de REST API para armazenar objetos, desde a criação e modificação de buckets e de suas permissões até a gestão de objetos.
 
-Digamos que você deseje usar o armazenamento de objetos como a origem para uma Edge Application estática. Para isso, você precisa:
+Digamos que você deseje usar o armazenamento de objetos como a origem para uma edge application estática. Para isso, você precisa:
 
 1. Criar um bucket.
 2. Fazer upload do arquivo que contém sua aplicação dentro de um diretório `src`. Por exemplo:
@@ -154,11 +154,11 @@ src/index.html
 
 ```
 
-Você pode acessar as instruções passo a passo neste [guia](https://www.azion.com/en/documentation/products/guides/upload-and-download-objects-from-bucket/) para fazer upload e download de objetos de um bucket do Azion Edge Storage.
+Você pode acessar as instruções passo a passo [neste guia](https://www.azion.com/en/documentation/products/guides/upload-and-download-objects-from-bucket/) para fazer upload e download de objetos de um bucket do Edge Storage da Azion.
 
 ---
 
-### Azion CLI
+## Azion CLI
 
 Outra alternativa é iniciar e implantar uma [aplicação através da Azion CLI](https://www.azion.com/en/documentation/devtools/cli/init/). Quando você inicializa uma aplicação através do comando `azion init` e a implanta no edge:
 
@@ -169,9 +169,9 @@ Você pode ver mais informações sobre [como implantar um aplicação através 
 
 ---
 
-### Azion Edge Functions Storage API
+## Azion Edge Functions Storage API
 
-O Azion Edge Storage pode ser acessado através da [API de Storage das Edge Functions](https://www.azion.com/en/documentation/devtools/runtime/api-reference/storage/). Essa interface permite que você leia e escreva dados no storage e nos seus buckets associados.
+O Edge Storage da Azion pode ser acessado através da [API de Storage das Edge Functions](https://www.azion.com/en/documentation/devtools/runtime/api-reference/storage/). Essa interface permite que você leia e escreva dados no storage e nos seus buckets associados.
 
 Para começar com a API de Storage, você precisa:
 
