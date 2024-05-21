@@ -1,3 +1,4 @@
+---
 schema: blog_post
 title: Melhorando a Depuração de Edge Functions com Azion CLI Logs
 authors:

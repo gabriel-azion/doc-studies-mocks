@@ -14,7 +14,7 @@
 
 | Property | Description |
 | --- | --- |
-| name | The name of the cache. |
+| name | Name of your cache setting. |
 | stale | A boolean indicating whether stale content can be served. |
 | queryStringSort | A boolean indicating whether the query string should be sorted. |
 | methods | An object specifying which HTTP methods should be cached. |

@@ -1,6 +1,29 @@
-# Enhancing Data Management with Azion's Edge Storage
+---
+schema: blog_post
+title: Enhancing Data Management with Azion's Edge Storage
+authors:
+    - src/content/authors/gabriel.franca.md
+meta_tags: azion, edge storage, object storage, data management, serverless, s3 api
+excerpt: >-
+    Discover how Azion's Edge Storage simplifies data management and enhances application performance. Learn about the benefits of object storage at the edge of the network and how to leverage it using Azion's REST API, CLI, and Edge Functions Storage API.
+description: >-
+    This blog post dives into Azion Edge Storage, an object storage solution designed to simplify data management and boost application performance. It covers key benefits, setup, and data management using S3 API, REST API, Azion CLI, and Edge Functions Storage API.
+img_featured: >-
+    /assets/blog/images/uploads/azion-edge-storage.png
+categories:
+    - developers
+related_content:
+namespace: blogpost_azion_edge_storage
+date: 2024-05-09T06:00:00Z
+date_updated:
+resourceHub:
+    flags:
+        contentType: Blog
+permalink: /enhancing-data-management-with-azion-edge-storage/
 
-As developers,navigating the complex world of data storage can often seem intimidating. There's a constant need to juggle managing growing data volumes, ensuring quick accessibility, and maintaining system performance.
+---
+
+As developers, navigating the complex world of data storage can often seem intimidating. There's a constant need to juggle managing growing data volumes, ensuring quick accessibility, and maintaining system performance.
 
 What if you could leverage the concept of Object Storage, deploying your data at the edge of the network, benefiting from low-latency access, scalability, predictable cost, and high availability without having to wrangle with the complexities of traditional storage systems?
 
@@ -29,7 +52,7 @@ Key benefits include:
 
 Edge Storage manages data through discrete objects. Each object includes:
 
-- Datathat composesthe object.
+- Data composing the object.
 - Associated metadata, such as the media type and object size.
 - An object key as the unique identifier.
 
@@ -80,7 +103,7 @@ Default Region....
 S3 Endpoint [s3.amazonaws.com]: https://s3.use-east-005.azionstorage.net/
 ```
 
-Now, you can access and manipulate objectsthrough S3cmd depending on the capabilities assigned to the S3 credential.
+Now, you can access and manipulate objects through S3cmd depending on the capabilities assigned to the S3 credential.
 
 Uploading an object using the S3 API
 
@@ -92,7 +115,7 @@ curl --location --request PUT 'https://s3.us-east-005.azionstorage.net/<bucket_n
     --data '<filepath>'
 ```
 
-A user, as long as they are assigned to a team with the Edit Storage Credentialspermission, can create credentials that will be visible to other users on the same account. Once a credential is created, it cannot be edited, and the secret keys will only be presented at the moment of creation. This way, when viewing a credential after it has been created, the keys will be omitted.
+A user, as long as they are assigned to a team with the Edit Storage Credentials permission, can create credentials that will be visible to other users on the same account. Once a credential is created, it cannot be edited, and the secret keys will only be presented at the moment of creation. This way, when viewing a credential after it has been created, the keys will be omitted.
 
 The credentials can be assigned to a specific bucket or all buckets created by the account, but not to a group of buckets. Although it is possible to create a set of credentials, these won't have management powers over the bucket or the credentials themselves - management of buckets and credentials can only be conducted through the REST API.
 
@@ -133,24 +156,24 @@ src/index.html
 
 ```
 
-You can access the step-by-step instructions in this [guide](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/guides/upload-and-download-objects-from-bucket/&sa=D&source=editors&ust=1713901060152813&usg=AOvVaw0xqe1rdVqm7AJdy99UalXA)to upload and download objects from an Azion Edge Storage bucket.
+You can access the step-by-step instructions in this [guide](https://www.azion.com/en/documentation/products/guides/upload-and-download-objects-from-bucket/)to upload and download objects from an Azion Edge Storage bucket.
 
 ---
 
 ### Azion CLI
 
-Another alternative is to initialize and deploy an [application through Azion CLI](https://www.google.com/url?q=https://www.azion.com/en/documentation/devtools/cli/init/&sa=D&source=editors&ust=1713901060153828&usg=AOvVaw29WUk7UC6JFbBSYAh4dk-w). When you initialize an application via the `azion init` command and deploy it to the edge:
+Another alternative is to initialize and deploy an [application through Azion CLI](https://www.azion.com/en/documentation/devtools/cli/init/). When you initialize an application via the `azion init` command and deploy it to the edge:
 
 1.  A bucket is automatically created with your chosen name for the project.
 2.  Your static application is stored in it.
 
-You can see more information on [how to deploy an application through Azion CLI guide](https://www.google.com/url?q=https://www.azion.com/en/documentation/products/cli/frameworks/react/&sa=D&source=editors&ust=1713901060154515&usg=AOvVaw1oryA2LowG0w2EChIjiRoH), which presents the steps to deploy a React application on the platform.
+You can see more information on [how to deploy an application through Azion CLI guide](https://www.azion.com/en/documentation/products/cli/frameworks/react/), which presents the steps to deploy a React application on the platform.
 
 ---
 
 ### Azion Edge Functions Storage API
 
-The Azion Edge Storage can be accessed through the [Edge Functions Storage API](https://www.google.com/url?q=https://www.azion.com/en/documentation/devtools/runtime/api-reference/storage/&sa=D&source=editors&ust=1713901060155448&usg=AOvVaw3lqnM5ec4Ywo2rNL55eYby). This interface enables you to read and write data in the storage and its associated buckets.
+The Azion Edge Storage can be accessed through the [Edge Functions Storage API](https://www.azion.com/en/documentation/devtools/runtime/api-reference/storage/). This interface enables you to read and write data in the storage and its associated buckets.
 
 To get started with Storage API, you need to:
 
@@ -166,28 +189,7 @@ import Storage from "azion:storage";
 const storage = new Storage(bucket);
 ```
 
-3.  Choose and implement the [methods listed in the documentation](https://www.google.com/url?q=https://www.azion.com/en/documentation/devtools/runtime/api-reference/storage/%23methods&sa=D&source=editors&ust=1713901060157677&usg=AOvVaw2Dsp-AbqIqEM269Oc9UluE).
-
----
-
-### Dataflow
-
-Let's say you need to use Edge Storage to store and access media files stored at the edge. The following data flow exemplifies the steps of this process.
-
-![](images/image1.png)[\[a\]](#cmnt1)
-
-1.  The user accesses a domain in Azion Edge Platform, requesting a static object like a video.
-2.  The edge application with origin set to bucket:
-
-1.  The Edge Application, configured with its origin set to a bucket in Edge Storage, will process the request and access Edge Storage to GET the desired object.
-2.  With the static object at hand, the Edge Application can store it in the cache using Edge Cache.
-
-3.  The edge application with origin set to a bucket and active Tiered Cache:
-
-1.  The Edge Application, configured with its origin set to a bucket in Edge Storage and with an active Tiered Cache, will first search for the content in the cache module. If not found, it will request the desired content from Edge Storage.
-2.  Upon finding the object, Tiered Cache can temporarily store it and send it to the Edge Application.[\[b\]](#cmnt2)
-
-4.  With the static object at hand, the Edge Application delivers the content to the user.
+3.  Choose and implement the [methods listed in the documentation](https://www.azion.com/en/documentation/devtools/runtime/api-reference/storage/).
 
 ---
 
