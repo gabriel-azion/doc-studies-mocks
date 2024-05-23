@@ -31,8 +31,8 @@
 
 ## rules
 
-| Property | Description |
-| --- | --- |
+| Property | Description |   Required |
+| --- | --- | --- |
 | request | An array of request rules. Each rule has properties like name, match, cache, rewrite, setCookie, setHeaders, forwardCookies, setOrigin, deliver, and runFunction. | No |
 | name | The name of the rule. | Yes |
 | match | The pattern to match for the rule. | |
