@@ -1,6 +1,12 @@
 
 # azion.config.js file
 
+The `azion.config.js` file is a configuration file created during the build of the application, based on the chosen preset. Each preset presents a set of default settings. This settings can be replaced by the user. This file is the source of truth for the configuration. In case it's delete, when the build process is triggered again, the default configuration is created.
+
+The following tables explain the properties of this configuration file.
+
+---
+
 ## origin
 
 | Property | Description | Values | Required |
