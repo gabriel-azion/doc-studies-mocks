@@ -16,7 +16,7 @@
 | --- | --- |
 | name | Name of your cache setting. |
 | stale | A boolean indicating whether stale content can be served. |
-| queryStringSort | A boolean indicating whether the query string should be sorted. |
+| queryStringSort | Considers objects with the same query strings as the same cached file regardless of the order of the fields. |
 | methods | An object specifying which HTTP methods should be cached. |
 | browser | An object specifying the maximum age of the cache in the browser. |
 | edge | An object specifying the maximum age of the cache at the edge. |
