@@ -40,20 +40,20 @@ The following tables explain the properties of this configuration file.
 ## cache
 
 
-| Property | Type | Error Message |
-|----------------|----------------|--------------------------------------------------------------------------------------------------|
-| name | string | The 'name' field must be a string. |
-| stale | boolean | The 'stale' field must be a boolean. |
-| queryStringSort | boolean | The 'queryStringSort' field must be a boolean. |
-| methods -> post | boolean | The 'post' field must be a boolean. |
-| methods -> options | boolean | The 'options' field must be a boolean. |
-| methods -> additionalProperties | boolean | No additional properties are allowed in the 'methods' object. |
-| browser -> maxAgeSeconds | number OR string (mathematical expression) | The 'maxAgeSeconds' field must be a number or a valid mathematical expression. |
-| browser -> additionalProperties | boolean | No additional properties are allowed in the 'browser' object. |
-| browser -> required | array | The 'maxAgeSeconds' field is required in the 'browser' object. |
-| edge -> maxAgeSeconds | number OR string (mathematical expression) | The 'maxAgeSeconds' field must be a number or a valid mathematical expression. |
-| edge -> additionalProperties | boolean | No additional properties are allowed in the 'edge' object. |
-| edge -> required | array | The 'maxAgeSeconds' field is required in the 'edge' object. |
+| Property | Type | Expected values |Error Message |
+| --- | --- | --- | --- |
+| name | string | | The 'name' field must be a string. |
+| stale | boolean | | The 'stale' field must be a boolean. |
+| queryStringSort | boolean | | The 'queryStringSort' field must be a boolean. |
+| methods -> post | boolean | | The 'post' field must be a boolean. |
+| methods -> options | boolean | | The 'options' field must be a boolean. |
+| methods -> additionalProperties | boolean | | No additional properties are allowed in the 'methods' object. |
+| browser -> maxAgeSeconds | number OR string (mathematical expression) | | The 'maxAgeSeconds' field must be a number or a valid mathematical expression. |
+| browser -> additionalProperties | boolean | | No additional properties are allowed in the 'browser' object. |
+| browser -> required | array | | The 'maxAgeSeconds' field is required in the 'browser' object. |
+| edge -> maxAgeSeconds | number OR string (mathematical expression) | | The 'maxAgeSeconds' field must be a number or a valid mathematical expression. |
+| edge -> additionalProperties | boolean | | No additional properties are allowed in the 'edge' object. |
+| edge -> required | array | | The 'maxAgeSeconds' field is required in the 'edge' object. |
 
 :::note
 | additionalProperties | boolean | No additional properties are allowed in cache item objects. |
