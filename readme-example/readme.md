@@ -2,6 +2,8 @@
 
 [Project Logo]
 
++ Badges
+
 ## Description 
 
 A succinct description of what the project does. Use one or two sentences.
@@ -37,10 +39,6 @@ Have a bug or a feature request? Please first read the issue guidelines and sear
 ## License 
 
 State your license here.
-
-## Badges
-
-Add any badges here.
 
 ## Acknowledgments
 
