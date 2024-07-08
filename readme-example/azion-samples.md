@@ -1,4 +1,12 @@
-# Azion Samples and Templates
+
+<h1 align="center">
+  Azion Samples and Templates
+</h1>
+<p align="center">
+    We're under a <a href="https://opensource.org/license/mit/" title="MIT">MIT</a> license.
+    <br>
+    You can read more about it on <a href="./LICENSE" title=".LICENSE">LICENSE</a>.
+</p>
 
 Welcome to the repository for code samples and templates designed for our edge computing platform. This platform allows you to run serverless applications using edge functions, providing low latency and high performance. Here, you'll find examples and templates to help you get started with various JavaScript frameworks, including Next.js, Angular, Astro, and more.
 
