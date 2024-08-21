@@ -15,13 +15,7 @@ Welcome to the repository for code samples and templates designed for our edge c
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Usage](#usage)
-- [Framework Support](#framework-support)
-  - [Next.js](#nextjs)
-  - [Angular](#angular)
-  - [Astro](#astro)
-  - [Others](#others)
+=  - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -42,15 +36,13 @@ This repository contains a collection of code samples and templates specifically
 
 Before you begin, ensure you have the following installed:
 
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/edge-computing-platform-samples.git
-    cd edge-computing-platform-samples
+    git clone https://github.com/your-username/azion-samples.git
+    cd azion-samples
     ```
 2. Install the dependencies for the specific framework or sample you want to use. For example, for a Next.js sample:
     ```bash
@@ -62,33 +54,11 @@ Before you begin, ensure you have the following installed:
 
 Each sample and template comes with detailed instructions on how to deploy and run the code. Follow the README within each subdirectory for specific usage information.
 
-## Framework Support
-
-### Next.js
-
-A comprehensive set of samples and templates for building serverless applications with Next.js on our edge computing platform.
-- [Next.js Sample](./nextjs-sample)
-- [Next.js Template](./nextjs-template)
-
-### Angular
-
-Quickly get started with Angular on our edge computing platform using these samples and templates.
-- [Angular Sample](./angular-sample)
-- [Angular Template](./angular-template)
-
-### Astro
-
-Build fast, content-focused websites with Astro, optimized for our edge computing platform.
-
-- [Astro Sample](./astro-sample)
-- [Astro Template](./astro-template)
-
 ### Others
 
 Additional samples and templates for other frameworks will be added over time. Check back regularly for updates.
 
 ## Contributing
-
 
 We welcome contributions to this repository! If you have code samples, templates, or improvements, please follow these steps:
 1. Fork the repository.
@@ -100,7 +70,3 @@ We welcome contributions to this repository! If you have code samples, templates
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or inquiries, please reach out to us at [your-email@example.com](mailto:your-email@example.com).
