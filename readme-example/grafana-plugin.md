@@ -11,7 +11,7 @@ It's recommended to install the binary in a folder of preference. When the binar
 ## Prerequisites
 
 - Grafana installed (Check this [Grafana installation guide](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) if needed)
-- Familiarity with Graffana's installation directory for accessing the `defaults.ini` file
+- Familiarity with Grafana's installation directory for accessing the `defaults.ini` file
 
 ## Installation Steps
 
@@ -22,7 +22,7 @@ It's recommended to install the binary in a folder of preference. When the binar
    allow_loading_unsigned_plugins = azion-azion-datasource
    ```
 
-3. Locate the `data` folder within your Grafana installation directory, and create a `plugins` directory inside (create `data` folder if nonexistent).
+3. Locate the `data` folder within your Grafana installation directory (create the `data` folder if nonexistent), and create a `plugins` directory inside.
 4. Download the [Azion plugin zip](https://github.com/aziontech/grafana-plugin/releases/latest).
 5. Move the zip file to your newly crafted `plugins` directory.
 6. Open the terminal, shift to the `plugins` directory and execute:
